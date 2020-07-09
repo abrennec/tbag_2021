@@ -67,11 +67,11 @@ This course provides you with an introduction to the theoretical backgrounds of 
 3) Audio & Graphics - Practical 
    1) Combination of Audio und Graphics in Film/Games/Art
       1) Examples 
-   2) Image / Audio Editing
-   3) Create a scene
-   4) Add sound scape to scene
-   5) Change sounds based on user interaction and position
-   6) Create sounding objects
+      2) Image / Audio Editing
+      3) Create a scene
+      4) Add sound scape to scene
+      5) Change sounds based on user interaction and position
+      6) Create sounding objects
 
 
 
