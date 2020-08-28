@@ -159,7 +159,6 @@ For any written assignments:
 01_intro/assignments/<my_last_name>/solution.md
 ```
 
-
 ---
 
 # Further Resources
