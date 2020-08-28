@@ -25,14 +25,14 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ## Topics
 
 - Historical notes
-- Properties of Sound
+- Properties of Sound and hearing
 - Digital Audio Fundamentals 
-- Applications: Audio Processing and Production
+- Applications: Recording and editing - musique concrete
 
 
 ## Learning Objectives
 
-- Students will learn what is sound and what kind of properties define sound.
+- Students will learn what is sound and what kind of properties define sound as well as how hearing works.
 - Students will lean how to describe sound technically.
 - Students will learn what is meant by audio and audio technology as well as how sound is processed digitally.
 - Students will learn how to work with sound in a computer and apply the theory practically. 

@@ -24,17 +24,21 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ## Topics
 
-- Properties of Sound
-- Digital Audio Fundamentals 
+- Digital audio signals and signal flow 
+- Mixing audio and audio production
+- Audio FX
 - Applications: Audio Processing and Production
 
 
 ## Learning Objectives
 
-- Students will learn what is sound and what kind of properties define sound.
-- Students will lean how to describe sound technically.
-- Students will learn what is meant by audio and audio technology as well as how sound is processed digitally.
-- Students will learn how to work with sound in a computer and apply the theory practically. 
+Now that students know about the basics of sound and audio they will learn how to process audio.
+
+- Students will learn about audio signal processing, i.e., theory behind audio signals and signal flow.
+- Students will learn about how recorded audio signals will be routed and mixed in a digital audio workstation (DAW).
+- Students will learn about how audio tracks can be further processed using audio effects (FX).
+- Students will learn how to create an audio mix and how to position their sound sources in a stereo mix.
+
 
 ---
 
