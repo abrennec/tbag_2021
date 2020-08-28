@@ -24,6 +24,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ## Topics
 
+- Historical notes
 - Properties of Sound
 - Digital Audio Fundamentals 
 - Applications: Audio Processing and Production
