@@ -74,24 +74,24 @@ On **Wednesdays**, we will have a check-in meeting for questions. All assignment
 ```
 
 1. Week: Introduction to the course (2)
-2. Week: Audio rendering: Properties of sound and digital audio fundamentals (4)
+2. Week: Audio production: Properties of sound, digital audio fundamentals, audio production workflow (4)
 3. Week: Audio processing: Signal flow, audio FX and audio plugins (4)
-4. Week: Audio synth: Synthesis and generative audio, audio programming (4)
-5. Week: Audio analysis: Fourier transform (4)
-6. Week: Graphics rendering: Basics of computer graphics, rasterization and graphics pipeline (4)
-7. Week: Graphics modelview: 3D models, vector meshes, transformations (4)
-8. Week: Graphics camera: Camera parameters, projections, image setup (4)
-9. Week: Graphics shaders: Vertex and fragment shaders (4)
+4. Week: Musical sounds: Fundamental aspects of music, sounds and sound synthesis (4)
+5. Week: Music computing: As the name suggest, music computing (4)
+6. Week: Graphics pripeline: Basics of computer graphics, rasterization and graphics pipeline, 3d models (4)
+7. Week: Graphics modelview: Vector meshes, local vs global space, matrices (4)
+8. Week: Graphics transformation: Affine transformations, from 3d to 2d (4)
+9. Week: Graphics shaders: Vertex shaders (4)
 10. Week: Final Exercise + Wrap-up (2)
 
 
 ## Learning Objectives
 
-Main objective of this course is to get an understanding of audio rendering as well as graphics rendering with a computer. The course is split into two parts, audio rendering and graphics rendering. You will learn about mathematical concepts and how they are applied to digital audio and graphics.
+Main objective of this course is to get an understanding of digital audio processing as well as 3d computer graphics. The course is split into two parts, audio rendering and graphics rendering. You will learn about mathematical concepts and how they are applied to digital audio and graphics.
 
-The first part, audio rendering, introduces you to the fundamentals of sound and hearing perception, digital audio processing and production as well as sound synthesis and analysis. The theoretical parts will be accompanied with practical exercises so that you can apply the concepts and ideas directly. The notion of sounds in space will be an overarching theme to make you familiar with spatial hearing and sound production. 
+The first part, audio rendering, introduces you to the fundamentals of sound and hearing perception, digital audio processing and production as well as sound synthesis and music computing. The theoretical parts will be accompanied with practical exercises so that you can apply the concepts and ideas directly. The notion of sounds in space will be an overarching theme to make you familiar with spatial hearing and sound production. 
 
-In the second part, graphics rendering will be in the foreground of the lecture. Here you will be introduced to the basic concepts of 3D computer graphics and the graphics pipeline. In particular, you will learn about the mathematical concepts behind 3D models, model transformations, viewing and texture / shader programming. Objects in space will also be an overarching theme and the theoretical concepts will be accompanied with practical exercises as well.
+In the second part, graphics rendering will be in the foreground of the lecture. Here you will be introduced to the basic concepts of 3D computer graphics and the graphics pipeline. In particular, you will learn about the mathematical concepts behind 3D models, model transformations, viewing and texture, as well as vertex shader programming. Objects in space will also be an overarching theme and the theoretical concepts will be accompanied with practical exercises as well.
 
 At the end of the lecture, a final exercise will allow you to combine both fields in an application and to explore the sounds and objects in space (hopefully!).
 
@@ -100,7 +100,7 @@ At the end of the lecture, a final exercise will allow you to combine both field
 
 
 ```diff
-- To be updated
+- To be defined
 ```
 
 In order to pass the course, you need to collect 50 assignment points and participate in a final exercise. All solutions have to be submitted to GitHub to be considered for an evaluation.
@@ -120,9 +120,7 @@ For CTech students there will be a grade. The grade will be based on the points 
 
 ### Grading criteria <!-- omit in toc -->
 
-* An application sketch that can be build, launched, and run
-* Engineering effort, clarity of code organization and comprehensibility (i.e., code quality)
-* Technical and creative reflection (esp. final exercise)
+* 
 
 
 ---
