@@ -10,7 +10,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Audio Processing -- Properties of Sound and Digital Audio Fundamentals](#audio-processing----properties-of-sound-and-digital-audio-fundamentals)
+- [Audio Production -- In the Mix and Sound Production](#audio-production----in-the-mix-and-sound-production)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
 - [Digital Audio Signals](#digital-audio-signals)
@@ -20,14 +20,16 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ---
 
 
-# Audio Processing -- Properties of Sound and Digital Audio Fundamentals
+# Audio Production -- In the Mix and Sound Production 
 
 
 ## Topics
 
-- Digital audio signals and signal flow 
-- Mixing audio and audio production
-- Audio FX
+- Digital Audio Workstation
+- Tracks, instruments, and FX
+- Basics of Mixing 
+- Dynamics and panning (sound space basics)
+- Audio FX (Reverb, delay, equalizer)
 - Applications: Audio Processing and Production
 
 

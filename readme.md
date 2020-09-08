@@ -26,27 +26,34 @@ This course provides you with an introduction to the theoretical backgrounds of 
    1) Digital Audio and Rendering Basics
       1) Properties of sound
       2) Hearing and fundamental acoustics 
-      3) Digital representation of sound
-      4) Signal flow and digital audio processing
-      5) Audio rendering process (interface, driver, playback) and audio buffers
-      6) Audio editing software
+      3) Digital representation of sound / digital audio fundamentals
+      4) Audio buffers, signal flow, interfaces, input, output
+      5) Audio editing software
    2) Audio Production
-      1) Digital audio workstation basics
-      2) Generating space 
-      3) Adding dynamics
-      4) 
-   3) Musical Sounds and Synthesis
-      1) 
+      1) Digital Audio Workstation
+      2) Tracks, instruments, and FX
+      3) Basics of Mixing 
+      4) Dynamics and panning (sound space basics)
+      5) Audio FX (Reverb, delay, equalizer)
+   3) Sound Synthesis
+      1) Sound generation
+      2) Generators and snythesizers
+      3) Waveforms and their mathematical description
+      4) Additive and subtractive synthesis
+      5) Audio analysis with FFT
    4) Music Computing
-      1) 
+      1) Musical sounds vs noise and sound
+      2) Harmony and melody 
+      3) Intervals and scales and how to calculate them
+      4) Frequency and pitch
+      5) Music computing languages and Sonic Pi
 2) Graphics Rendering 
    1) Graphics Pipeline
       1) Overview of the graphics rendering process
       2) Introduction to the rendering pipeline
       3) Fixed vs programmable pipeline
       4) The role of OpenGL
-      5) 3D models 
-      6) Vectors and vector meshes
+      5) 3D models, vectos, vertices and vertex meshes
    2) Models and Views (local vs world)
       1) Positioning models in 3D space
       2) Local vs global space
@@ -65,7 +72,6 @@ This course provides you with an introduction to the theoretical backgrounds of 
       3) Basics of a shader program and different shader types
       4) Shader attributes and uniforms
       5) Reviewing and altering vertex meshes with shaders
-      6) Handing over variables from vertex to fragment shaders
 3) Practical Exercises
    1) Audio - Design and produce a (musical) sound space based on a specific topic (i.e., star wars, spacecraft, city slickers, nature, climate change, ... )
    2) Graphics - Create and implement an interactive or animated graphical counterpart of the sound space with 3d computer graphics, images/textures, and shaders

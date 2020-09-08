@@ -23,7 +23,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Sound vs Audio](#sound-vs-audio)
   - [Digital Audio](#digital-audio)
   - [Sampling](#sampling)
-  - [## Quantization](#h2-idquantization-16quantizationh2)
+  - [## Quantization](#h2-idquantization-24quantizationh2)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
   - [Historical context](#historical-context)
@@ -41,6 +41,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - Properties of Sound 
 - Hearing and acoustics
 - Digital Audio Fundamentals 
+- Audio buffers, basic signal flow, interfaces, input and output
 - Applications: Recording and editing - musique concrete
 
 

@@ -10,40 +10,31 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Graphics Basics -- Modelview](#graphics-basics----modelview)
+- [Graphics -- Model and View](#graphics----model-and-view)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
-- [3D Triangle Meshes](#3d-triangle-meshes)
   - [External Media](#external-media)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
-  - [Historical context](#historical-context)
-  - [Maths stuff](#maths-stuff)
 
 ---
 
 
-# Graphics Basics -- Modelview
+# Graphics -- Model and View
 
 
 ## Topics
 
-- 3D Triangle Meshes
-- Vertex, Matrices
-- Transformations
+- Positioning models in 3D space
+- Local vs global space
+- Mathematical description through matrices
+- 3D space vs 2D screen
+- Projections and change of dimension
 
 
 ## Learning Objectives
 
 - Students will learn 
-
-# 3D Triangle Meshes
-
-Marschner slides on CG intro
-
-
-![tbag](imgs/)
-
 
 ## External Media
 
@@ -57,11 +48,5 @@ Marschner slides on CG intro
 --- 
 
 # Assignments
-
-## Historical context
-
-
-
-## Maths stuff
 
 

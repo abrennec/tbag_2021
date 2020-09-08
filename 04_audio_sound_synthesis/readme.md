@@ -10,7 +10,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Audio Synthesis -- Sound Synthesis and Algorithmic Sound Generation](#audio-synthesis----sound-synthesis-and-algorithmic-sound-generation)
+- [Sound Synthesis -- Digital Sound Generation and Analysis](#sound-synthesis----digital-sound-generation-and-analysis)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
 - [Further Reading](#further-reading)
@@ -19,15 +19,16 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ---
 
 
-# Audio Synthesis -- Sound Synthesis and Algorithmic Sound Generation
+# Sound Synthesis -- Digital Sound Generation and Analysis
 
 
 ## Topics
 
-- Additive synthesis
-- Substractive synthesis
-- Generative audio
-- Audio analysis - at a glance
+- Sound generation
+- Generators and snythesizers
+- Waveforms and their mathematical description
+- Additive and subtractive synthesis
+- Audio analysis with FFT
 
 
 ## Learning Objectives
