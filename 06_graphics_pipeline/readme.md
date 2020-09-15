@@ -25,6 +25,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ## Topics
 
+- Checkout historical notes first
 - Overview of the graphics rendering process
 - Introduction to the rendering pipeline
 - Fixed vs programmable pipeline

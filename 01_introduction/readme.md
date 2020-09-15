@@ -15,7 +15,6 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Course Description](#course-description)
   - [Method of Instruction](#method-of-instruction)
     - [Exercises](#exercises)
-    - [Final Exercise](#final-exercise)
   - [Syllabus](#syllabus)
   - [Learning Objectives](#learning-objectives)
   - [Evaluation and Grading](#evaluation-and-grading)
@@ -33,9 +32,9 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ## Organization 
 
-- Wednesdays 10:00 h - 13:30 h
+- Mondays 10:00 h - 13:30 h
 - Module 5 | 3 SWS | 4 ECTS
-- 9 sessions in total 
+- 10 sessions in total, session 1 & 10 only half of the time, 
 
 ```diff
 - The course will be held online until further notice. 
@@ -52,20 +51,13 @@ This course will start as an online course which requires an increased amount of
 
 Make use of the **Github team** when you are stuck and post your questions there. If you cannot find a solution, get in touch with your tutors.
 
-On **Mondays**, new learning material and assignments will be published in the morning. We will meet online to check-in briefly and discuss open questions. 
-
-On **Wednesdays**, we will have a check-in meeting for questions. All assignments will be given a dedicated deadline. In general, please upload any code assignments to the assignment's folder on GitHub and put your research solutions to the GitHub Wiki. 
-
-**Note**: Group work is encouraged but might not be applicable due to the current situation. This will be a point for discussion in the first online session.
+Each **Monday**, new learning materials and assignments will be published. The time from 10 to 13:30 will be used to work through the materials in the group, in smaller teams and on an individual basis.
 
 ### Exercises
-- (bi-)weekly practical exercises will be assigned and are mandatory to pass the course
+- Smaller exercises will be part of the lecture sessions to put theory to practice right away.
+- Two small term projects spanning over the audio and graphics sessions will target individual and creative work.
+- One final exercise will be assigned a the end of the course and will target an audio-visual piece of application-
 - Group work is welcome / mandatory
-
-### Final Exercise 
-- Assigned at the end of the course (January/February 2021)
-- Combines audio and graphics
-
 
 ## Syllabus
 
@@ -73,16 +65,16 @@ On **Wednesdays**, we will have a check-in meeting for questions. All assignment
 - The syllabus might be subject to change depending on how the general progress and on how the online session format works.
 ```
 
-1. Week: Introduction to the course (2)
-2. Week: Audio production: Properties of sound, digital audio fundamentals, audio production workflow (4)
-3. Week: Audio processing: Signal flow, audio FX and audio plugins (4)
-4. Week: Musical sounds: Fundamental aspects of music, sounds and sound synthesis (4)
-5. Week: Music computing: As the name suggest, music computing (4)
-6. Week: Graphics pripeline: Basics of computer graphics, rasterization and graphics pipeline, 3d models (4)
-7. Week: Graphics modelview: Vector meshes, local vs global space, matrices (4)
-8. Week: Graphics transformation: Affine transformations, from 3d to 2d (4)
-9. Week: Graphics shaders: Vertex shaders (4)
-10. Week: Final Exercise + Wrap-up (2)
+1. Introduction to the course (2 hrs)
+2. Audio Rendering Basics (4 hrs)
+3. Audio Production (4 hrs)
+4. Sound Synthesis (4 hrs)
+5. Music Computing (4 hrs)
+6. Graphics Pipeline (4 hrs)
+7. Models and Views (local vs world) (4 hrs)
+8. Transformations (4 hrs)
+9. Shader programming (4 hrs)
+10. Final Exercise + Wrap-up (2 hrs)
 
 
 ## Learning Objectives
@@ -187,3 +179,5 @@ The following references have served as resources for this lecture and are recom
 - Modern JavaScript Tutorial: https://javascript.info
 - Buss, S. (2003):  3D Computer Graphics—A Mathematical introduction with OpenGL. Cambridge University Press, New York, NY, USA.
 - Shiffman, D. (2012): Nature of Code. https://natureofcode.com/book/
+- Learn Computer Graphics from Scracht: https://www.scratchapixel.com
+

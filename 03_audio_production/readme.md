@@ -26,12 +26,11 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ## Topics
 
 - Digital Audio Workstation
-- Tracks, instruments, and FX
+- Tracks, instruments, and Plugins
 - Basics of Mixing 
 - Dynamics and panning (sound space basics)
 - Audio FX (Reverb, delay, equalizer)
-- Applications: Audio Processing and Production
-
+- Exercise and applications: production
 
 ## Learning Objectives
 

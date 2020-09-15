@@ -24,12 +24,11 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ## Topics
 
 - Musical sounds vs noise and sound
-- Harmony and melody 
-- Intervals and scales and how to calculate them
+- Harmony, melody, and beat
+- Intervals, scales and how to calculate them
 - Frequency and pitch
-- Music computing languages
-- Sonic Pi and Ruby
-- Combining previously learned content into music computing with Sonic Pi
+- Music computing languages and Sonic Pi
+- Exercise and applications: Combining previously learned content into music computing with Sonic Pi
 
 ## Learning Objectives
 

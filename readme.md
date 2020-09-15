@@ -17,21 +17,25 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 # Theoretical Backgrounds of Audio and Graphics Applications
 
-This course provides you with an introduction to the theoretical backgrounds of digital audio and graphics software applications. It is split into one part that focuses on different topics in the field of audio rendering such as digital production, audio processing, synthesis and music computing. The second part focuses on 3D computer graphics and focuses on 3D model generation, transformation, and rendering including an introduction to shader programming.
+This course provides you with an introduction to the theoretical backgrounds of digital audio and graphics software applications. It is split into one part that focuses on different topics in the field of audio rendering such as digital production, audio processing, synthesis and music computing. The second part focuses on 3D computer graphics and in particular on 3D models and vertex meshes, matrix multiplications and transformations, and ends with an introduction to shader programming.
 
+The theoretical lectures will be accompanied with three practical exercises:
+1) Audio - Design and produce a (musical) stereo-based sound space based on a specific topic (i.e., star wars, spacecraft, city slickers, nature, climate change, ... ).
+2) Graphics - Create and implement an interactive or animated graphical counterpart of the sound space with 3d computer graphics, images/textures, and shaders.
+3) Final Exercise - Combine the results of the audio and graphics exercises into an interactive or animated audio-visual scene.
 
  ## Topics
 
 1) Audio Rendering 
-   1) Digital Audio and Rendering Basics
-      1) Properties of sound
-      2) Hearing and fundamental acoustics 
-      3) Digital representation of sound / digital audio fundamentals
-      4) Audio buffers, signal flow, interfaces, input, output
+   1) Audio Rendering Basics
+      1) Audio rendering 
+      2) Properties of sound
+      3) Hearing and acoustics 
+      4) Digital audio fundamentals
       5) Audio editing software
    2) Audio Production
       1) Digital Audio Workstation
-      2) Tracks, instruments, and FX
+      2) Tracks, instruments, and Plugins
       3) Basics of Mixing 
       4) Dynamics and panning (sound space basics)
       5) Audio FX (Reverb, delay, equalizer)
@@ -43,8 +47,8 @@ This course provides you with an introduction to the theoretical backgrounds of 
       5) Audio analysis with FFT
    4) Music Computing
       1) Musical sounds vs noise and sound
-      2) Harmony and melody 
-      3) Intervals and scales and how to calculate them
+      2) Harmony, melody, and beat 
+      3) Intervals, scales and how to calculate them
       4) Frequency and pitch
       5) Music computing languages and Sonic Pi
 2) Graphics Rendering 
@@ -72,7 +76,3 @@ This course provides you with an introduction to the theoretical backgrounds of 
       3) Basics of a shader program and different shader types
       4) Shader attributes and uniforms
       5) Reviewing and altering vertex meshes with shaders
-3) Practical Exercises
-   1) Audio - Design and produce a (musical) sound space based on a specific topic (i.e., star wars, spacecraft, city slickers, nature, climate change, ... )
-   2) Graphics - Create and implement an interactive or animated graphical counterpart of the sound space with 3d computer graphics, images/textures, and shaders
-   3) Final Exercise - Combine the results of the audio and graphics exercises into an interactive or animated audio-visual scene
