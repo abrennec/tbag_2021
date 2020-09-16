@@ -10,23 +10,25 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Audio Rendering Basics - Properties of Sound and Digital Audio Fundamentals](#audio-rendering-basics---properties-of-sound-and-digital-audio-fundamentals)
+- [Lecture Facts](#lecture-facts)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
-- [Audio Rendering](#audio-rendering)
-  - [Sound vs Audio](#sound-vs-audio)
-  - [Digital Audio](#digital-audio)
-- [Properties of Sound](#properties-of-sound)
-  - [Sound Waves](#sound-waves)
+- [Audio Rendering Basics - Properties of Sound and Digital Audio Fundamentals](#audio-rendering-basics---properties-of-sound-and-digital-audio-fundamentals)
+  - [Audio Rendering](#audio-rendering)
+    - [Sound vs Audio](#sound-vs-audio)
+    - [Digital Audio](#digital-audio)
+  - [Properties of Sound](#properties-of-sound)
+    - [Sound Waves](#sound-waves)
     - [Frequency](#frequency)
     - [Amplitude](#amplitude)
     - [Wave Length](#wave-length)
-- [Hearing and Acoustics](#hearing-and-acoustics)
-  - [External Media](#external-media)
-- [Digital Audio Fundamentals](#digital-audio-fundamentals)
-  - [Sampling](#sampling)
-  - [Quantization](#quantization)
-  - [Audio Buffers](#audio-buffers)
+  - [Hearing and Acoustics](#hearing-and-acoustics)
+    - [External Media](#external-media)
+  - [Digital Audio Fundamentals](#digital-audio-fundamentals)
+    - [Sampling](#sampling)
+    - [Quantization](#quantization)
+    - [Audio Buffers](#audio-buffers)
+  - [Audio Editing Software](#audio-editing-software)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
   - [Historical context](#historical-context)
@@ -35,11 +37,9 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
+# Lecture Facts
 
-# Audio Rendering Basics - Properties of Sound and Digital Audio Fundamentals
-
-
-## Topics
+## Topics 
 
 - Audio rendering
 - Properties of sound 
@@ -48,15 +48,18 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - Audio editing software
 - Exercise and applications: musique concrete
 
-
 ## Learning Objectives
 
-- Students will learn what is sound and what kind of properties define sound as well as how hearing works.
-- Students will lean how to describe sound technically.
-- Students will learn what is meant by audio and audio technology as well as how sound is processed digitally.
-- Students will learn how to work with sound in a computer and apply the theory practically. 
+- What is sound and what kind of properties define sound as well as how hearing works.
+- How to describe sound technically.
+- What is meant by audio and audio technology as well as how sound is processed digitally.
+- How to work with sound in a computer and apply the theory practically. 
 
-# Audio Rendering
+---
+
+# Audio Rendering Basics - Properties of Sound and Digital Audio Fundamentals
+
+## Audio Rendering
 
 Overview of audio rendering process
 - analog vs digital audio signal
@@ -65,7 +68,7 @@ Overview of audio rendering process
 - audio processing
 - audio devices
 
-## Sound vs Audio 
+### Sound vs Audio 
 Sound 
 refers to a natural acoustical phenomenon
 
@@ -74,7 +77,13 @@ refers to audible sound i.e., the frequency range of human hearing
 
 refers to audio signals & the (electronic) representation of sound i.e., in the contexts of sound capture, processing, reproduction
 
-## Digital Audio
+Signal represents a quantity that varies over time
+Audio signal is a representation of sound 
+audio signals can be represented electronically in analog & digital formats as continuous and discrete signals
+digital processors operate mathematically on the binary representations of the signal
+digital audio expresses the pressure waveform as a binary number
+
+### Digital Audio
 
 Sound waves are digitized using an audio-to-digital-converter (adc) that is part of the sound card/audio interface (device) and converted back using an digital-to-analog-converter (dac). Driver APIs provide a programming interface that tells the operating system (or the audio application directly) how to exchange audio data with the audio interface. Audio APIs introduce another layer of abstraction: They provide a programming interface across all operating systems (platforms) & are generally used by application developers.
 
@@ -82,7 +91,9 @@ Audio signals can be represented electronically in
 analog formats: analog processors operate directly on the voltage level of the analog signal (continuous function)
 digital formats: digital processors operate mathematically on the binary representations of the digital signal (discrete function)
 
-# Properties of Sound
+Digital - Everything can be represented as a finite integer number
+
+## Properties of Sound
 
 ```
 “If a tree falls in the forest and no one is near, does it make any sound?“ 
@@ -109,7 +120,7 @@ Vibrating objects (molecules in the air, speaker membranes, eardrums, tuning for
 
 A wave describes a disturbance inside a medium that propagates energy from particle to particle and moves through the medium — thus a wave can be expressed as a function of pressure change against position and time 
 
-## Sound Waves
+### Sound Waves
 
 Longitudinal waves  — the direction of vibration that creates the wave is equal to the direction of the wave (i.e., waves in air)
 
@@ -123,7 +134,7 @@ Transverse waves — the direction of vibration that creates the wave is perpend
 
 
 
-# Hearing and Acoustics
+## Hearing and Acoustics
 
 Anything that we perceive about the physical world
 Loudness is our perception of the Power or Intensity of a sound, closely related to the Amplitude of a sound
@@ -139,7 +150,7 @@ Human hearing (and thus what we refer to as sound) is around 20Hz to 20kHz
 
 Pressure changes of sound vibrations/oscillations can be produced periodically (guitar string vibration) / aperiodically (cymbal crash)
 
-## External Media
+### External Media
 
 Google experiments sound wave 
 - https://musiclab.chromeexperiments.com/Sound-Waves/
@@ -149,7 +160,7 @@ Sound properties explained by
 - [Science Sauce](https://www.youtube.com/watch?v=TsQL-sXZOLc)
 
 
-# Digital Audio Fundamentals
+## Digital Audio Fundamentals
 
 Digital audio and digital audio technology usually describes the process of record, store, generate, manipulate, and reproduce sound using audio signals that have been encoded in digital form.
 what is a digital audio signal?
@@ -163,17 +174,20 @@ Audio equipment represents changing air pressure of sound with changing electric
 Acoustical systems can be accessed with transducers, devices that change energy from one form to another 
 kettledrum changes mechanical energy into acoustical energy; a microphone responds by producing electrical energy or a loudspeaker that produces acoustical energy from electrical energy
 
-## Sampling 
+### Sampling 
 
 Quantization - mapping the codomain of a sampling function to a set of integer numbers
 Noise (made by devices, etc.) cannot be eliminated; thus, quantization is always imprecise due to the existing noise
 Digital signal processing works with countable sequences of integers so that no noise is introduced -> example is reproduction and mp3
 The amplitude accuracy of a set of samples is entirely dependent on the processing HW indicated by the number of bits per sample, i.e., CD with 16 bits per sample, DVD with 24 bits per sample 
 
-## Quantization
+### Quantization
 
 
-## Audio Buffers
+### Audio Buffers
+
+
+## Audio Editing Software
 
 
 ---

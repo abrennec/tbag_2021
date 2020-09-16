@@ -34,7 +34,8 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 - Mondays 10:00 h - 13:30 h
 - Module 5 | 3 SWS | 4 ECTS
-- 10 sessions in total, session 1 & 10 only half of the time, 
+- 10 sessions in total, session 1 & 10 only half of time.
+- Participation in the lectures is **not compulsory**. **However**, in order to pass the course and receive a grade, you need to submit homework and take a final practical exercise.
 
 ```diff
 - The course will be held online until further notice. 
@@ -54,10 +55,10 @@ Make use of the **Github team** when you are stuck and post your questions there
 Each **Monday**, new learning materials and assignments will be published. The time from 10 to 13:30 will be used to work through the materials in the group, in smaller teams and on an individual basis.
 
 ### Exercises
-- Smaller exercises will be part of the lecture sessions to put theory to practice right away.
-- Two small term projects spanning over the audio and graphics sessions will target individual and creative work.
-- One final exercise will be assigned a the end of the course and will target an audio-visual piece of application-
-- Group work is welcome / mandatory
+- Practical exercises will be part of the lecture sessions to put theory to practice right away.
+- Homework assignments will have to be taken to pass the course and collect points for the final grade.
+- A final exercise will be assigned at the end of the course and will target an audio-visual piece of application.
+- Group work is welcome.
 
 ## Syllabus
 
@@ -90,29 +91,22 @@ At the end of the lecture, a final exercise will allow you to combine both field
 
 ## Evaluation and Grading 
 
+In order to **pass the course**, you need to collect 60/100 assignment points. All solutions have to be submitted to GitHub to be considered for an evaluation.
 
-```diff
-- To be defined
-```
+For CTech students there will be a **grade**. The grade will be based on the points collected for the homework assignments and the final exercises. 
 
-In order to pass the course, you need to collect 50 assignment points and participate in a final exercise. All solutions have to be submitted to GitHub to be considered for an evaluation.
+### Grading Breakdown <!-- omit in toc -->
 
-For CTech students there will be a grade. The grade will be based on the points collected for the homework assignments and the final exercises. 
+The grade is derived from the collected points: you can get 70 points for the homework and 30 points for the final exercise. Bonus points can be awarded for excellent work or additional tasks.
 
-### Breakdown <!-- omit in toc -->
-
-* 60% - Homework assignments
-  * Programming exercises
-  * Wiki updates and critiques
-* 40% - Final exercise
-  * The final exercise will be a programming exercise of an openFrameworks application. The type of application can be chosen individually. However, the application must include/address:
-    * Object-oriented design
-    * At least two different topics from the course
-    * An artistic idea that can be freely chosen 
+* 70 pts - Homework assignments (due every 2nd week)
+* 30 pts - Final exercise (due end of winter term)
 
 ### Grading criteria <!-- omit in toc -->
 
-* 
+* Correctness of the task
+* Overall quality and accuracy (i.e., consistent naming conventions, correct spelling, clean folders (no log files), etc.)
+* On time submission
 
 
 ---
