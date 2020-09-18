@@ -18,10 +18,10 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Sound vs Audio](#sound-vs-audio)
     - [Digital Audio](#digital-audio)
   - [Properties of Sound](#properties-of-sound)
+    - [Physical Sense](#physical-sense)
     - [Sound Waves](#sound-waves)
-    - [Frequency](#frequency)
-    - [Amplitude](#amplitude)
-    - [Wave Length](#wave-length)
+    - [Psychophysical Sense](#psychophysical-sense)
+    - [Sound Waves](#sound-waves-1)
   - [Hearing and Acoustics](#hearing-and-acoustics)
     - [External Media](#external-media)
   - [Digital Audio Fundamentals](#digital-audio-fundamentals)
@@ -98,40 +98,48 @@ Digital - Everything can be represented as a finite integer number
 ```
 “If a tree falls in the forest and no one is near, does it make any sound?“ 
 ```
-Sound is a complex physical & psychophysical phenomenon.
+Sound is a complex physical and psychophysical phenomenon that involves an understanding of physics as well as of the human perception and sensation. 
 
-Sound in a physical sense:
-A pressure wave that transmits energy through an elastic medium. Pressure wave and medium have certain measurable properties (frequency, amplitude, density of the medium, etc.,) that allow to clearly describe the sound field, the wave propagation, etc.
+### Physical Sense
 
-Sound in a psychophysical sense:
-A perception (loudness, pitch, etc.) inside the mind of the listener. A sensation stimulated in the organs of hearing caused by the vibrating eardrum & interpreted by the brain as an audible sound.
+In a physical sense, sound is a **pressure wave** that transmits **energy** through an **elastic medium** like air or water, for example. 
+
+### Sound Waves
+
+The term **wave** or **pressure wave** is used to describe the sequence of alternating **compressions** and **rarefactions** of oscillating particles in the medium. 
+Hence, a wave describes a disturbance inside a medium that propagates energy from particle to particle and moves through the medium. 
+
+In this sense, a wave can be expressed as a function of pressure change against position and time.
 
 ![tbag](imgs/)
 
-A vibrating object causes a mechanical disturbance in a medium, for instance, in the air
+This pressure wave is the result of a **mechanical disturbance** in the medium which is usually caused by a **vibrating object** (oscillating air particles, speaker membranes, eardrums, tuning forks, guitar strings, etc.). Phrased differently, a vibrating object causes a mechanical disturbance in a medium, for instance, in the air, and the local disturbances of the particles in the medium propagate from one region to another (see also Fig. X). 
 
-The local disturbances propagate from one region to another
-
-A wave is a sequence of alternating compressions & rarefactions of the particles of the medium that transfers energy through the medium / space triggered by an initial vibration
 
 When we talk about sound it is important to understand the difference between vibrating objects causing a wave to propagate and the wave propagation itself
 
-Vibrating objects (molecules in the air, speaker membranes, eardrums, tuning forks, guitar strings, etc.) can be expressed as a function of pressure change (amplitude) against time
+Vibrating objects can be expressed as a function of pressure change (amplitude) against time
 
-A wave describes a disturbance inside a medium that propagates energy from particle to particle and moves through the medium — thus a wave can be expressed as a function of pressure change against position and time 
+
+In this sense, the pressure wave and the medium have certain measurable properties that allow to (mathematically) describe the sound field, the wave propagation, etc. The measurable properties are, for example:
+
+- **Frequency** of the wave
+- **Amplitude** of the wave
+- **Density** of the medium
+
+### Psychophysical Sense
+
+In a psychophysical or cognitive sense, sound is a **perception** inside the mind of the listener. When a sound wave reaches the eardrum, it causes the eardrum to vibrate. This stimulation propagates in, that a sensation is stimulated in the organs of hearing which is caused by the vibrating eardrum  interpreted by the brain as an audible sound.
+
+![tbag](imgs/)
+
+
 
 ### Sound Waves
 
 Longitudinal waves  — the direction of vibration that creates the wave is equal to the direction of the wave (i.e., waves in air)
 
-Transverse waves — the direction of vibration that creates the wave is perpendicular to the direction of the wave (i.e., light waves, waves in water, vibrating string)
-
-### Frequency
-
-### Amplitude
-
-### Wave Length
-
+Transverse waves — the direction of vibration that creates the wave is perpendicular to the direction of the wave (i.e., light waves, waves in water, vibrating strings)
 
 
 ## Hearing and Acoustics

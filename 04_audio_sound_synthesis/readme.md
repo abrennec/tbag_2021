@@ -42,6 +42,10 @@ Students know about the basics of sound and digital audio and are capable of pro
 
 ---
 
+sound synth with p5??
+
+---
+
 # Further Reading
 
 
