@@ -18,12 +18,15 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Syllabus](#syllabus)
   - [Learning Objectives](#learning-objectives)
   - [Evaluation and Grading](#evaluation-and-grading)
-- [Communication & Materials](#communication--materials)
-  - [Assignments](#assignments)
+  - [Communication & Materials](#communication--materials)
+    - [Platforms](#platforms)
+    - [Assignments](#assignments)
 - [Further Resources](#further-resources)
   - [Maths](#maths)
   - [Audio](#audio)
   - [Graphics](#graphics)
+- [Historical Overview of Computer Music](#historical-overview-of-computer-music)
+  - [Musique Concrète](#musique-concrète)
 
 ---
 
@@ -93,7 +96,7 @@ At the end of the lecture, a final exercise will allow you to combine both field
 
 In order to **pass the course**, you need to collect 60/100 assignment points. All solutions have to be submitted to GitHub to be considered for an evaluation.
 
-For CTech students there will be a **grade**. The grade will be based on the points collected for the homework assignments and the final exercises. 
+For CTech students there will be a **grade**. The grade will be based on the points collected for the homework assignments and the final exercise. 
 
 ### Grading Breakdown <!-- omit in toc -->
 
@@ -111,12 +114,13 @@ The grade is derived from the collected points: you can get 70 points for the ho
 
 ---
 
-# Communication & Materials
+## Communication & Materials
 
 
 ```diff
 - To be updated
 ```
+### Platforms
 
 As a communication platform, we will use [GitHub.com](https://github.com/) to share code, lecture materials, comments, and submit homework and project assignments.
 
@@ -133,14 +137,18 @@ git clone https://github.com/ctechfilmuniversity/
 
 ```
 
+<!-- We will also use a Miro board for group work and collecting, categorizing and storing central topics.
 
-## Assignments
+- Miro board (TBD) -->
 
-Please submit your assignments and exercise solutions to the assignments folder of the corresponding session, i.e., "01_intro". To do so, go to the assignments folder and create a folder. Name it **<my_last_name>** and put your results into that folder, for example, like so:
+
+### Assignments
+
+In many cases, you will be asked to submit your solutions to Github. If so, please submit them to the assignments folder of the corresponding session, i.e., "01_introduction". To do so, go to the assignments folder and create a folder. Name it **<my_last_name>** and put your results into that folder, for example, like so:
 
 ```
 For any written assignments:
-01_intro/assignments/<my_last_name>/solution.md
+01_intro/assignments/Brennecke/solution.md
 ```
 
 ---
@@ -165,6 +173,7 @@ The following references have served as resources for this lecture and are recom
 - Watkinson, J. (1998): The Art of Sound Reproduction. Focal Press. 
 - Parviainen, T. (2016): Learn Web Audio from the Ground Up, Part 1: Signals and Sine Waves. http://teropa.info/blog/2016/08/04/sine-waves.html
 - Smus, B. (2013): WebAudio API. O’Reilly Media. Free.
+- Hall, D.E. (2008): Musikalische Akustik. Schott, Mainz.
 
 
 ## Graphics
@@ -175,3 +184,34 @@ The following references have served as resources for this lecture and are recom
 - Shiffman, D. (2012): Nature of Code. https://natureofcode.com/book/
 - Learn Computer Graphics from Scracht: https://www.scratchapixel.com
 
+--- 
+
+# Historical Overview of Computer Music
+
+To give you a gentle introduction into the sound and audio topics that we will cover, please checkout the video presentation on central milestones in the history of computer music:
+
+```diff
+- To be updated
+```
+- Link to Computer Music History video
+
+![screencast](imgs/screencast.png)
+
+You can find the accompanying slides in the **resources** folder. 
+
+## Musique Concrète
+
+In the video, you learned about **Musique Concrète**. Music Concrète was an essential and critical milestone from a technological as well as from an artistic point of view. It introduced a completely new approach to the process of music making by re-using, altering and adapting pre-recorded sounds. To get an even better understanding of this technique and art form, please also check out the following two articles:
+
+- [All you need to know about Musique Concrète](https://www.musicradar.com/news/everything-you-need-to-know-about-musique-concrete)
+- [Pierre Schaeffer und die Musique Concrète](https://museum.rechtaufremix.org/exponate/pierre-schaeffer-und-die-musique-concrete/)
+
+
+Music concrète will serve as the basis for our first practical exercise in the next session. To prepare that session, please wrap your head around the following questions and use the **Github Wiki** to add additional material, examples, questions and thoughts that we can use as a basis for a discussion next week: 
+
+- What is musique concrète?
+- What was so revolutionary about musique concrète?
+- Find more audio material online and pick one or two examples that you find interesting. 
+- What do you find interesting? How could you imagine using this in an art piece?
+- What is interesting from a technological point of view, what from an artistic point of view?
+- What would you like to do with it?

@@ -31,7 +31,6 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Audio Editing Software](#audio-editing-software)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
-  - [Historical context](#historical-context)
   - [Record and edit.](#record-and-edit)
   - [Technical stuff](#technical-stuff)
 
@@ -208,18 +207,6 @@ The amplitude accuracy of a set of samples is entirely dependent on the processi
 
 # Assignments
 
-## Historical context
-
-Watch the video lecture *Historical notes on computer music and digital audio*. Do a little research on some of the aspects mentioned:
-
-- Musique conrète
-  - What is musique concrete?
-  - Find more audio material online and pick one or two examples that you find interesting. 
-  - What do you find interesting? How could you imagine using this in an art piece?
-- Audio programming
-  - What kind of audio programming languages were mentioned in the video lecture? 
-  - Check out the different languages and try to find additional languages.
-  - Pick one language and try to program some sound with it.
 
 ## Record and edit.
 
