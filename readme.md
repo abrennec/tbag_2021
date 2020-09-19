@@ -27,12 +27,11 @@ The theoretical lectures will be accompanied with smaller exercises that accompa
  ## Topics
 
 1) Audio Rendering 
-   1) Audio Rendering Basics
-      1) Audio rendering 
-      2) Properties of sound
-      3) Hearing and acoustics 
-      4) Digital audio fundamentals
-      5) Audio editing software
+   1) Sound and Audio Basics
+      1) Audio rendering techniques
+      2) Properties of Sound
+      3) Digital audio fundamentals
+      4) Audio editing software
    2) Audio Production
       1) Digital Audio Workstation
       2) Tracks, instruments, and Plugins
