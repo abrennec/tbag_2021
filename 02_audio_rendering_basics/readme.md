@@ -14,21 +14,20 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - [Sound and Audio Basics](#sound-and-audio-basics)
   - [Audio Rendering Techniques](#audio-rendering-techniques)
     - [Video](#video)
-    - [Questions](#questions)
+    - [Questions and Todos](#questions-and-todos)
   - [Properties of Sound](#properties-of-sound)
     - [Video](#video-1)
     - [Physical Aspects of Sound](#physical-aspects-of-sound)
       - [Sound Wave Properties](#sound-wave-properties)
-      - [Reflection and Refraction](#reflection-and-refraction)
     - [Psychophysical Aspects of Sound](#psychophysical-aspects-of-sound)
     - [Hearing and Acoustics](#hearing-and-acoustics)
-    - [External Media](#external-media)
+    - [Questions and Todos](#questions-and-todos-1)
+    - [Further Reading and Materials](#further-reading-and-materials)
   - [Digital Audio Fundamentals](#digital-audio-fundamentals)
     - [Digital Audio](#digital-audio)
   - [digital 2](#digital-2)
     - [Sampling](#sampling)
     - [Quantization](#quantization)
-    - [Audio Buffers](#audio-buffers)
   - [Audio Editing Software](#audio-editing-software)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
@@ -78,7 +77,7 @@ To get an overview of audio rendering check out the accompanying video presentat
 
 Make sure that you take notes during the video presentation so that you can answer the questions in the following section.
 
-### Questions
+### Questions and Todos
 
 - What is meant by audio rendering in general?
 - What are the different audio rendering approaches? 
@@ -150,38 +149,41 @@ to as **sound waves**.
 
 The pressure wave is the result of a **mechanical disturbance** in the medium. Hence, to generate sound, a disturbance or **vibration** is required. This vibration might be caused by any kind of **vibrating object** like, for instance, a vibrating speaker membrane, a tuning fork, a drum beat, a slammed door, a guitar strings, or simply an oscillating air particle, to name a few. 
 
-When the direction of the vibration that creates the wave is equal to the direction of the wave propagation (i.e., sound travelling through the air) we are talking about a **longitudinal wave**. In contrast, when the direction of vibration that creates the wave is perpendicular to the direction of the wave propagation (i.e., light waves, waves in the water, vibrating strings), we are talking about **transversal wave**.
+When the direction of the vibration that creates the wave is equal to the direction of the wave propagation, we are talking about a **longitudinal wave**. This happens, for instance, when sound travels through the air caused by a vibrating speaker membrane: 
 
-![tbag](imgs/)
+![longitudinal wave](imgs/)
+
+In contrast, when the direction of vibration that creates the wave is perpendicular to the direction of the wave propagation, we are talking about a **transversal wave**. This happes, for instance, when a stone falls into the water or a rope or string vibrates:
+
+![traversal wave](imgs/)
 
 In any way, a vibrating object is required to cause a mechanical disturbance inside of a medium so that the resulting energy can start traveling through it. If that energy can be picked up and processed by the human hearing organ and brain, i.e., lies within the human hearing range, we are talking about a **sound wave**.
 
 #### Sound Wave Properties
 
-Sound waves can be expressed as a function of pressure change, alternating sequence of compression and rarefaction, against position and time:
+Sound waves can be expressed as a function of pressure change (the alternating sequence of compression and rarefaction) against position or time:
 
-![tbag](imgs/)
+![sound wave representation](imgs/)
 
-The measurable properties of a sound wave are
+Central measurable properties of a sound wave are
 
-- **Frequency** 
-- **Amplitude** 
-- **Length** 
-- **Speed** 
+- **Amplitude A** describes the strengths of the air pressure changes and represents the maximum magnitude or distance of displacement from the equilibrium to the maximal compression or rarefaction. 
+- **Frequency f** describes the rate at which the air pressure changes from compression to rarefaction per second. It is measured as **number of cycles per second** in  where **one cycle** is one sequence of an oscillation from equilibrium to pressure compression to rarefaction and back to equilibrium.
+- **Period T** describes the time in seconds s it takes for one entire cycle to execute. Period and frequency are inversely related by f = 1 / T.
 
 
-#### Reflection and Refraction
-
+<!-- #### Reflection and Refraction -->
 
 
 
 ### Psychophysical Aspects of Sound
 
-In a psychophysical or cognitive sense, sound is a **perception** inside the mind of the listener. When a sound wave reaches the eardrum, it causes the eardrum to vibrate. This stimulation propagates in, that a sensation is stimulated in the organs of hearing which is caused by the vibrating eardrum  interpreted by the brain as an audible sound.
+In a psychophysical or cognitive sense, sound is a **perception** inside the mind of the listener. A sensation stimulated in the organs of hearing caused by the vibrating eardrum & interpreted by the brain as an audible sound.
+
+When a sound wave reaches the eardrum, it causes the eardrum to vibrate. This stimulation propagates in, that a sensation is stimulated in the organs of hearing which is caused by the vibrating eardrum  interpreted by the brain as an audible sound.
 
 Audio refers to an audible sound i.e., the frequency range of human hearing
 
-![tbag](imgs/)
 
 ### Hearing and Acoustics
 
@@ -190,24 +192,47 @@ Loudness is our perception of the Power or Intensity of a sound, closely related
 In digital signal: loudness is computed by adding up the squares of the digital samples
 If we want to know the power of a segment of audio we add up the squares of the the samples and devide by the amount of samples
 
-![sound overview](imgs/hearing_02.png)
-
 Sounds interact via the eardrum with the rest of the auditory system
 Eardrums work like a transducer — transform one form of energy/information into another
 
 Human hearing (and thus what we refer to as sound) is around 20Hz to 20kHz 
 
-Pressure changes of sound vibrations/oscillations can be produced periodically (guitar string vibration) / aperiodically (cymbal crash)
+Amplitude A is perceived as loudness, a subjective cognitive measure
+Human ear has an enormous range of response to pressure and intensity changes
 
-### External Media
+Threshold of hearing ~0,00001 Pa 
+Threshold of pain ~10 Pa
 
-Google experiments sound wave 
-- https://musiclab.chromeexperiments.com/Sound-Waves/
+The minimum audible pressure amplitude, at the threshold of hearing, is about 10^-5 pascal, or about 10^-10 standard atmosphere, corresponding to a minimum intensity of about 10-12 watt per square metre. The pressure fluctuation associated with the threshold of pain, meanwhile, is over 10 pascals—one million times the pressure or one trillion times the intensity of the threshold of hearing. In both cases, the enormous dynamic range of the ear dictates that its response to changes in frequency and intensity must be nonlinear.
 
-Sound properties explained by
-- [Khan Academy](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
-- [Science Sauce](https://www.youtube.com/watch?v=TsQL-sXZOLc)
+Frequency ƒ is perceived as pitch
 
+The higher the frequency, the higher the perceived pitch & vice versa
+
+Human hearing ranges between ~20Hz to ~20kHz
+
+The enormous dynamic range of the ear in perceiving frequency & amplitude is non-linear
+
+Perceived loudness varies with intensity & frequency
+
+Perceived pitch varies with frequency only
+
+### Questions and Todos
+
+Google Experiments provides several very nice little audio applications. Check out the [sound wave app](https://musiclab.chromeexperiments.com/Sound-Waves/). What kind of wave type is depicted here?
+
+Also, check out the [spectogram app](https://musiclab.chromeexperiments.com/Spectrogram/). What do you understand from the information provided by the spectogram? What is a spectogram?
+
+Check out [Teropa's harmonic explorer](https://teropa.info/harmonics-explorer/) and play with the frequency and amplitude parameters. Also, add more and more simple sound waves (in this case, sine waves) together. What do you notice? How do the sounds sound like?
+
+
+### Further Reading and Materials
+
+- [What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
+- [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
+- [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
+
+--- 
 
 ## Digital Audio Fundamentals
 
@@ -245,12 +270,14 @@ The amplitude accuracy of a set of samples is entirely dependent on the processi
 ### Quantization
 
 
-### Audio Buffers
-
-
 ## Audio Editing Software
 
+Audacity
+
+Sonic Visualizer
+
 Reaper 
+
 
 ---
 

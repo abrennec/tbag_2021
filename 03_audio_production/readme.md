@@ -14,6 +14,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
 - [Digital Audio Signals](#digital-audio-signals)
+    - [Audio Buffers](#audio-buffers)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
 
@@ -54,6 +55,9 @@ Signal - A formal description of a phenomenon evolving over time and space (1D -
 Signal processing - An operation that modifies, analyzes, changes the information contained in a signal
 Operates on an abstract representation of a physical quantity not on the quantity itself
 Digital - Everything can be represented as a finite integer number
+
+
+### Audio Buffers
 
 ---
 
