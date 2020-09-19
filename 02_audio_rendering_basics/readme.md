@@ -30,9 +30,8 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Quantization](#quantization)
   - [Audio Editing Software](#audio-editing-software)
 - [Further Reading](#further-reading)
-- [Assignments](#assignments)
-  - [Record and edit.](#record-and-edit)
-  - [Technical stuff](#technical-stuff)
+- [Assignment 1](#assignment-1)
+  - [Musique Concrète 1/2](#musique-concrète-12)
 
 ---
 
@@ -287,25 +286,28 @@ Reaper
 
 --- 
 
-# Assignments
+# Assignment 1
 
+Due in the next but one session with some additional tasks coming next week. 
 
-## Record and edit.
+## Musique Concrète 1/2 
 
-Download the free audio processing application *Audacity*. 
-
-- Pick a mobile recorder or your mobile phone and record some sounds, i.e., create some field-recordings.
-- Load the recorded sounds into Audacity and edit the recordings, try to identify interesting sounding parts. 
-- Cut, copy, and paste the recordings and play them back forward and backwards to create and interesting track.
-- Try to create musique conrete with your recording.
+Download the free audio processing applications *Audacity*, *Sonic Visualizer*, and the evaluation version of *Reaper*. 
 
 ```diff
-- Add some Audacity tutorial, tutorial on editing sounds.
+- Add download links
 ```
 
-## Technical stuff
+One goal of this task is that you play around with the different audio applications on your own and try to figure out how they work and what you can do with them. Note down your findings, questions, and learnings in the Github Wiki so that everyone can learn and contribute.
 
-- What are the central properties of sound? 
-- Why is sound described in the form of a wave?
-- How do wavelength, frequency, pitch, and amplitude relate?
-- What has loudness to do with all of this?
+The next goal is that you conduct an audio rendering and work on a piece of musique concrète. Think about one topic or scenery that interests you or that you detest. Try to come up with an auditive sound scene that you would like to create. 
+
+- Pick a mobile recorder or your mobile phone and record some sounds, i.e., create field-recordings, or go to [freesound.org](https://freesound.org) to search for royalty free sounds that fit your idea.
+- Load the recorded sounds into Audacity or Reaper and edit the recordings, try to identify interesting sounding parts, cut out parts that you do not like.
+- Cut, copy, and paste the recordings and play them back forward and backwards to create and interesting track.
+
+**You can work on this task in a group or on your own!**
+
+```diff
+- Add some Audacity & Reaper tutorial, tutorial on editing sounds.
+```

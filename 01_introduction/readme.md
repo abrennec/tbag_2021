@@ -103,6 +103,10 @@ For CTech students there will be a **grade**. The grade will be based on the poi
 The grade is derived from the collected points: you can get 70 points for the homework and 30 points for the final exercise. Bonus points can be awarded for excellent work or additional tasks.
 
 * 70 pts - Homework assignments (due every 2nd week)
+  * 15 pts - Assignments 1 & 2 
+  * 25 pts - Assignments 3 & 4 
+  * 15 pts - Assignments 5 & 6
+  * 25 pts - Assignments 7 & 8
 * 30 pts - Final exercise (due end of winter term)
 
 ### Grading criteria <!-- omit in toc -->
