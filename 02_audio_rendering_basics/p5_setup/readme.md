@@ -25,6 +25,7 @@
    ![Live Server](imgs/liveserver-btn.png)
 * Your browser opens and should present you with a grey canvas.
 * Each time you change the code and save, the browser should automatically reload and show the current output.
+* You can shut down the server with another click onto the previously mentioned button.
 
 
 ## Tipps
