@@ -6,7 +6,7 @@
 * Download and install Visual Studio Code: <https://code.visualstudio.com/Download>
 * Open Visual Studio Code
 * Press `ctrl` + `p` on Windows/Linux or `cmd` + `p` on MacOs
-* Type `ext install samplavigne.p5-vscode`
+* Type `ext install samplavigne.p5-vscode` and press `Enter`.
 * After a short moment, the `p5.vscode` extension has been installed.
 
 
@@ -14,8 +14,8 @@
 
 * Press `ctrl` / `cmd` + `shift` + `p`
 * Type in `p5` and select `Create p5.js Project`
-* In the opening file explorer create an empty folder, where you want to put yourproject and click on `Open`.
-* A new window opens with your initial project setup.
+* In the opening file explorer create an empty folder, where you want to put your project and click on `Open`.
+* A new window in VS Code opens with your initial project setup.
 
 
 ## Starting your p5.js project
@@ -29,5 +29,5 @@
 
 ## Tipps
 
-* If you need to install p5 addons, you can easily install them by pressing `ctrl` / `cmd` + `shift` + `p`, typing `p5` and selecting `Install p5.js Contributor Library`.
+* If you need to install p5 addons, you can easily install them by pressing `ctrl` / `cmd` + `shift` + `p`, typing `p5` and selecting `Install p5.js Contributor Library`. Id an addon is not available, you have to install it manually. To do that, have a look at <https://p5js.org/libraries/>.
 * Every time you don't have access to your setup, but want to do some prototyping, you can use the p5 online editor: <https://editor.p5js.org/>
