@@ -19,10 +19,15 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 This course provides you with an introduction to the theoretical backgrounds of digital audio and graphics software applications. It is split into one part that focuses on different topics in the field of audio rendering such as digital production, audio processing, synthesis and music computing. The second part focuses on 3D computer graphics and in particular on 3D models and vertex meshes, matrix multiplications and transformations, and ends with an introduction to shader programming.
 
-The theoretical lectures will be accompanied with smaller exercises that accompany the audio and graphics lectures as well as one final exercises:
-1) Audio - Design and produce a (musical) stereo-based sound space based on a specific topic (i.e., star wars, spacecraft, city slickers, nature, climate change, ... ).
-2) Graphics - Create and implement an interactive or animated graphical counterpart of the sound space with 3d computer graphics, images/textures, and shaders.
-3) Final Exercise - Combine the results of the audio and graphics exercises into an interactive or animated audio-visual scene.
+The theoretical lectures will be accompanied with smaller exercises that are intended to underpin two small term projects:  
+1) **Audio exercise** - Design and produce a (musical) stereo-based sound space based on a specific topic (i.e., star wars, spacecraft, city slickers, nature, climate change, ... ).
+2) **Graphics exercise** - Create and implement an interactive or animated graphical counterpart of the sound space with 3d computer graphics, images/textures, and shaders.
+
+There fill be one final exercise intended to combine both directions of the lecture:
+
+3) **Final exercise** - Combine the results of the audio and graphics exercises into an interactive or animated audio-visual scene.
+
+The three projects will be central to the final grade.
 
  ## Topics
 

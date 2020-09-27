@@ -29,9 +29,8 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Sampling](#sampling)
     - [Quantization](#quantization)
   - [Audio Editing Software](#audio-editing-software)
-- [Further Reading](#further-reading)
 - [Assignment 1](#assignment-1)
-  - [Musique Concrète 1/2](#musique-concrète-12)
+  - [Musique Concrète](#musique-concrète)
 
 ---
 
@@ -277,20 +276,13 @@ Sonic Visualizer
 
 Reaper 
 
-
----
-
-# Further Reading
-
-
-
 --- 
 
 # Assignment 1
 
 Due in the next but one session with some additional tasks coming next week. 
 
-## Musique Concrète 1/2 
+## Musique Concrète
 
 Download the free audio processing applications *Audacity*, *Sonic Visualizer*, and the evaluation version of *Reaper*. 
 

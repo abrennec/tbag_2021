@@ -38,14 +38,14 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - Mondays 10:00 h - 13:30 h
 - Module 5 | 3 SWS | 4 ECTS
 - 10 sessions in total, session 1 & 10 only half of time.
-- Participation in the lectures is **not compulsory**. **However**, in order to pass the course and receive a grade, you need to submit homework and take a final practical exercise.
+- Participation in the lectures is **not compulsory**. **However**, in order to pass the course and receive a grade, you need to submit two term projects and take a final practical exercise.
 
 ```diff
 - The course will be held online until further notice. 
 - During the time of online lectures, we will use the lecture hours for updates, discussions and consultation times.
 ```
 
-## Course Description 
+## Course Description
 
 This course provides you with an introduction to the theoretical backgrounds of digital audio and graphics software applications. In this context, you will learn about the audio and graphics rendering pipelines. 
 
@@ -58,8 +58,9 @@ Make use of the **Github team** when you are stuck and post your questions there
 Each **Monday**, new learning materials and assignments will be published. The time from 10 to 13:30 will be used to work through the materials in the group, in smaller teams and on an individual basis.
 
 ### Exercises
+
 - Practical exercises will be part of the lecture sessions to put theory to practice right away.
-- Homework assignments will have to be taken to pass the course and collect points for the final grade.
+- Two smaller term projects will have to be taken to pass the course and collect points for the final grade.
 - A final exercise will be assigned at the end of the course and will target an audio-visual piece of application.
 - Group work is welcome.
 
@@ -69,16 +70,17 @@ Each **Monday**, new learning materials and assignments will be published. The t
 - The syllabus might be subject to change depending on how the general progress and on how the online session format works.
 ```
 
-1. Introduction to the course (2 hrs)
-2. Audio Rendering Basics (4 hrs)
-3. Audio Production (4 hrs)
-4. Sound Synthesis (4 hrs)
-5. Music Computing (4 hrs)
-6. Graphics Pipeline (4 hrs)
-7. Models and Views (local vs world) (4 hrs)
-8. Transformations (4 hrs)
-9. Shader programming (4 hrs)
-10. Final Exercise + Wrap-up (2 hrs)
+1. 26.10.20 - Intro to course, Audio Rendering (4 hrs)
+2. 02.11.20 - Audio Production (4 hrs)
+3. 16.11.20 - Sound Synthesis (4 hrs)
+4. 23.11.20 - Music Computing (4 hrs)
+5. 30.11.20 - Audio projects (2 hrs)
+6. 07.12.20 - Graphics Rendering (4 hrs)
+7. 14.12.20 - Models and Views (local vs world) (4 hrs)
+8. 11.02.20 - Transformations (4 hrs)
+9. 25.01.20 - Shader programming (4 hrs)
+10. 01.02.20 - Graphics projects, final Exercise + course wrap-up (2 hrs)
+
 
 
 ## Learning Objectives
@@ -94,26 +96,28 @@ At the end of the lecture, a final exercise will allow you to combine both field
 
 ## Evaluation and Grading 
 
-In order to **pass the course**, you need to collect 60/100 assignment points. All solutions have to be submitted to GitHub to be considered for an evaluation.
+In order to **pass the course**, you need to collect 50/100 points. All solutions have to be submitted to GitHub to be considered for an evaluation.
 
-For CTech students there will be a **grade**. The grade will be based on the points collected for the homework assignments and the final exercise. 
+For CTech students there will be a **grade**. The grade will be based on the points collected for the term projects and the final exercise. 
 
 ### Grading Breakdown <!-- omit in toc -->
 
-The grade is derived from the collected points: you can get 70 points for the homework and 30 points for the final exercise. Bonus points can be awarded for excellent work or additional tasks.
+The grade is derived from the collected points:
 
-* 70 pts - Homework assignments (due every 2nd week)
-  * 15 pts - Assignments 1 & 2 
-  * 25 pts - Assignments 3 & 4 
-  * 15 pts - Assignments 5 & 6
-  * 25 pts - Assignments 7 & 8
-* 30 pts - Final exercise (due end of winter term)
+* 20 pts - General involvement and quality of work
+* 40 pts - Term projects 
+  * 20 pts Audio project (due 30 Nov, scope: ~1 working day)
+  * 20 pts Graphics project (due 1 Feb, scope: ~1 working day)
+* 40 pts - Final exercise (due end of winter term, scope ~2.5 working days)
+
+ Bonus points can be awarded for excellent work or additional tasks.
 
 ### Grading criteria <!-- omit in toc -->
 
 * Correctness of the task
-* Overall quality and accuracy (i.e., consistent naming conventions, correct spelling, clean folders (no log files), etc.)
-* On time submission
+* Quality of the result
+* Technical accuracy (i.e., consistent naming conventions, correct spelling, clean folders (no log files), etc.)
+* Presentation in class (informal)
 
 
 ---
@@ -148,11 +152,10 @@ git clone https://github.com/ctechfilmuniversity/
 
 ### Assignments
 
-In many cases, you will be asked to submit your solutions to Github. If so, please submit them to the assignments folder of the corresponding session, i.e., "01_introduction". To do so, go to the assignments folder and create a folder. Name it **<my_last_name>** and put your results into that folder, for example, like so:
+Please submit your solutions to Github to the "projects" folder and create a folder that carries your last name. Put your results into that folder, for example, like so:
 
 ```
-For any written assignments:
-01_intro/assignments/Brennecke/solution.md
+projects/01_audio_projects/Brennecke/solution.md
 ```
 
 ---
