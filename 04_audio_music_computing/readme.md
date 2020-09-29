@@ -18,6 +18,13 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
+   1. Musical sounds vs noise and sound
+   2. Harmony, melody, and beat 
+   3. Intervals, scales and how to calculate them
+   4. Music computing languages and Sonic Pi
+   5. Project work
+
+
 
 # Music Computing 
 

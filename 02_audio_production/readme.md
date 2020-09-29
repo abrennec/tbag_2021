@@ -30,10 +30,15 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ---
 
 
+   1. Digital audio fundamentals
+   2. Working with a DAW
+   3. Mixing and audio rendering
+   4. Audio FX and spatial sound
+   5. Project work
+
+
+
 # Audio Production -- In the Mix and Sound Production 
-
-
-
 
 ## Topics
 
