@@ -61,7 +61,7 @@ The three projects will be central to the final grade.
 
 ## Method of Instruction
 
-The course is desidned as an online course that will use tools and technique from **flipped classroom** and **blended learning** approaches. Theoretical input will be pre-recorded and prepared such that students can work through many of the materials on their own and in their own pace. The weekly sessions will focus on interactive discussions, practical project work, and exercises.
+The course is designed as an online course that will use tools and technique from **flipped classroom** and **blended learning** approaches. Theoretical input will be pre-recorded and prepared such that students can work through the materials on their own and in their own pace online and offline. The weekly sessions will focus on live discussions, project work, and exercises. 
 
 Make use of the **Github team** when you are stuck and post your questions there. If you cannot find a solution, get in touch with your tutors. The **Miro board** will be used for group work and discussions. Make sure that you register a personal account at Miro.
 
@@ -88,12 +88,13 @@ For CTech students there will be a **grade**. The grade will be based on the poi
 The grade is derived from the collected points:
 
 * 20 pts - General involvement and quality of work
+  * (1-1.5 time hrs for lecture recap and homework assignments)
 * 40 pts - Term projects 
-  * 20 pts Audio project (due 30 Nov, scope: ~1 working day)
-  * 20 pts Graphics project (due 1 Feb, scope: ~1 working day)
-* 40 pts - Final exercise (due end of winter term, scope ~2.5 working days)
+  * 20 pts Audio project (due 30 Nov, scope: 1 working day, time hours)
+  * 20 pts Graphics project (due 1 Feb, scope: 1 working day)
+* 40 pts - Final exercise (due end of winter term, scope 2 working days, time hours)
 
- Bonus points can be awarded for excellent work or additional tasks.
+Bonus points can be awarded for excellent work or additional tasks.
 
 ### Grading criteria <!-- omit in toc -->
 
