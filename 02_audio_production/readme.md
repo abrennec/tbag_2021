@@ -175,11 +175,7 @@ Due in the next but one session with some additional tasks coming next week.
 
 ## Musique Concrète
 
-Download the free audio processing applications *Audacity*, *Sonic Visualizer*, and the evaluation version of *Reaper*. 
-
-```diff
-- Add download links
-```
+Check out this [Recipe for Music Concrète](https://www.youtube.com/watch?v=2ZpwbXDleDw) to get an idea where to start.
 
 One goal of this task is that you play around with the different audio applications on your own and try to figure out how they work and what you can do with them. Note down your findings, questions, and learnings in the Github Wiki so that everyone can learn and contribute.
 
