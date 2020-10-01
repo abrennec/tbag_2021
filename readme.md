@@ -140,11 +140,11 @@ At the end of the lecture, a final exercise will allow you to combine both field
    3. Additive and subtractive synthesis
    4. Audio analysis with FFT
    5. Project work
-4. 23.11.20 - Music Computing (4 hrs)
-   1. Musical sounds vs noise and sound
-   2. Harmony, melody, and beat 
-   3. Intervals, scales and how to calculate them
-   4. Music computing languages and Sonic Pi
+4. 23.11.20 - Audio Programming (4 hrs)
+   1. Introducing WebAudio and p5.js
+   2. Digital signal flow 
+   3. Working with audio buffers
+   4. Interactive audio - changing the signal flow
    5. Project work
 5. 30.11.20 - Audio projects (2 hrs)
    1. Projects presentation
@@ -152,8 +152,8 @@ At the end of the lecture, a final exercise will allow you to combine both field
    1. Computer graphics history
    2. Graphics rendering basics
    3. 2D images vs 3D graphics 
-   4. The role of OpenGL
-   5. Introducing p5.js and WebGL
+   4. The role of OpenGL and introducing WebGL
+   5. Project work
 7. 14.12.20 - Models and Views (local vs world) (4 hrs)
    1. 3D models, vectos, vertices and vertex meshes
    2. Local vs global space
@@ -199,9 +199,9 @@ git clone https://github.com/ctechfilmuniversity/
 
 ```
 
-<!-- We will also use a Miro board for group work and collecting, categorizing and storing central topics.
+We will also use a Miro board for group work and collecting, categorizing and storing central topics. You will be invited to Miro project "tbag_2021" for this.
 
-- Miro board (TBD) -->
+- [Miro project tbag_2021](https://miro.com/app/dashboard/)
 
 ---
 
@@ -235,6 +235,7 @@ The following references have served as resources for this lecture and are recom
 - Buss, S. (2003):  3D Computer Graphics—A Mathematical introduction with OpenGL. Cambridge University Press, New York, NY, USA.
 - Shiffman, D. (2012): Nature of Code. https://natureofcode.com/book/
 - Learn Computer Graphics from Scracht: https://www.scratchapixel.com
+- [WebGL fundamentals](https://webglfundamentals.org)
 
 --- 
 
