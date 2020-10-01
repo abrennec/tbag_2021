@@ -88,7 +88,7 @@ For CTech students there will be a **grade**. The grade will be based on the poi
 The grade is derived from the collected points:
 
 * 20 pts - General involvement and quality of work
-  * (1-1.5 time hrs for lecture recap and homework assignments)
+  * (2 time hrs for lecture recap and homework assignments)
 * 40 pts - Term projects 
   * 20 pts Audio project (due 30 Nov, scope: 1 working day, time hours)
   * 20 pts Graphics project (due 1 Feb, scope: 1 working day)
