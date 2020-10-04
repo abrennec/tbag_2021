@@ -154,16 +154,16 @@ At the end of the lecture, a final exercise will allow you to combine both field
    3. Local space, global space, camera space, screen space
    4. Graphics vs images and textures
    5. OpenGL and WebGL
-7. 14.12.20 - 3D Models and Transformations (4 hrs)
+7. 14.12.20 - 3D Models Transformations (4 hrs)
    1. 3D models, vertices and vertex meshes
    2. Matrix multiplication
    3. Affine transformations
    4. Project work
-8. 11.02.20 - Programmable Pipeline (4 hrs)
-   1. The programmable rendering pipeline
-   2. Vertex shaders, geometry shaders, tesselation shaders, fragment shaders
-   3. OpenGL Shader Language
-   4. My first shader program
+8. 11.02.20 - Programmable Pipeline / Textures and materials (4 hrs)
+   1. Textures and coordinates
+   2. The programmable rendering pipeline
+   3. Vertex shaders, geometry shaders, tesselation shaders, fragment shaders
+   4. OpenGL Shader Language
    5. Project work
 9.  25.01.20 - Shader programming (4 hrs)
     1. Uniforms and attributes
