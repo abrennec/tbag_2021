@@ -10,7 +10,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Graphics -- Graphics Pipeline](#graphics----graphics-pipeline)
+- [Graphics -- Transformations](#graphics----transformations)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
   - [External Media](#external-media)
@@ -20,16 +20,18 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ---
 
 
-# Graphics -- Graphics Pipeline
+# Graphics -- Transformations
 
 
 ## Topics
 
-1. Computer graphics history
-2. Graphics rendering basics
-3. Local space, global space, camera space, screen space
-4. Graphics vs images and textures
-5. OpenGL and WebGL
+
+1. The programmable rendering pipeline
+2. Vertex shaders, geometry shaders, tesselation shaders, fragment shaders
+3. OpenGL Shader Language
+4. My first shader program
+5. Project work
+
 
 ## Learning Objectives
 

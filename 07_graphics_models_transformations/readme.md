@@ -10,7 +10,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Graphics -- Transformations](#graphics----transformations)
+- [Graphics -- Model and View](#graphics----model-and-view)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
   - [External Media](#external-media)
@@ -20,22 +20,21 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ---
 
 
-# Graphics -- Transformations
+# Graphics -- Model and View
 
 
 ## Topics
 
-- Affine transformations
-- Translation
-- Rotation
-- Scaling
-- Matrix multiplication
+
+1. 3D models, vertices and vertex meshes
+2. Matrix multiplication
+3. Affine transformations
+4. Project work
 
 
 ## Learning Objectives
 
 - Students will learn 
-
 
 ## External Media
 

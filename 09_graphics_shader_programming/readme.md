@@ -25,11 +25,12 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ## Topics
 
-- Reviewing the rendering pipeline
-- Understanding what the GPU is good at and what the CPU is good
-- Basics of a shader program and different shader types
-- Shader attributes and uniforms
-- Reviewing and altering vertex meshes with shaders
+
+1. Uniforms and attributes
+2. Vertex and texture coordinates
+3. Shapes and 3D shader programs
+4. Simple image effects
+5. Project work
 
 
 ## Learning Objectives

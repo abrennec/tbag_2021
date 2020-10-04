@@ -151,30 +151,30 @@ At the end of the lecture, a final exercise will allow you to combine both field
 6. 07.12.20 - Graphics Rendering (4 hrs)
    1. Computer graphics history
    2. Graphics rendering basics
-   3. 2D images vs 3D graphics 
-   4. The role of OpenGL and introducing WebGL
-   5. Project work
-7. 14.12.20 - Models and Views (local vs world) (4 hrs)
-   1. 3D models, vectos, vertices and vertex meshes
-   2. Local vs global space
-   3. Mathematical description through matrices
-   4. 3D space vs 2D screen
-   5. Project work
-8. 11.02.20 - Transformations (4 hrs)
-   1. Affine transformations
-   2. Translation, scaling, rotation
-   3. Matrix multiplication
+   3. Local space, global space, camera space, screen space
+   4. Graphics vs images and textures
+   5. OpenGL and WebGL
+7. 14.12.20 - 3D Models and Transformations (4 hrs)
+   1. 3D models, vertices and vertex meshes
+   2. Matrix multiplication
+   3. Affine transformations
    4. Project work
+8. 11.02.20 - Programmable Pipeline (4 hrs)
+   1. The programmable rendering pipeline
+   2. Vertex shaders, geometry shaders, tesselation shaders, fragment shaders
+   3. OpenGL Shader Language
+   4. My first shader program
+   5. Project work
 9.  25.01.20 - Shader programming (4 hrs)
-    1. Reviewing the rendering pipeline
-    2. Basics of a shader program and different shader types
-    3. Shader attributes and uniforms
-    4. Reviewing and altering vertex meshes with shaders
+    1. Uniforms and attributes
+    2. Vertex and texture coordinates
+    3. Shapes and 3D shader programs
+    4. Simple image effects
     5. Project work
 10. 01.02.20 - Graphics projects
     1. Projects presentation
     2. Final Exercise + course wrap-up (2 hrs)
-s
+
 
 ## Communication and Materials
 

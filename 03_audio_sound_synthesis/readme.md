@@ -18,22 +18,18 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-   1. Sound generation and snythesizers
-   2. Waveforms and their mathematical description
-   3. Additive and subtractive synthesis
-   4. Audio analysis with FFT
-   5. Project work
+
 
 # Sound Synthesis -- Digital Sound Generation and Analysis
 
 
 ## Topics
 
-- Sound generation
-- Generators and snythesizers
-- Waveforms and their mathematical description
-- Additive and subtractive synthesis
-- Audio analysis with FFT
+1. Sound generation and snythesizers
+2. Waveforms and their mathematical description
+3. Additive and subtractive synthesis
+4. Audio analysis with FFT
+5. Project work
 
 
 ## Learning Objectives

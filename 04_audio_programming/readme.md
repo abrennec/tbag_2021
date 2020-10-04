@@ -10,33 +10,28 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Graphics -- Model and View](#graphics----model-and-view)
+- [Audio Programming](#audio-programming)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
-  - [External Media](#external-media)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
 
 ---
 
 
-# Graphics -- Model and View
-
+# Audio Programming
 
 ## Topics
 
-- Positioning models in 3D space
-- Local vs global space
-- Mathematical description through matrices
-- 3D space vs 2D screen
-- Projections and change of dimension
-
+1. Introducing WebAudio and p5.js
+1. Digital signal flow 
+2. Working with audio buffers
+3. Interactive audio - changing the signal flow
+4. Project work
 
 ## Learning Objectives
 
-- Students will learn 
-
-## External Media
+- Students will 
 
 
 ---
