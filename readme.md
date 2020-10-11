@@ -79,22 +79,19 @@ Each week, new learning materials and assignments will be published. The time fr
 
 ## Evaluation and Grading 
 
-In order to **pass the course**, you need to collect 50/100 points. All solutions have to be submitted to GitHub to be considered for an evaluation.
+In order to **pass the course**, you need to participate in the two term projects at least. All solutions have to be submitted to GitHub to be considered for an evaluation.
 
-For CTech students there will be a **grade**. The grade will be based on the points collected for the term projects and the final exercise. 
+For CTech students there will be a **grade**. The grade will be based on the grades received for the term projects and the final exercise. 
 
 ### Grading Breakdown <!-- omit in toc -->
 
-The grade is derived from the collected points:
-
-* 10 pts - Homework assignments & quality of work
-  * (~2 time hrs for lecture recap and homework assignments)
+* 10 pts - Excellent work
 * 40 pts - Term projects 
   * 20 pts Audio project (due 30 Nov, scope: 1 working day, time hours)
   * 20 pts Graphics project (due 1 Feb, scope: 1 working day)
 * 50 pts - Final exercise (due end of winter term, scope 2-3 working days, time hours)
 
-Bonus points can be awarded for excellent work or additional tasks.
+Extra points can be awarded for excellent work or additional tasks.
 
 ### Grading criteria <!-- omit in toc -->
 
@@ -122,56 +119,56 @@ At the end of the lecture, a final exercise will allow you to combine both field
 - The syllabus might be subject to change depending on how the general progress and on how the online session format works.
 ```
 
-1. 26.10.20 - Audio Rendering (4 hrs)
+1. 04.11.20 - Audio Rendering (4 hrs)
    1. Intro to the course
    2. Computer music history 
    3. Audio rendering basics
    4. Sound properties
    5. DAW and Reaper
-2. 02.11.20 - Audio Production (4 hrs)
+2. 18.11.20 - Audio Production (4 hrs)
    1. Digital audio fundamentals
    2. Working with a DAW
    3. Mixing and audio rendering
    4. Audio FX and spatial sound
    5. Project work
-3. 16.11.20 - Sound Synthesis (4 hrs)
+3. 25.11.20 - Sound Synthesis (4 hrs)
    1. Sound generation and snythesizers
    2. Waveforms and their mathematical description
    3. Additive and subtractive synthesis
    4. Audio analysis with FFT
    5. Project work
-4. 23.11.20 - Audio Programming (4 hrs)
+4. 02.12.20 - Audio Programming (4 hrs)
    1. Introducing WebAudio and p5.js
    2. Digital signal flow 
    3. Working with audio buffers
    4. Interactive audio - changing the signal flow
    5. Project work
-5. 30.11.20 - Audio projects (2 hrs)
+5. 09.12.20 - Audio projects (2 hrs)
    1. Projects presentation
-6. 07.12.20 - Graphics Rendering (4 hrs)
-   1. Computer graphics history
+6. 16.12.20 - Graphics Rendering (4 hrs)
+   <!-- 1. Computer graphics history
    2. Graphics rendering basics
    3. Local space, global space, camera space, screen space
-   4. Graphics vs images and textures
-   5. OpenGL and WebGL
-7. 14.12.20 - 3D Models Transformations (4 hrs)
-   1. 3D models, vertices and vertex meshes
-   2. Matrix multiplication
-   3. Affine transformations
-   4. Project work
-8. 11.02.20 - Programmable Pipeline / Textures and materials (4 hrs)
-   1. Textures and coordinates
-   2. The programmable rendering pipeline
-   3. Vertex shaders, geometry shaders, tesselation shaders, fragment shaders
-   4. OpenGL Shader Language
-   5. Project work
-9.  25.01.20 - Shader programming (4 hrs)
-    1. Uniforms and attributes
-    2. Vertex and texture coordinates
-    3. Shapes and 3D shader programs
-    4. Simple image effects
-    5. Project work
-10. 01.02.20 - Graphics projects
+   4. OpenGL and WebGL -->
+7. 13.01.20 - Transformations (4 hrs)
+   <!-- 1. 3D models, vertices and vertex meshes
+   1. Matrix multiplication
+   2. Affine transformations
+   3. Graphics, images, textures
+   4. Project work -->
+8. 20.01.20 - Shader programming I (4 hrs)
+   <!-- 1. The programmable rendering pipeline
+   1. Vertex shaders and fragment shaders
+   2. OpenGL Shader Language
+   3. Vertex shader manipulations
+   4. Project work -->
+9.  27.01.20 - Shader programming II (4 hrs)
+    <!-- 1. Uniforms and attributes
+    1. Vertex and texture coordinates
+    2. Shapes and 3D shader programs
+    3. Simple image effects
+    4. Project work -->
+10. 03.02.20 - Graphics projects
     1. Projects presentation
     2. Final Exercise + course wrap-up (2 hrs)
 

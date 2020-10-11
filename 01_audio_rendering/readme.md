@@ -18,11 +18,13 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Audio Rendering Basics](#audio-rendering-basics)
     - [Video Lecture](#video-lecture-1)
     - [Exercise - Audio Rendering](#exercise---audio-rendering)
-  - [Sound Properties](#sound-properties)
-    - [Physical Aspects of Sound](#physical-aspects-of-sound)
-      - [Sound Wave Properties](#sound-wave-properties)
-    - [Psychophysical Aspects of Sound](#psychophysical-aspects-of-sound)
-    - [Hearing and Acoustics](#hearing-and-acoustics)
+  - [Properties of Sound](#properties-of-sound)
+    - [Sound Pressure Waves](#sound-pressure-waves)
+    - [Sound Wave Properties](#sound-wave-properties)
+    - [Amplitude](#amplitude)
+    - [Frequency](#frequency)
+    - [Exercise](#exercise)
+    - [Hearing](#hearing)
   - [Reaper Introduction](#reaper-introduction)
 - [Homework Assignment](#homework-assignment)
   - [Sound](#sound)
@@ -77,8 +79,7 @@ In the video on computer music history, you learned about **Musique Concrète**.
 - [All you need to know about Musique Concrète](https://www.musicradar.com/news/everything-you-need-to-know-about-musique-concrete)
 - [Pierre Schaeffer und die Musique Concrète](https://museum.rechtaufremix.org/exponate/pierre-schaeffer-und-die-musique-concrete/)
 
-
-Music concrète will serve as the basis for our first practical exercise. Please wrap your head around the following questions and use sticky notes and this **[Miro Board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351573492&cot=12)** to answer them and add additional material, examples, questions and thoughts that we can use as a basis for a discussion: 
+**Group work**: Music concrète will serve as the basis for our first practical exercise. Once you have completed the material above, please get in touch with your group member. Wrap your heads around the following questions and use sticky notes and this **[Miro Board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351573492&cot=12)** to answer them and add additional material, examples, questions and thoughts that we can use as a basis for a discussion: 
 
 - What is musique concrète?
 - What was so revolutionary about musique concrète?
@@ -121,24 +122,9 @@ Now check out this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M
 
 --- 
 
-## Sound Properties
+## Properties of Sound
 
-```
-“If a tree falls in the forest and no one is near, does it make any sound?“ 
-```
-
-This quote is pointing to the essence of what sound is: 
-Sound is a complex physical (acoustic) and psychophysical (cognitive) phenomenon that involves an understanding of physics as well as of the human perception and sensation. Without the physical aspects of sound, we could probably not be able to hear a sound. But without our hearing capabilities and our psychophysical interpretation of sound, we would also not be able to hear or perceive it. 
-
-Hence, in order to understand what sound is and how sound can be worked with later on, we first need to learn about the following aspects of sound:
-
-1) Sound generation
-2) Sound propagation
-3) Sound perception
-
-In particular, sound generation and sound propagation is determined by the world of physics and can be well described physically, whereas sound perception is especially a psychophysical process, which is also determined by the individual human constitution and anatomy.
-
-Please check out the accompanying slides and video presentation:
+Please check out the accompanying slides and video presentation before you continue reading:
 
 ```diff
 - To be updated
@@ -147,19 +133,37 @@ Please check out the accompanying slides and video presentation:
 
 ![screencast](imgs/screencast.png)
 
+---
 
-### Physical Aspects of Sound
+```
+“If a tree falls in the forest and no one is near, does it make any sound?“ 
+```
+
+This quote is pointing to the essence of what sound is: Sound is a complex physical (acoustic) and psychophysical (cognitive) phenomenon that involves an understanding of physics as well as of the human perception and sensation. Without the physical aspects of sound, we could probably not be able to hear a sound. But without our hearing capabilities and our psychophysical interpretation of sound, we would also not be able to hear or perceive it. Therefore, it is helpful to think of sound in the form of an 
+
+- physical sound event
+- cognitive auditory event 
+
+Moreover, in order to understand what sound is and how sound can be worked with later on, we first need to learn about the following aspects of sound:
+
+1) Sound generation
+2) Sound propagation
+3) Sound perception
+
+Sound generation and sound propagation refer to physical properties of sound whereas sound perception refers to the psychophysical aspects of sound. The former are defined by the physical objects and environments that cause sound and in which sound is propagating. The latter are defined and influenced by the individual human constitution and anatomy.
+
+### Sound Pressure Waves
 
 In a physical sense, sound is a **pressure wave** that transmits **energy** through an **elastic medium** like air or water. When this wave (or energy) reaches the human ear, it is translated into electrochemical impulses that, when sent to and processed by the brain, are perceived as sound. 
 
-```
-Not all pressure waves can be processed by the human
-brain as sound. Only the waves that are
+Note that not all pressure waves can be processed by the human brain as sound. Only the waves that are
 within the **human hearing range** will be referred
 to as **sound waves**. 
-```
 
 The pressure wave is the result of a **mechanical disturbance** in the medium. Hence, to generate sound, a disturbance or **vibration** is required. This vibration might be caused by any kind of **vibrating object** like, for instance, a vibrating speaker membrane, a tuning fork, a drum beat, a slammed door, a guitar strings, or simply an oscillating air particle, to name a few. 
+
+![tuning fork](imgs/pressure_wave.gif)
+*Image source: https://www.physicsclassroom.com/Class/sound/tfl.gif*
 
 When the direction of the vibration that creates the wave is equal to the direction of the wave propagation, we are talking about a **longitudinal wave**. This happens, for instance, when sound travels through the air caused by a vibrating speaker membrane: 
 
@@ -169,53 +173,54 @@ In contrast, when the direction of vibration that creates the wave is perpendicu
 
 ![traversal wave](imgs/)
 
-In any way, a vibrating object is required to cause a mechanical disturbance inside of a medium so that the resulting energy can start traveling through it. If that energy can be picked up and processed by the human hearing organ and brain, i.e., lies within the human hearing range, we are talking about a **sound wave**.
+A vibrating object is required to cause a mechanical disturbance inside of a medium so that the resulting energy can start traveling through it. If that energy can be picked up and processed by the human hearing organ and brain, i.e., lies within the human hearing range, we are talking about a **sound wave**.
 
-#### Sound Wave Properties
+### Sound Wave Properties
 
 Sound waves can be expressed as a function of pressure change (the alternating sequence of compression and rarefaction) against position or time:
 
-![sound wave representation](imgs/)
+![sound wave representation](imgs/wavelength.png)
 
-Central measurable properties of a sound wave are
+Most essential parameters that can be used to describe a sound wave are its **Amplitude A** and its **Frequency f**.
 
-- **Amplitude A** describes the strengths of the air pressure changes and represents the maximum magnitude or distance of displacement from the equilibrium to the maximal compression or rarefaction. 
-- **Frequency f** describes the rate at which the air pressure changes from compression to rarefaction per second. It is measured as **number of cycles per second** in  where **one cycle** is one sequence of an oscillation from equilibrium to pressure compression to rarefaction and back to equilibrium.
-- **Timbre**
+### Amplitude
 
+Amplitude describes the strengths of the air pressure changes and represents the maximum magnitude or distance of displacement from the equilibrium to the maximal compression or rarefaction. 
 
-<!-- #### Reflection and Refraction -->
-
+In a psychophysical sense, Amplitude is interpreted or preceived as **loudness**. The stronger the pressure wave, i.e., the largert the distance between maximum compression and maximum rarefaction, the louder the sound. 
 
 
-### Psychophysical Aspects of Sound
 
-In a psychophysical or cognitive sense, sound is a **perception** inside the mind of the listener. A sensation stimulated in the organs of hearing caused by the vibrating eardrum & interpreted by the brain as an audible sound.
+### Frequency
 
-When a sound wave reaches the eardrum, it causes the eardrum to vibrate. This stimulation propagates in, that a sensation is stimulated in the organs of hearing which is caused by the vibrating eardrum  interpreted by the brain as an audible sound.
+Frequency describes the rate at which the air pressure changes from compression to rarefaction per second. It is measured as **number of cycles per second** in  where **one cycle** is one sequence of an oscillation from equilibrium to pressure compression to rarefaction and back to equilibrium.
 
-Audio refers to an audible sound i.e., the frequency range of human hearing
+In a psychophysical sense, Frequency is perceived as pitch. A higher frequency, i.e., a high number of cycles per second is perceived as a higher tone whereas a low frequency, i.e., a small number of cycles per second is perceived as a lower tone.
+
+### Exercise
+
+To get an understanding of how Amplitude and Frequency are related, checkout this [interactive applet](http://musicandcomputersbook.com/applets/1_3_hear_freq.php) that allows you to change the two parameters.
 
 
-### Hearing and Acoustics
+### Hearing
 
-Anything that we perceive about the physical world
+<!-- Anything that we perceive about the physical world
 Loudness is our perception of the Power or Intensity of a sound, closely related to the Amplitude of a sound
 In digital signal: loudness is computed by adding up the squares of the digital samples
-If we want to know the power of a segment of audio we add up the squares of the the samples and devide by the amount of samples
+If we want to know the power of a segment of audio we add up the squares of the the samples and devide by the amount of samples -->
 
-Sounds interact via the eardrum with the rest of the auditory system
+<!-- Sounds interact via the eardrum with the rest of the auditory system
 Eardrums work like a transducer — transform one form of energy/information into another
 
 Human hearing (and thus what we refer to as sound) is around 20Hz to 20kHz 
 
-Amplitude A is perceived as loudness, a subjective cognitive measure
-Human ear has an enormous range of response to pressure and intensity changes
 
-Threshold of hearing ~0,00001 Pa 
-Threshold of pain ~10 Pa
+Human ear has an enormous range of response to pressure and intensity changes:
 
-The minimum audible pressure amplitude, at the threshold of hearing, is about 10^-5 pascal, or about 10^-10 standard atmosphere, corresponding to a minimum intensity of about 10-12 watt per square metre. The pressure fluctuation associated with the threshold of pain, meanwhile, is over 10 pascals—one million times the pressure or one trillion times the intensity of the threshold of hearing. In both cases, the enormous dynamic range of the ear dictates that its response to changes in frequency and intensity must be nonlinear.
+- Threshold of hearing ~0,00001 Pa 
+- Threshold of pain ~10 Pa -->
+
+<!-- The minimum audible pressure amplitude, at the threshold of hearing, is about 10^-5 pascal, or about 10^-10 standard atmosphere, corresponding to a minimum intensity of about 10-12 watt per square metre. The pressure fluctuation associated with the threshold of pain, meanwhile, is over 10 pascals—one million times the pressure or one trillion times the intensity of the threshold of hearing. In both cases, the enormous dynamic range of the ear dictates that its response to changes in frequency and intensity must be nonlinear.
 
 Frequency ƒ is perceived as pitch
 
@@ -226,8 +231,7 @@ Human hearing ranges between ~20Hz to ~20kHz
 The enormous dynamic range of the ear in perceiving frequency & amplitude is non-linear
 
 Perceived loudness varies with intensity & frequency
-
-Perceived pitch varies with frequency only
+Perceived pitch varies with frequency only -->
 
 ---
 
@@ -253,9 +257,8 @@ To get a good understanding of the software, checkout the [Reaper user guide](ht
 
 ## Sound
 
-- Read this script's chapter on Sound Properties
-- Further audio visual material on the properties of sound can be found here:
-  - [What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
+- Read [What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php) on Sound Properties
+- Further audio visual material on the properties of sound can be found at:
   - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
   - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
 
