@@ -20,11 +20,12 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Exercise - Audio Rendering](#exercise---audio-rendering)
   - [Properties of Sound](#properties-of-sound)
     - [Sound Pressure Waves](#sound-pressure-waves)
-    - [Sound Wave Properties](#sound-wave-properties)
-    - [Amplitude](#amplitude)
-    - [Frequency](#frequency)
-    - [Exercise](#exercise)
-    - [Hearing](#hearing)
+    - [Wave Types](#wave-types)
+      - [*Interactive App*](#interactive-app)
+    - [Wave Properties](#wave-properties)
+      - [Amplitude](#amplitude)
+      - [Frequency](#frequency)
+    - [Exercise - Theory](#exercise---theory)
   - [Reaper Introduction](#reaper-introduction)
 - [Homework Assignment](#homework-assignment)
   - [Sound](#sound)
@@ -165,6 +166,10 @@ The pressure wave is the result of a **mechanical disturbance** in the medium. H
 ![tuning fork](imgs/pressure_wave.gif)
 *Image source: https://www.physicsclassroom.com/Class/sound/tfl.gif*
 
+A vibrating object is required to cause a mechanical disturbance inside of a medium so that the resulting energy can start traveling through it. If that energy can be picked up and processed by the human hearing organ and brain, i.e., lies within the human hearing range, we are talking about a **sound wave**.
+
+### Wave Types
+
 When the direction of the vibration that creates the wave is equal to the direction of the wave propagation, we are talking about a **longitudinal wave**. This happens, for instance, when sound travels through the air caused by a vibrating speaker membrane: 
 
 ![longitudinal wave](imgs/)
@@ -173,9 +178,12 @@ In contrast, when the direction of vibration that creates the wave is perpendicu
 
 ![traversal wave](imgs/)
 
-A vibrating object is required to cause a mechanical disturbance inside of a medium so that the resulting energy can start traveling through it. If that energy can be picked up and processed by the human hearing organ and brain, i.e., lies within the human hearing range, we are talking about a **sound wave**.
+#### *Interactive App*
 
-### Sound Wave Properties
+- Google Experiments provides several very nice little audio applications. Check out the [sound wave app](https://musiclab.chromeexperiments.com/Sound-Waves/). What kind of wave type is depicted here?
+
+
+### Wave Properties
 
 Sound waves can be expressed as a function of pressure change (the alternating sequence of compression and rarefaction) against position or time:
 
@@ -183,7 +191,7 @@ Sound waves can be expressed as a function of pressure change (the alternating s
 
 Most essential parameters that can be used to describe a sound wave are its **Amplitude A** and its **Frequency f**.
 
-### Amplitude
+#### Amplitude
 
 Amplitude describes the strengths of the air pressure changes and represents the maximum magnitude or distance of displacement from the equilibrium to the maximal compression or rarefaction. 
 
@@ -191,18 +199,25 @@ In a psychophysical sense, Amplitude is interpreted or preceived as **loudness**
 
 
 
-### Frequency
+#### Frequency
 
 Frequency describes the rate at which the air pressure changes from compression to rarefaction per second. It is measured as **number of cycles per second** in  where **one cycle** is one sequence of an oscillation from equilibrium to pressure compression to rarefaction and back to equilibrium.
 
 In a psychophysical sense, Frequency is perceived as pitch. A higher frequency, i.e., a high number of cycles per second is perceived as a higher tone whereas a low frequency, i.e., a small number of cycles per second is perceived as a lower tone.
 
-### Exercise
+### Exercise - Theory
+
+Skim through the first three sections of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
+
+- [1.1 What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
+- [1.2 Amplitude and Loudness](http://musicandcomputersbook.com/chapter1/01_02.php)
+- [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
 
 To get an understanding of how Amplitude and Frequency are related, checkout this [interactive applet](http://musicandcomputersbook.com/applets/1_3_hear_freq.php) that allows you to change the two parameters.
 
-
-### Hearing
+Further audio visual material on the properties of sound can be found at:
+  - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
+  - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
 
 <!-- Anything that we perceive about the physical world
 Loudness is our perception of the Power or Intensity of a sound, closely related to the Amplitude of a sound
@@ -257,14 +272,9 @@ To get a good understanding of the software, checkout the [Reaper user guide](ht
 
 ## Sound
 
-- Read [What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php) on Sound Properties
-- Further audio visual material on the properties of sound can be found at:
-  - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
-  - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
+- Read this script's **Properties of Sound** chapter including and follow the exercises.
 
-- Google Experiments provides several very nice little audio applications. Check out the [sound wave app](https://musiclab.chromeexperiments.com/Sound-Waves/). What kind of wave type is depicted here?
-
-- Also, check out the [spectogram app](https://musiclab.chromeexperiments.com/Spectrogram/). 
+- Check out the [spectogram app](https://musiclab.chromeexperiments.com/Spectrogram/). 
   - What do you understand from the information provided by the spectogram? 
   - What is a spectogram?
 
@@ -272,7 +282,7 @@ To get a good understanding of the software, checkout the [Reaper user guide](ht
   - What do you notice? 
   - How do the sounds sound like?
 
-- Optional: Checkout this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350352000606&cot=12) and add answers to the above mentioned questions, add other materials that reflect what you have learned, as well as questions that you would like to clarify.
+<!-- - Checkout this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350352000606&cot=12) and add answers to the above mentioned questions, add other materials that reflect what you have learned, as well as questions that you would like to clarify. -->
 
 
 ## Reaper and Musique Concrète
