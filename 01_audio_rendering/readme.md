@@ -15,17 +15,23 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [History of Computer Music](#history-of-computer-music)
     - [Video Lecture](#video-lecture)
     - [Exercise - Music Concrète](#exercise---music-concrète)
+  - [Properties of Sound](#properties-of-sound)
+    - [Physical and Psychophysical Aspects](#physical-and-psychophysical-aspects)
+    - [Sound Generation & Propagation](#sound-generation--propagation)
+      - [Sound Pressure Waves](#sound-pressure-waves)
+    - [Sound Perception](#sound-perception)
+      - [Hearing](#hearing)
+    - [Sound Wave Properties](#sound-wave-properties)
+      - [Excerpt - Wave Types](#excerpt---wave-types)
+      - [*Interactive App*](#interactive-app)
+    - [Wave Properties](#wave-properties)
+    - [Amplitude](#amplitude)
+    - [Frequency](#frequency)
+    - [Timbre](#timbre)
+    - [Exercise - Theory](#exercise---theory)
   - [Audio Rendering Basics](#audio-rendering-basics)
     - [Video Lecture](#video-lecture-1)
     - [Exercise - Audio Rendering](#exercise---audio-rendering)
-  - [Properties of Sound](#properties-of-sound)
-    - [Sound Pressure Waves](#sound-pressure-waves)
-    - [Wave Types](#wave-types)
-      - [*Interactive App*](#interactive-app)
-    - [Wave Properties](#wave-properties)
-      - [Amplitude](#amplitude)
-      - [Frequency](#frequency)
-    - [Exercise - Theory](#exercise---theory)
   - [Reaper Introduction](#reaper-introduction)
 - [Homework Assignment](#homework-assignment)
   - [Sound](#sound)
@@ -42,15 +48,15 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 **What?**
 
 - The historical context of computer music and digital audio.
-- Basics about audio rendering.
 - Physical and psychophysical properties of sound.
+- Introduction into audio rendering.
 - How to use a digital audio workstation.
 
 **Why?**
 
 1) **Historicaly Overview**: We will start with an historical overview of the development and milestones that established computer music and digital audio processing techniques.
-2) **Audio rendering**: We will look into common audio rendering approaches so that you get a general understanding and overview of what is actually meant by audio rendering and how it is basically conducted.
-3) **Properties of sound**: We will look into the complex phenomenon called *sound* and its physical and psychophysical properties. This will lay the ground works for understanding how sound creation, propagation, and perception works and what that means for digitally rendering and processing audio.
+2) **Properties of sound**: We will look into the complex phenomenon called *sound* and its physical and psychophysical properties. This will lay the ground works for understanding how sound creation, propagation, and perception works and what that means for digitally rendering and processing audio.
+3) **Audio rendering**: We will look into common audio rendering approaches so that you get a general understanding and overview of what is actually meant by audio rendering and how it is basically conducted.
 4) **Introduction to Reaper**: We will learn about a digital audio workstation, Reaper, which will be the tool used to handle audio files in this lecture.
 
 
@@ -89,40 +95,6 @@ In the video on computer music history, you learned about **Musique Concrète**.
 
 --- 
 
-## Audio Rendering Basics
-
-Audio rendering is a term commonly used in the context of digital sound reproduction with a special focus on the rendering process itself. In general, audio rendering targets the processing and mixing together of one ore more **sound sources** (for example, musical instruments, vocals, guitars, drums, etc.) such that an **audio image** or **soundscape** is created ready to be played back on a (specific) set of loudspeakers or headphones, the **output devices**.
-
-### Video Lecture
-
-To get an overview of audio rendering check out the accompanying video presentation:
-
-```diff
-- To be updated
-```
-- Link to Audio Rendering video
-- ~ 14 mins
-
-![screencast](imgs/screencast.png)
-
-
-### Exercise - Audio Rendering
-
-Now check out this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351779224&cot=12) to work on the following questions and todos in groups of 2, every group works on one task:
-
-- What is meant by audio rendering in general?
-- What are the different audio rendering approaches? 
-- *Sound reproduction* or *audio rendering*, how do you think does the meaning or intention of the terms differ?
-- With this basic knowledge of the audio rendering process, try to draw a simple diagram that incorporates the following terms:
-  - input source
-  - output device
-  - processing unit
-  - analog to digital conversion
-  - digital to analog conversion
-
-
---- 
-
 ## Properties of Sound
 
 Please check out the accompanying slides and video presentation before you continue reading:
@@ -136,39 +108,59 @@ Please check out the accompanying slides and video presentation before you conti
 
 ---
 
+### Physical and Psychophysical Aspects
+
 ```
 “If a tree falls in the forest and no one is near, does it make any sound?“ 
 ```
 
-This quote is pointing to the essence of what sound is: Sound is a complex physical (acoustic) and psychophysical (cognitive) phenomenon that involves an understanding of physics as well as of the human perception and sensation. Without the physical aspects of sound, we could probably not be able to hear a sound. But without our hearing capabilities and our psychophysical interpretation of sound, we would also not be able to hear or perceive it. Therefore, it is helpful to think of sound in the form of an 
+Sound is a complex physical (acoustic) and psychophysical (cognitive) phenomenon that involves an understanding of physics and of the human perception. It is helpful to think of sound events in the form of a **physical sound event** as well as of a **cognitive auditory event**. 
 
-- physical sound event
-- cognitive auditory event 
+Sound as a physical event is defined by how sound is generated and propagated and refers to the **physical aspects** of sound. Sound as a cognitive auditory event is defined by how sound is perceived and refers to the **psychophysical aspects** of sound. It is the interaction of these three aspects, generation, propagation, and perception, which enables us to finally hear sound:
 
-Moreover, in order to understand what sound is and how sound can be worked with later on, we first need to learn about the following aspects of sound:
+1) Sound generation and propagation.
+2) Sound perception.
 
-1) Sound generation
-2) Sound propagation
-3) Sound perception
+### Sound Generation & Propagation
 
-Sound generation and sound propagation refer to physical properties of sound whereas sound perception refers to the psychophysical aspects of sound. The former are defined by the physical objects and environments that cause sound and in which sound is propagating. The latter are defined and influenced by the individual human constitution and anatomy.
+In order to generate sound, a vibrating object (e.g. a tuning fork) is required which causes a mechanical disturbance in a medium (e.g. air), as depicted in the following illustration: 
 
-### Sound Pressure Waves
+![tuning fork](imgs/pressure_wave.gif)
+*Image source: https://www.physicsclassroom.com/Class/sound/tfl.gif*
 
-In a physical sense, sound is a **pressure wave** that transmits **energy** through an **elastic medium** like air or water. When this wave (or energy) reaches the human ear, it is translated into electrochemical impulses that, when sent to and processed by the brain, are perceived as sound. 
+The vibration of the tuning fork causes the air molecules in its closest proximity to vibrate as well. Their vibration is then transmitted to the next set of molecules in their closest proximity and so on. Hence, the inital disturbance caused by the mechanical movement of the tuning fork starts to travel through the medium in the form of a wave.
+
+#### Sound Pressure Waves
+
+In a physical sense, this wave is called a **pressure wave** because the vibration of air molecules in the medium is actually 
+
+Sound waves can be expressed as a function of pressure change, this is the alternating sequence of compression and rarefaction, against position and over time, as depicted in the following diagram:
+
+![sound wave representation](imgs/wavelength.png)
+
+The depicted diagram shows a sine wave 
+
+The pressure wave is the result of a **mechanical disturbance** in the medium. Hence, to generate sound, a disturbance or **vibration** is required. This vibration might be caused by any kind of **vibrating object** like, for instance, a vibrating speaker membrane, a tuning fork, a drum beat, a slammed door, a guitar strings, or simply an oscillating air particle, to name a few. 
+
+
+
+### Sound Perception
+
+In a physical sense, this wave is called a **pressure wave**
+
+that transmits **energy** through an **elastic medium** like air or water. When this wave (or energy) reaches the human ear, it is translated into electrochemical impulses that, when sent to and processed by the brain, are perceived as sound. 
+
+If that energy can be picked up and processed by the human hearing organ and brain, i.e., lies within the human hearing range, we are talking about a **sound wave**.
 
 Note that not all pressure waves can be processed by the human brain as sound. Only the waves that are
 within the **human hearing range** will be referred
 to as **sound waves**. 
 
-The pressure wave is the result of a **mechanical disturbance** in the medium. Hence, to generate sound, a disturbance or **vibration** is required. This vibration might be caused by any kind of **vibrating object** like, for instance, a vibrating speaker membrane, a tuning fork, a drum beat, a slammed door, a guitar strings, or simply an oscillating air particle, to name a few. 
+#### Hearing
 
-![tuning fork](imgs/pressure_wave.gif)
-*Image source: https://www.physicsclassroom.com/Class/sound/tfl.gif*
+### Sound Wave Properties
 
-A vibrating object is required to cause a mechanical disturbance inside of a medium so that the resulting energy can start traveling through it. If that energy can be picked up and processed by the human hearing organ and brain, i.e., lies within the human hearing range, we are talking about a **sound wave**.
-
-### Wave Types
+#### Excerpt - Wave Types
 
 When the direction of the vibration that creates the wave is equal to the direction of the wave propagation, we are talking about a **longitudinal wave**. This happens, for instance, when sound travels through the air caused by a vibrating speaker membrane: 
 
@@ -185,29 +177,26 @@ In contrast, when the direction of vibration that creates the wave is perpendicu
 
 ### Wave Properties
 
-Sound waves can be expressed as a function of pressure change (the alternating sequence of compression and rarefaction) against position or time:
-
-![sound wave representation](imgs/wavelength.png)
-
 Most essential parameters that can be used to describe a sound wave are its **Amplitude A** and its **Frequency f**.
 
-#### Amplitude
+### Amplitude
 
 Amplitude describes the strengths of the air pressure changes and represents the maximum magnitude or distance of displacement from the equilibrium to the maximal compression or rarefaction. 
 
 In a psychophysical sense, Amplitude is interpreted or preceived as **loudness**. The stronger the pressure wave, i.e., the largert the distance between maximum compression and maximum rarefaction, the louder the sound. 
 
-
-
-#### Frequency
+### Frequency
 
 Frequency describes the rate at which the air pressure changes from compression to rarefaction per second. It is measured as **number of cycles per second** in  where **one cycle** is one sequence of an oscillation from equilibrium to pressure compression to rarefaction and back to equilibrium.
 
 In a psychophysical sense, Frequency is perceived as pitch. A higher frequency, i.e., a high number of cycles per second is perceived as a higher tone whereas a low frequency, i.e., a small number of cycles per second is perceived as a lower tone.
 
+### Timbre
+
+
 ### Exercise - Theory
 
-Skim through the first three sections of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
+Read the first three sections of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
 
 - [1.1 What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
 - [1.2 Amplitude and Loudness](http://musicandcomputersbook.com/chapter1/01_02.php)
@@ -218,6 +207,13 @@ To get an understanding of how Amplitude and Frequency are related, checkout thi
 Further audio visual material on the properties of sound can be found at:
   - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
   - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
+
+
+***Please Note:*** The previous sections on sound properties were restricted to the very basic concepts of sound generation and propagation through air and addressed the most essential properties of sound in order to get you started. To dive into more aspects of sound and acoustics, please checkout the following literature:
+
+- Musimathics
+- Acoustics and psychoacoustics
+
 
 <!-- Anything that we perceive about the physical world
 Loudness is our perception of the Power or Intensity of a sound, closely related to the Amplitude of a sound
@@ -249,6 +245,39 @@ Perceived loudness varies with intensity & frequency
 Perceived pitch varies with frequency only -->
 
 ---
+
+## Audio Rendering Basics
+
+Audio rendering is a term commonly used in the context of digital sound reproduction with a special focus on the rendering process itself. In general, audio rendering targets the processing and mixing together of one ore more **sound sources** (for example, musical instruments, vocals, guitars, drums, etc.) such that an **audio image** or **soundscape** is created ready to be played back on a (specific) set of loudspeakers or headphones, the **output devices**.
+
+### Video Lecture
+
+To get an overview of audio rendering check out the accompanying video presentation:
+
+```diff
+- To be updated
+```
+- Link to Audio Rendering video
+- ~ 14 mins
+
+![screencast](imgs/screencast.png)
+
+
+### Exercise - Audio Rendering
+
+Now check out this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351779224&cot=12) to work on the following questions and todos in groups of 2, every group works on one task:
+
+- What is meant by audio rendering in general?
+- What are the different audio rendering approaches? 
+- *Sound reproduction* or *audio rendering*, how do you think does the meaning or intention of the terms differ?
+- With this basic knowledge of the audio rendering process, try to draw a simple diagram that incorporates the following terms:
+  - input source
+  - output device
+  - processing unit
+  - analog to digital conversion
+  - digital to analog conversion
+
+--- 
 
 ## Reaper Introduction
 

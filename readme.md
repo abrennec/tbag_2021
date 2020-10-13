@@ -122,8 +122,8 @@ At the end of the lecture, a final exercise will allow you to combine both field
 1. 04.11.20 - Audio Rendering (4 hrs)
    1. Intro to the course
    2. Computer music history 
-   3. Audio rendering basics
-   4. Sound properties
+   3. Sound properties
+   4. Audio rendering basics
    5. DAW and Reaper
 2. 18.11.20 - Audio Production (4 hrs)
    1. Digital audio fundamentals
@@ -147,9 +147,9 @@ At the end of the lecture, a final exercise will allow you to combine both field
    1. Projects presentation
 6. 16.12.20 - Graphics Rendering (4 hrs)
    <!-- 1. Computer graphics history
-   2. Graphics rendering basics
-   3. Local space, global space, camera space, screen space
-   4. OpenGL and WebGL -->
+   1. Graphics rendering basics
+   2. Local space, global space, camera space, screen space
+   3. OpenGL and WebGL -->
 7. 13.01.20 - Transformations (4 hrs)
    <!-- 1. 3D models, vertices and vertex meshes
    1. Matrix multiplication
