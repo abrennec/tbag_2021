@@ -56,3 +56,11 @@ sound synth with p5??
 # Assignments
 
 
+- Check out the [spectogram app](https://musiclab.chromeexperiments.com/Spectrogram/). 
+  - What do you understand from the information provided by the spectogram? 
+  - What is a spectogram?
+
+
+- Check out [Teropa's harmonic explorer](https://teropa.info/harmonics-explorer/) and play with the frequency and amplitude parameters. Also, add more and more simple sound waves (in this case, sine waves) together. 
+  - What do you notice? 
+  - How do the sounds sound like?
