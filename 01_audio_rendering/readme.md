@@ -23,6 +23,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Sound Pressure Waves](#sound-pressure-waves)
     - [Amplitude](#amplitude)
     - [Frequency](#frequency)
+    - [Complex Sounds and Timbre](#complex-sounds-and-timbre)
   - [Sound Perception](#sound-perception)
     - [Hearing](#hearing)
     - [Human Hearing Range](#human-hearing-range)
@@ -177,23 +178,43 @@ Frequency describes the rate at which the air pressure changes from compression 
 
 In a psychophysical sense, Frequency is perceived as pitch. A higher frequency, i.e., a high number of cycles per second is perceived as a higher tone whereas a low frequency, i.e., a small number of cycles per second is perceived as a lower tone.
 
+### Complex Sounds and Timbre
+
+
+
 
 ## Sound Perception
 
-Anything that we perceive about the physical world is referred to as **psychophysical** because it is related to the human organs of sensation (for exmaple eyes for seeing and ears for hearing) as well as the interpretation and processing of these sensations by the human brain. In the context of sound, a pressure wave that reaches the human ear is translated into electrochemical impulses and sent to the brain for further processing. This is illustrated in a simplified version below:
+Anything that we perceive about the physical world is referred to as psychophysical because it is related to the human organs of sensation (for exmaple eyes for seeing and ears for hearing) as well as the interpretation and processing of these sensations by the human brain. In the context of sound, a pressure wave that reaches the human ear is translated into electrochemical impulses and sent to the brain for further processing. This is illustrated in a simplified version below:
 
 ![sound perception](imgs/sound_perception.png)
 
-Note that not all pressure waves can be processed by the human brain as sound. Only those waves that are
-within the **human hearing range** will be referred
-to as **sound waves**. 
-
 ### Hearing
 
-The eardrum works like a **transducer** in this context. It transforms mechanical energy into electrochemical impulses. 
+The human auditory system is responsible for the human hearing capabilities and can be broken down into three parts:
+
+- the outer ear,
+- the middle ear, 
+- the inner ear,
+
+as depcited in the following image:
 
 ![ear anatomy](imgs/ear_anatomy.jpg)
 *Image source: http://pikeslaneprimary.weebly.com/class-4aj/how-do-we-hear-sounds*
+
+
+The **outer ear** is comprised of the pinna and the ear canal which form an acoustic system. The individual anatomic characteristics of the pinna help humans localize sound sources and alter the incoming sound waves slightly before they enter the ear canal. When the sound wave reaches the outer part of the eardrum, it sets the eardrum into vibration.
+
+The **middle hear** is comprised of the eardrum and 
+
+primarily responsible for translating the initial pressure energy into 
+
+ in order to transform the mechanical energy of the wave into electrochemical impulses. 
+
+Note that not all pressure waves can be processed by the human brain as audible. Only those waves that are
+within the **human hearing range** will be referred
+to as audible and as such are referred to as **sound waves**. 
+
 
 ### Human Hearing Range
 
