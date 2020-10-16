@@ -13,33 +13,31 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - [Audio Rendering - Learning Objectives](#audio-rendering---learning-objectives)
 - [History of Computer Music](#history-of-computer-music)
     - [Video Lecture](#video-lecture)
-    - [Exercise - Music Concrète](#exercise---music-concrète)
+    - [Exercise - Computer Music](#exercise---computer-music)
+- [Audio Rendering Basics](#audio-rendering-basics)
+    - [Video Lecture](#video-lecture-1)
+    - [Exercise - Audio Rendering](#exercise---audio-rendering)
 - [Properties of Sound](#properties-of-sound)
   - [Physical and Psychophysical Aspects](#physical-and-psychophysical-aspects)
   - [Sound Generation & Propagation](#sound-generation--propagation)
     - [Longitudinal Wave](#longitudinal-wave)
     - [Transversal Wave](#transversal-wave)
-      - [*Interactive App*](#interactive-app)
     - [Sound Pressure Waves](#sound-pressure-waves)
     - [Amplitude](#amplitude)
     - [Frequency](#frequency)
     - [Complex Sounds and Timbre](#complex-sounds-and-timbre)
+    - [Exercise - Theory](#exercise---theory)
   - [Sound Perception](#sound-perception)
     - [Hearing](#hearing)
     - [Human Hearing Range](#human-hearing-range)
-    - [Hearing](#hearing-1)
-    - [Exercise - Theory](#exercise---theory)
-- [Audio Rendering Basics](#audio-rendering-basics)
-    - [Video Lecture](#video-lecture-1)
-    - [Exercise - Audio Rendering](#exercise---audio-rendering)
-- [Reaper Introduction](#reaper-introduction)
+    - [Amplitude and Loudness](#amplitude-and-loudness)
+    - [Frequency and Pitch](#frequency-and-pitch)
+    - [Exercise - Theory](#exercise---theory-1)
+- [Digital Audio Workstation](#digital-audio-workstation)
 - [Homework Assignment](#homework-assignment)
   - [Sound](#sound)
-  - [Reaper and Musique Concrète](#reaper-and-musique-concrète)
-    - [Get started](#get-started)
-    - [Topics](#topics)
-    - [Resources](#resources)
-    - [Editing](#editing)
+  - [Music Concrète](#music-concrète)
+  - [Reaper](#reaper)
 
 ---
 
@@ -48,16 +46,16 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 **What?**
 
 - The historical context of computer music and digital audio.
-- Physical and psychophysical properties of sound.
 - Introduction into audio rendering.
+- Physical and psychophysical properties of sound.
 - How to use a digital audio workstation.
 
 **Why?**
 
 1) **Historicaly Overview**: We will start with an historical overview of the development and milestones that established computer music and digital audio processing techniques.
-2) **Properties of sound**: We will look into the complex phenomenon called *sound* and its physical and psychophysical properties. This will lay the ground works for understanding how sound creation, propagation, and perception works and what that means for digitally rendering and processing audio.
-3) **Audio rendering**: We will look into common audio rendering approaches so that you get a general understanding and overview of what is actually meant by audio rendering and how it is basically conducted.
-4) **Introduction to Reaper**: We will learn about a digital audio workstation, Reaper, which will be the tool used to handle audio files in this lecture.
+2) **Audio rendering basics**: We will look into common audio rendering approaches so that you get a general understanding and overview of what is actually meant by audio rendering and how it is basically conducted.
+3) **Properties of sound**: We will look into the complex phenomenon called *sound* and its physical and psychophysical properties. This will lay the ground works for understanding how sound creation, propagation, and perception works and what that means for digitally rendering and processing audio.
+4) **Introduction to Reaper**: We will learn about a digital audio workstation, Reaper, which will be used in this lecture.
 
 
 # History of Computer Music
@@ -76,20 +74,43 @@ To give you a gentle introduction into the sound and audio topics that we will c
 
 You can find the accompanying slides in the **resources** folder. 
 
+### Exercise - Computer Music
 
-### Exercise - Music Concrète
+- What are the different areas of application and research that were presented in the screencast / what kind of application fields did you identify or are aware of other than that?
+- 
 
-In the video on computer music history, you learned about **Musique Concrète**. Music Concrète was an essential and critical milestone from a technological as well as from an artistic point of view. It introduced a completely new approach to the process of music making by re-using, altering and adapting pre-recorded sounds. To get an even better understanding of this technique and art form, check out the following resources as well:
+---
 
-- [All you need to know about Musique Concrète](https://www.musicradar.com/news/everything-you-need-to-know-about-musique-concrete)
-- [Pierre Schaeffer und die Musique Concrète](https://museum.rechtaufremix.org/exponate/pierre-schaeffer-und-die-musique-concrete/)
+# Audio Rendering Basics
 
-**Group work**: Music concrète will serve as the basis for our first practical exercise. Once you have completed the material above, please get in touch with your group member. Wrap your heads around the following questions and use sticky notes and this **[Miro Board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351573492&cot=12)** to answer them and add additional material, examples, questions and thoughts that we can use as a basis for a discussion: 
+Audio rendering is a term commonly used in the context of digital sound reproduction with a special focus on the rendering process itself. In general, audio rendering targets the processing and mixing together of one ore more **sound sources** (for example, musical instruments, vocals, guitars, drums, etc.) such that an **audio image** or **soundscape** is created ready to be played back on a (specific) set of loudspeakers or headphones, the **output devices**.
 
-- What is musique concrète?
-- What was so revolutionary about musique concrète?
-- What do you find interesting? How could you imagine using this in an art piece?
-- *Bonus: What is interesting from a technological point of view, what from an artistic point of view?*
+### Video Lecture
+
+To get an overview of audio rendering check out the accompanying video presentation:
+
+```diff
+- To be updated
+```
+- Link to Audio Rendering video
+- ~ 14 mins
+
+![screencast](imgs/screencast.png)
+
+
+### Exercise - Audio Rendering
+
+Now check out this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351779224&cot=12) to work on the following questions and todos in groups of 2, every group works on one task:
+
+- What is meant by audio rendering in general?
+- What are the different audio rendering approaches? 
+- *Sound reproduction* or *audio rendering*, how do you think does the meaning or intention of the terms differ?
+- With this basic knowledge of the audio rendering process, try to draw a simple diagram that incorporates the following terms:
+  - input source
+  - output device
+  - processing unit
+  - analog to digital conversion
+  - digital to analog conversion
 
 --- 
 
@@ -137,7 +158,9 @@ In contrast, when the direction of vibration that creates the wave is perpendicu
 ![traversal wave](imgs/transversal.gif)
 *Image source: https://de.wikipedia.org/wiki/Datei:Pricna_vlna.gif*
 
-#### *Interactive App*
+
+
+***Interactive App***
 
 *Google Experiments provides several very nice little audio applications. Check out the [sound wave app](https://musiclab.chromeexperiments.com/Sound-Waves/). What kind of wave type is depicted here?*
 
@@ -164,11 +187,21 @@ For our further considerations, however, two other properties of waves are decis
 
 ### Amplitude
 
-Amplitude describes the strengths of the air pressure changes and represents the maximum magnitude or distance of displacement from the equilibrium to the maximal compression or rarefaction, as depcited in the next Figure:
+The amplitude A of a sound wave describes the maximum magnitude/distance of displacement of air molecules from equilibrium (rest position, no movement) either to maximum compression or to maximum rarefaction. Amplitude is always relative to equilibrium where the molecules are in rest position and do not move. This is illustrated in the next Figure:
 
 ![amplitude](imgs/amplitude.png)
 
-In a psychophysical sense, Amplitude is interpreted or preceived as **loudness**. The stronger the pressure wave, i.e., the largert the distance between maximum compression and maximum rarefaction, the louder the sound. 
+In a psychophysical sense, amplitude is preceived as **loudness**. The larger the distance from rest position to compression or rarefaction, the louder the sound. 
+
+**Measuring Amplitude**
+
+In this regard, the amplitude of a sound wave is a parameter that expresses the strengths of the changes in (air) **pressure**. It can also serve as a parameter that expresses the amount of **energy** that is transmitted by the sound wave. In the former case, amplitude would usually be measured as **sound pressure level** (SPL) in Pascal (Pa). This quantifies as force per unit area or as Newton per square meter (1 Pa = 1 N/m^2). In the latter case, amplitude would be measured in the form of **sound intensity** (I) which represents the energy (or power in Watts) per unit time and unit area and is measured in Watts/m^2.
+
+The force acting on a surface (left) or the energy passing through a specific area in time (right) is illustrated in the following two illustrations:
+
+![amplitude](imgs/pressure_force.png)
+
+
 
 ### Frequency
 
@@ -176,11 +209,36 @@ Frequency describes the rate at which the air pressure changes from compression 
 
 ![frequency](imgs/frequency.png)
 
-In a psychophysical sense, Frequency is perceived as pitch. A higher frequency, i.e., a high number of cycles per second is perceived as a higher tone whereas a low frequency, i.e., a small number of cycles per second is perceived as a lower tone.
+In a psychophysical sense, Frequency is perceived as **pitch**. A higher frequency, i.e., a high number of cycles per second is perceived as a higher tone whereas a low frequency, i.e., a small number of cycles per second is perceived as a lower tone.
+
+**Measuring Frequency**
+
+Frequency is measured as cycles per second in Hertz. In the previous illustration, the left diagram depicts a frequency rate at 2 Hz, i.e., two cycles per second whereas the right diagram depicts a frequency at a rate of 4 Hz, i.e., four cycles per second.
+
+To get an understanding of how Amplitude and Frequency are related, checkout this [interactive applet](http://musicandcomputersbook.com/applets/1_3_hear_freq.php) that allows you to change the two parameters.
+
 
 ### Complex Sounds and Timbre
 
+In the real world sounds are rarely stripped down to one frequency only or purely periodic as in the examples above. Instead, sounds are complex combinations of several different frequencies. Check out the example depicted in the following image from the [musicandcomutersbook.com](http://musicandcomputersbook.com/chapter1/01_01.php):
 
+
+![complex_sounds](imgs/complex_sounds.png)
+*Image source: http://musicandcomputersbook.com/chapter1/01_01.php)*
+
+In this context, the **timbre** of a sound is a recurring term which can be described as the color of a specific tone or even instrument. As we will see, there are different approaches to specify, analyze and to design a sound's timbre, but the complexity of sound generation, propagation and perception makes it difficult to re-create natural timbre. To find out more about the timbre, please see the section on timbre in the [musicandcomputersbook.com](http://musicandcomputersbook.com/chapter1/01_04.php).
+
+
+
+### Exercise - Theory
+
+Read the following section of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
+
+- [1.1 What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
+
+Further audio visual material on the properties of sound can be found at:
+  - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
+  - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
 
 
 ## Sound Perception
@@ -205,112 +263,70 @@ as depcited in the following image:
 
 The **outer ear** is comprised of the pinna and the ear canal which form an acoustic system. The individual anatomic characteristics of the pinna help humans localize sound sources and alter the incoming sound waves slightly before they enter the ear canal. When the sound wave reaches the outer part of the eardrum, it sets the eardrum into vibration.
 
-The **middle hear** is comprised of the eardrum and 
+The **middle ear** is comprised of the inner part of the eardrum and the ossicles (malleus, incus, stapes), small bones that transmit the pressure coming from the eardrum to the inner ear in an optimal way. Imagine the middle ear as a processing unit that translates external vibration into internal vibration.
 
-primarily responsible for translating the initial pressure energy into 
+The **inner ear** is finally responsible of transforming the mechanical energy of the pressure wave into electrochemical impulses which are sent to the human brain. This is mainly carried out by the cochlea, a snail-like organ in the inner ear. The cochlea is filled with cochlear duct, a fluid which is set into motion once a sound wave reaches the inner ear. This fluid's motion interacts with the tiny little hair cells of the basilar membrane which send nerve impulses to the brain. Interestingly, the hair cells of the basilar membrane react to different frequencies depending on their position. to high frequencies the hair cells at the beginning of the membrane react, to low frequencies the hair cells at the end of the basilar membrane react, see also the following illustration:
 
- in order to transform the mechanical energy of the wave into electrochemical impulses. 
+![ear anatomy](imgs/basilar_membrane.png)
+
+
+### Human Hearing Range
+
+As we have seen in the previous section, loudness is a psychophysical property related to the amplitude of sound pressure waves. It describes the human perception of the power or intensity of a sound wave's change in pressure. Pitch, on the other hand, is a psychophysical property related to the frequency of a sound wave. It describes how high or low humans perceive a specific sound. 
 
 Note that not all pressure waves can be processed by the human brain as audible. Only those waves that are
 within the **human hearing range** will be referred
 to as audible and as such are referred to as **sound waves**. 
 
+### Amplitude and Loudness
 
-### Human Hearing Range
+The **threshold of hearing** refers to the minimum audible pressure amplitude. It is measured in Pascal Pa and
+ranges about 10^-5 Pa. In terms of intensity, this corresponds to a minimum intensity of about 10-12 watt per square metre. In terms of Decibel, the threshold of hearing is at 0 dB.
 
-As we have seen in the previous section, loudness is a psychophysical property related to the amplitude of sound waves. It commonly describes the human perception of the power or intensity of a sound wave's change in pressure. Pitch, on the other hand, is a psychophysical property related to the frequency of a sound wave. It commonly describes how high or low humans perceive a specific sound. 
+The **threshold of pain** refers to the maximum audible pressure amplitude. The threshold of pain is associated with pressure fluctuation shortly before damage to the hearing organs. It is over 10 Pa. This is one million times the pressure or one trillion times the intensity of the threshold of hearing. In terms of Decibel, the threshold of pain starts at ~90 dB.
 
+- **Threshold of hearing** (silence): ~0,00001 Pa <=> 0 dB
+- **Threshold of pain** (hearing damage): ~10 Pa <=>  140 dB, however hearing damage can begin at 90 dB already
 
+These quantifications are difficult to work with in order to describe changes in loudness. Therefore, the decibel has been introduced which is a logarithmic measure to better quantify and relate air pressure changes with the human hearing range, see also the following illustration:
 
+![pressure loudness](imgs/pressure_loudness.png)
 
-<!-- 
-In digital signal: loudness is computed by adding up the squares of the digital samples
-If we want to know the power of a segment of audio we add up the squares of the the samples and devide by the amount of samples -->
+<!-- In both cases, the enormous dynamic range of the ear dictates that its response to changes in frequency and intensity must be nonlinear. -->
 
-<!-- 
+### Frequency and Pitch
 
-Human hearing (and thus what we refer to as sound) is around 20Hz to 20kHz 
+Human hearing capabilities that respond to frequency range from approximately 20 Hz to 20.000 Hz (20 kHz). The higher the frequency, the higher the perceived pitch and vice versa.
 
+- **Lowest frequencies audible by humans** ~20 Hz
+- **Highest frequencies audible by humans** ~ 20 kHz
 
-Human ear has an enormous range of response to pressure and intensity changes:
+As with the preception of loudness due to changes in air pressure, the enormous dynamic range of the ear in perceiving frequencies is non-linear, too. The following illustration relates the changes in frequency with the changes in pitch: 
 
-- Threshold of hearing ~0,00001 Pa 
-- Threshold of pain ~10 Pa -->
+![frequency_pitch](imgs/freq_pitch.png)
 
-<!-- The minimum audible pressure amplitude, at the threshold of hearing, is about 10^-5 pascal, or about 10^-10 standard atmosphere, corresponding to a minimum intensity of about 10-12 watt per square metre. The pressure fluctuation associated with the threshold of pain, meanwhile, is over 10 pascals—one million times the pressure or one trillion times the intensity of the threshold of hearing. In both cases, the enormous dynamic range of the ear dictates that its response to changes in frequency and intensity must be nonlinear.
+As you can see, the relation is in logarithmic form. This means, a linear change in pitch, i.e., from note A to the next and next next octaves of A does not correspond to a linear shift in frequencies. Rather, while pitch increases linearly, frequencies double. 
 
-Frequency ƒ is perceived as pitch
-
-The higher the frequency, the higher the perceived pitch & vice versa
-
-Human hearing ranges between ~20Hz to ~20kHz
-
-The enormous dynamic range of the ear in perceiving frequency & amplitude is non-linear
-
-Perceived loudness varies with intensity & frequency
-Perceived pitch varies with frequency only -->
-
-### Hearing
+It is interesting to note that perceived loudness varies with intensity and frequency; perceived pitch varies with frequency only though. The human hearing range deacreases with increasing age.
 
 
 ### Exercise - Theory
 
-Read the first three sections of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
+Read the following sections of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
 
-- [1.1 What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
 - [1.2 Amplitude and Loudness](http://musicandcomputersbook.com/chapter1/01_02.php)
 - [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
 
-To get an understanding of how Amplitude and Frequency are related, checkout this [interactive applet](http://musicandcomputersbook.com/applets/1_3_hear_freq.php) that allows you to change the two parameters.
-
-Further audio visual material on the properties of sound can be found at:
-  - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
-  - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
-
-
-***Please Note:*** The previous sections on sound properties were restricted to the very basic concepts of sound generation and propagation through air and addressed the most essential properties of sound in order to get you started. To dive into more aspects of sound and acoustics, please checkout the following literature:
-
-- Musimathics
-- Acoustics and psychoacoustics
-
 ---
 
-# Audio Rendering Basics
+***Please Note:*** The previous sections on sound properties were restricted to the very basic concepts of sound generation and propagation through air and addressed the most essential properties of sound in order to get you started. To dive into more aspects of sound and acoustics, please checkout the recommended readings from the first page.
 
-Audio rendering is a term commonly used in the context of digital sound reproduction with a special focus on the rendering process itself. In general, audio rendering targets the processing and mixing together of one ore more **sound sources** (for example, musical instruments, vocals, guitars, drums, etc.) such that an **audio image** or **soundscape** is created ready to be played back on a (specific) set of loudspeakers or headphones, the **output devices**.
-
-### Video Lecture
-
-To get an overview of audio rendering check out the accompanying video presentation:
-
-```diff
-- To be updated
-```
-- Link to Audio Rendering video
-- ~ 14 mins
-
-![screencast](imgs/screencast.png)
-
-
-### Exercise - Audio Rendering
-
-Now check out this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351779224&cot=12) to work on the following questions and todos in groups of 2, every group works on one task:
-
-- What is meant by audio rendering in general?
-- What are the different audio rendering approaches? 
-- *Sound reproduction* or *audio rendering*, how do you think does the meaning or intention of the terms differ?
-- With this basic knowledge of the audio rendering process, try to draw a simple diagram that incorporates the following terms:
-  - input source
-  - output device
-  - processing unit
-  - analog to digital conversion
-  - digital to analog conversion
+<!-- - Musimathics
+- Acoustics and psychoacoustics -->
 
 --- 
 
-# Reaper Introduction
-
-**Live session intro via zoom**
+# Digital Audio Workstation
 
 Reaper is a digital audio workstation that we will be using during this lecture. Please download and install Reaper for the time of being. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
 
@@ -320,7 +336,6 @@ Reaper is a digital audio workstation that we will be using during this lecture.
 To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
 
 - [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
-- **EDITING WITH REAPER**
 
 To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
 
@@ -330,57 +345,37 @@ To get a good understanding of the software, checkout the [Reaper user guide](ht
 
 ## Sound
 
-- Read this script's **Properties of Sound** chapter including and follow the exercises.
+- Review this script's **Properties of Sound** chapter including and follow the exercises.
+- Now that you have learned about computer music, audio rendering, as well as sound as a physical and psychophysical phenomenon, how do you bring all of these aspects together? How do they relate in your understanding?
+
+
 
 
 <!-- - Checkout this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350352000606&cot=12) and add answers to the above mentioned questions, add other materials that reflect what you have learned, as well as questions that you would like to clarify. -->
 
+## Music Concrète
 
-## Reaper and Musique Concrète
+In the video on computer music history, you learned about **Musique Concrète**. Music Concrète was an essential and critical milestone from a technological as well as from an artistic point of view. It introduced a completely new approach to the process of music making by re-using, altering and adapting pre-recorded sounds. To get an even better understanding of this technique and art form, check out the following resources as well:
 
-### Get started 
+- [All you need to know about Musique Concrète](https://www.musicradar.com/news/everything-you-need-to-know-about-musique-concrete)
+- [Pierre Schaeffer und die Musique Concrète](https://museum.rechtaufremix.org/exponate/pierre-schaeffer-und-die-musique-concrete/)
 
-This task will kick-off the first small term project. Your task will be to create one song in the style of musique conrète. To get an idea of where or how to start, check out this video: 
+**Group work**: Music concrète will serve as the basis for our first practical exercise. Once you have completed the material above, please get in touch with your group member. Wrap your heads around the following questions and use sticky notes and this **[Miro Board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351573492&cot=12)** to answer them and add additional material, examples, questions and thoughts that we can use as a basis for a discussion: 
 
-- [Recipe for Musique Conrète](https://www.youtube.com/watch?v=2ZpwbXDleDw)
+- What is musique concrète?
+- What was so revolutionary about musique concrète?
+- What do you find interesting? How could you imagine using this in an art piece?
+- What is interesting from a technological point of view, what from an artistic point of view?
 
+## Reaper 
 
-### Topics
+Reaper is a digital audio workstation that we will be using during this lecture. Please download and install Reaper for the time of being. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
 
-First of all you may need a certain topic or source of inspiration that will serve as a basis for your composition.
-You might alway want to ask yourselves these two questions when considering a specific theme:
+- [Reaper website](https://www.reaper.fm/index.php)
+- [Download Reaper Link](https://www.reaper.fm/download.php)
 
-- What does this topic sound like? 
-- What kind of sounds would let me interpret this topic in the form of musique concrète?
+To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
 
-The following topics are simply suggestions; feel free to come up with an individual topic.
+- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
 
-- Your apartment
-- Outer space
-- City slickers
-- Natural boundaries
-- Stillness
-- Fear
-- Covid 19
-- ...
-
-### Resources
-
-You can either use your mobile phone to record short sound samples, you can checkout this [sample folder](https://owncloud.gwdg.de/index.php/s/Vjfs9uYJEz5qoHV) that contains a preselection of freesound.org samples useful for creating a musique conrète, or you can go to [freesound.org ](https://freesound.org) and search for samples that you would like to integrate.
-
-### Editing 
-
-Make sure that you limit the number of samples to 3-5 different samples and work with them, which means:
-
-- Start and run Reaper
-- Create a new track
-- Import your samples
-- Edit the samples, for example, by
-  - chopping off the beginning or the end
-  - reversing the sample
-  - shortening it
-- Save the project
-- Export and/or render the song into one final sound file (wav, or mp3)
-
-Simply play around with the samples in Reaper and make use of as many Reaper tutorials and functionalities that work for you. 
-
+To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.

@@ -26,6 +26,12 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - [Further Reading](#further-reading)
 - [Homework Assignments](#homework-assignments)
   - [Musique Concrète](#musique-concrète)
+- [Homework Assignment](#homework-assignment)
+  - [Reaper and Musique Concrète](#reaper-and-musique-concrète)
+    - [Get started](#get-started)
+    - [Topics](#topics-1)
+    - [Resources](#resources)
+    - [Editing](#editing)
 
 ---
 
@@ -190,3 +196,54 @@ The next goal is that you conduct an audio rendering and work on a piece of musi
 ```diff
 - Add some Audacity & Reaper tutorial, tutorial on editing sounds.
 ```
+
+# Homework Assignment 
+
+## Reaper and Musique Concrète
+
+### Get started 
+
+This task will kick-off the first small term project. Your task will be to create one song in the style of musique conrète. To get an idea of where or how to start, check out this video: 
+
+- [Recipe for Musique Conrète](https://www.youtube.com/watch?v=2ZpwbXDleDw)
+
+
+### Topics
+
+First of all you may need a certain topic or source of inspiration that will serve as a basis for your composition.
+You might alway want to ask yourselves these two questions when considering a specific theme:
+
+- What does this topic sound like? 
+- What kind of sounds would let me interpret this topic in the form of musique concrète?
+
+The following topics are simply suggestions; feel free to come up with an individual topic.
+
+- Your apartment
+- Outer space
+- City slickers
+- Natural boundaries
+- Stillness
+- Fear
+- Covid 19
+- ...
+
+### Resources
+
+You can either use your mobile phone to record short sound samples, you can checkout this [sample folder](https://owncloud.gwdg.de/index.php/s/Vjfs9uYJEz5qoHV) that contains a preselection of freesound.org samples useful for creating a musique conrète, or you can go to [freesound.org ](https://freesound.org) and search for samples that you would like to integrate.
+
+### Editing 
+
+Make sure that you limit the number of samples to 3-5 different samples and work with them, which means:
+
+- Start and run Reaper
+- Create a new track
+- Import your samples
+- Edit the samples, for example, by
+  - chopping off the beginning or the end
+  - reversing the sample
+  - shortening it
+- Save the project
+- Export and/or render the song into one final sound file (wav, or mp3)
+
+Simply play around with the samples in Reaper and make use of as many Reaper tutorials and functionalities that work for you. 
+
