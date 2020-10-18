@@ -32,10 +32,9 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Human Hearing Range](#human-hearing-range)
     - [Amplitude and Loudness](#amplitude-and-loudness)
     - [Frequency and Pitch](#frequency-and-pitch)
-  - [Exercise - Categorization and Review](#exercise---categorization-and-review)
+- [Exercise - Categorization and Review](#exercise---categorization-and-review)
 - [Homework Assignment](#homework-assignment)
   - [Sound](#sound)
-    - [What is sound?](#what-is-sound)
   - [Music Concrète](#music-concrète)
   - [Reaper](#reaper)
 
@@ -314,7 +313,7 @@ As you can see, the relation is in logarithmic form. This means, a linear change
 It is interesting to note that perceived loudness varies with intensity and frequency; perceived pitch varies with frequency only though. The human hearing range deacreases with increasing age.
 
 
-## Exercise - Categorization and Review
+# Exercise - Categorization and Review
 
 Now that you have learned about computer music, audio rendering, as well as sound as a physical and psychophysical phenomenon, how do you bring all of these aspects together? How do they relate in your understanding?
 
@@ -342,7 +341,6 @@ Review this script's [Properties of Sound](#properties-of-sound). Read the first
 - [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
 - [1.4 Timbre](http://musicandcomputersbook.com/chapter1/01_04.php)
 
-### What is sound?
 
 Please pick one of the following questions and try to answer it. Find an example to illustrate your answer if possible. Add the question you picked as well as your answer to this [Miro board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351920589&cot=10). 
 
