@@ -32,6 +32,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Topics](#topics-1)
     - [Resources](#resources)
     - [Editing](#editing)
+    - [Reaper](#reaper)
 
 ---
 
@@ -63,6 +64,8 @@ Now that students know about the basics of sound and audio they will learn how t
 - Students will learn about how recorded audio signals will be routed and mixed in a digital audio workstation (DAW).
 - Students will learn about how audio tracks can be further processed using audio effects (FX).
 - Students will learn how to create an audio mix and how to position their sound sources in a stereo mix.
+
+4) **Introduction to Reaper**: We will learn about a digital audio workstation, Reaper, which will be used in this lecture.
 
 # Learning Objectives
 
@@ -247,3 +250,10 @@ Make sure that you limit the number of samples to 3-5 different samples and work
 
 Simply play around with the samples in Reaper and make use of as many Reaper tutorials and functionalities that work for you. 
 
+### Reaper
+
+To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
+
+- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
+
+To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.

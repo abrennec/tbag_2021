@@ -26,16 +26,16 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Amplitude](#amplitude)
     - [Frequency](#frequency)
     - [Complex Sounds and Timbre](#complex-sounds-and-timbre)
-    - [Exercise - Theory](#exercise---theory)
+    - [Exercise - Theory Recap](#exercise---theory-recap)
   - [Sound Perception](#sound-perception)
     - [Hearing](#hearing)
     - [Human Hearing Range](#human-hearing-range)
     - [Amplitude and Loudness](#amplitude-and-loudness)
     - [Frequency and Pitch](#frequency-and-pitch)
-    - [Exercise - Theory](#exercise---theory-1)
-- [Digital Audio Workstation](#digital-audio-workstation)
+  - [Exercise - Categorization and Review](#exercise---categorization-and-review)
 - [Homework Assignment](#homework-assignment)
   - [Sound](#sound)
+    - [What is sound?](#what-is-sound)
   - [Music Concrète](#music-concrète)
   - [Reaper](#reaper)
 
@@ -45,17 +45,18 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 **What?**
 
+This lecture will start with an introduction to the course and will give you and introduction to the field of audio rendering in general following these steps:
+
 - The historical context of computer music and digital audio.
 - Introduction into audio rendering.
 - Physical and psychophysical properties of sound.
-- How to use a digital audio workstation.
 
 **Why?**
 
 1) **Historicaly Overview**: We will start with an historical overview of the development and milestones that established computer music and digital audio processing techniques.
 2) **Audio rendering basics**: We will look into common audio rendering approaches so that you get a general understanding and overview of what is actually meant by audio rendering and how it is basically conducted.
 3) **Properties of sound**: We will look into the complex phenomenon called *sound* and its physical and psychophysical properties. This will lay the ground works for understanding how sound creation, propagation, and perception works and what that means for digitally rendering and processing audio.
-4) **Introduction to Reaper**: We will learn about a digital audio workstation, Reaper, which will be used in this lecture.
+
 
 
 # History of Computer Music
@@ -230,11 +231,14 @@ In this context, the **timbre** of a sound is a recurring term which can be desc
 
 
 
-### Exercise - Theory
+### Exercise - Theory Recap
 
-Read the following section of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
+Read the following section of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets. 
 
 - [1.1 What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
+- Read the question at the bottom of section.
+  - Do you find them relevant? 
+  - Can you give answers to each of them?
 
 Further audio visual material on the properties of sound can be found at:
   - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
@@ -310,12 +314,14 @@ As you can see, the relation is in logarithmic form. This means, a linear change
 It is interesting to note that perceived loudness varies with intensity and frequency; perceived pitch varies with frequency only though. The human hearing range deacreases with increasing age.
 
 
-### Exercise - Theory
+## Exercise - Categorization and Review
 
-Read the following sections of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets.
+Now that you have learned about computer music, audio rendering, as well as sound as a physical and psychophysical phenomenon, how do you bring all of these aspects together? How do they relate in your understanding?
 
-- [1.2 Amplitude and Loudness](http://musicandcomputersbook.com/chapter1/01_02.php)
-- [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
+- Go to this [Miro frame](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350756164642&cot=12) and categorize the different terms and topics. Feel free to copy the frame and work with an individual setup. Try to answer the following questions:
+  - What aspects belong to each topic?
+  - How do the topics relate to each other in your understanding?
+- Go to this [Miro frame](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350756113809&cot=12) and review the session according to the columns.
 
 ---
 
@@ -324,20 +330,6 @@ Read the following sections of the [Music and Computers Book](http://musicandcom
 <!-- - Musimathics
 - Acoustics and psychoacoustics -->
 
---- 
-
-# Digital Audio Workstation
-
-Reaper is a digital audio workstation that we will be using during this lecture. Please download and install Reaper for the time of being. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
-
-- [Reaper website](https://www.reaper.fm/index.php)
-- [Download Reaper Link](https://www.reaper.fm/download.php)
-
-To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
-
-- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
-
-To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
 
 --- 
 
@@ -345,10 +337,27 @@ To get a good understanding of the software, checkout the [Reaper user guide](ht
 
 ## Sound
 
-- Review this script's **Properties of Sound** chapter including and follow the exercises.
-- Now that you have learned about computer music, audio rendering, as well as sound as a physical and psychophysical phenomenon, how do you bring all of these aspects together? How do they relate in your understanding?
+Review this script's [Properties of Sound](#properties-of-sound). Read the first sections of the Music and Computers online book and check out the interactive exercises presented there:
+- [1.2 Amplitude and Loudness](http://musicandcomputersbook.com/chapter1/01_02.php)
+- [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
+- [1.4 Timbre](http://musicandcomputersbook.com/chapter1/01_04.php)
 
+### What is sound?
 
+Please pick one of the following questions and try to answer it. Find an example to illustrate your answer if possible. Add the question you picked as well as your answer to this [Miro board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351920589&cot=10). 
+
+If a question has already been chosen, please pick another one.
+
+- What is the amplitude of a sound and how does it relate to the physical and psychophysical aspects of the wave?
+- Why are loudnes and pitch logarithmic measures? 
+- What is meant by an audio envelope? 
+- What is an ADSR vs an ASR? 
+- What is meant by timbre? 
+  - Try to find interesting sound examples that present different timbre.
+- Check out the [spectogram app](https://musiclab.chromeexperiments.com/Spectrogram/). 
+  - What do you understand from the information provided by the spectogram? 
+  - What is a spectogram?
+  - How does timbre come into play?
 
 
 <!-- - Checkout this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350352000606&cot=12) and add answers to the above mentioned questions, add other materials that reflect what you have learned, as well as questions that you would like to clarify. -->
@@ -373,9 +382,3 @@ Reaper is a digital audio workstation that we will be using during this lecture.
 
 - [Reaper website](https://www.reaper.fm/index.php)
 - [Download Reaper Link](https://www.reaper.fm/download.php)
-
-To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
-
-- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
-
-To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
