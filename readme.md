@@ -48,26 +48,25 @@ The three projects will be central to the final grade.
 
 ## General Information 
 
-- Mondays 10:00 h - 13:30 h
+- Wednesday 10:00 h - 13:30 h
 - Module 5 | 3 SWS | 4 ECTS
-- 10 sessions in total, session 1 & 10 only half of time.
+- 10 sessions in total, sessions 5 & 10 only half of time.
 - Participation in the lectures is **not compulsory**. **However**, in order to pass the course and receive a grade, you need to collect points. See the [Evaluation and Grading](#evaluation-and-grading) section for the details.
 
 
 ```diff
 - The course will be held online until further notice. 
-- During the time of online lectures, we will use the lecture hours for updates, discussions and consultation times.
 ```
 
 ## Method of Instruction
 
-The course is designed as an online course that will use tools and technique from **flipped classroom** and **blended learning** approaches. Theoretical input will be pre-recorded and prepared such that students can work through the materials on their own and in their own pace online and offline. The weekly sessions will focus on live discussions, project work, and exercises. 
+The course is designed as an online course that will use tools and technique from **flipped classroom** and **blended learning** approaches. For example, there will be pre-recorded lectures such that students can work through the materials on their own and in their own pace online and offline. The weekly sessions will focus on live discussions, project work, and exercises.
 
-Make use of the **Github team** when you are stuck and post your questions there. If you cannot find a solution, get in touch with your tutors. The **Miro board** will be used for group work and discussions. Make sure that you register a personal account at Miro.
+Make use of the **[Github team](https://github.com/orgs/ctechfilmuniversity/teams/ws2021_tbag)** when you are stuck and post your questions there. If you cannot find a solution, get in touch with your tutors. The **[Miro board](https://miro.com/app/dashboard/)** will be used for group work and discussions. Make sure that you register a personal account at Miro.
 
 ### Weekly Sessions
 
-Each week, new learning materials and assignments will be published. The time from 10 to 13:30 will be used to work through the materials in the group, in smaller teams and on an individual basis.
+Each week, new learning materials and assignments will be published. The time from 10 to 13:30 will be used to work through the materials in the group, in smaller teams or on an individual basis. Moreover, there will be homework assignments to deepen the understanding of the learning materials and/or to work on the term projects.
 
 ### Practical Work
 
@@ -79,19 +78,17 @@ Each week, new learning materials and assignments will be published. The time fr
 
 ## Evaluation and Grading 
 
-In order to **pass the course**, you need to participate in the two term projects at least. All solutions have to be submitted to GitHub to be considered for an evaluation.
+In order to **pass the course**, you need to submit the final exercies. Note that the term projects are used to prepare the final exercise.
 
 For CTech students there will be a **grade**. The grade will be based on the grades received for the term projects and the final exercise. 
 
 ### Grading Breakdown <!-- omit in toc -->
 
-* 10 pts - Excellent work
 * 40 pts - Term projects 
-  * 20 pts Audio project (due 30 Nov, scope: 1 working day, time hours)
-  * 20 pts Graphics project (due 1 Feb, scope: 1 working day)
-* 50 pts - Final exercise (due end of winter term, scope 2-3 working days, time hours)
-
-Extra points can be awarded for excellent work or additional tasks.
+  * 20 pts Audio project (due 5th session, scope: 1 working day)
+  * 20 pts Graphics project (due 10th session, scope: 1 working day)
+* 50 pts - Final exercise (due end of winter term, scope 2-3 working days)
+* 5 - 10 pts can be awarded for excellence of work and high quality  submissions.
 
 ### Grading criteria <!-- omit in toc -->
 
@@ -122,52 +119,45 @@ At the end of the lecture, a final exercise will allow you to combine both field
 1. 04.11.20 - Audio Rendering (4 hrs)
    1. Intro to the course
    2. Computer music history 
-   3. Sound properties
-   4. Audio rendering basics
-   5. DAW and Reaper
+   3. Audio rendering 
+   4. Sound properties
 2. 18.11.20 - Audio Production (4 hrs)
-   1. Digital audio fundamentals
-   2. Working with a DAW
-   3. Mixing and audio rendering
-   4. Audio FX and spatial sound
-   5. Project work
+   1. Digital audio
+   2. Stereo soundscape
+   3. Dynamics and panning
+   4. Audio FX
 3. 25.11.20 - Sound Synthesis (4 hrs)
-   1. Sound generation and snythesizers
-   2. Waveforms and their mathematical description
-   3. Additive and subtractive synthesis
-   4. Audio analysis with FFT
-   5. Project work
+   1. Sound generation and basic waveforms
+   2. Sound synthesis
+   3. Anlysis and filter
+   4. Subtractive synthesis by example 
 4. 02.12.20 - Audio Programming (4 hrs)
-   1. Introducing WebAudio and p5.js
-   2. Digital signal flow 
-   3. Working with audio buffers
-   4. Interactive audio - changing the signal flow
-   5. Project work
+   1. WebAudio and p5.js
+   2. Generating waveforms
+   3. Audio in/out
+   4. Interactive audio application
 5. 09.12.20 - Audio projects (2 hrs)
    1. Projects presentation
 6. 16.12.20 - Graphics Rendering (4 hrs)
-   <!-- 1. Computer graphics history
-   1. Graphics rendering basics
-   2. Local space, global space, camera space, screen space
-   3. OpenGL and WebGL -->
+   1. Computer graphics history
+   2. Graphics, images, textures
+   3. Graphics rendering pipeline
+   4. Local, global, camera, and screen spaces
 7. 13.01.20 - Transformations (4 hrs)
-   <!-- 1. 3D models, vertices and vertex meshes
-   1. Matrix multiplication
+   1. 3D models, vertices and vertex meshes
    2. Affine transformations
-   3. Graphics, images, textures
-   4. Project work -->
+   3. Projection
+   4. OpenGL and WebGL
 8. 20.01.20 - Shader programming I (4 hrs)
-   <!-- 1. The programmable rendering pipeline
-   1. Vertex shaders and fragment shaders
-   2. OpenGL Shader Language
-   3. Vertex shader manipulations
-   4. Project work -->
+   1. The programmable rendering pipeline
+   2. Vertex shaders and fragment shaders
+   3. OpenGL Shader Language
+   4. Vertex shader manipulations
 9.  27.01.20 - Shader programming II (4 hrs)
-    <!-- 1. Uniforms and attributes
-    1. Vertex and texture coordinates
-    2. Shapes and 3D shader programs
-    3. Simple image effects
-    4. Project work -->
+    1. Uniforms and attributes
+    2. Vertex and texture coordinates
+    3. Shapes and 3D
+    4. Simple image effects
 10. 03.02.20 - Graphics projects
     1. Projects presentation
     2. Final Exercise + course wrap-up (2 hrs)
@@ -175,30 +165,24 @@ At the end of the lecture, a final exercise will allow you to combine both field
 
 ## Communication and Materials
 
-
-```diff
-- To be updated
-```
 ### Platforms
 
 As a communication platform, we will use [GitHub.com](https://github.com/) to share code, lecture materials, comments, and submit homework and project assignments.
 
-- [GitHub repository (public)](https://github.com/ctechfilmuniversity/)
-- [GitHub Wiki (public)](https://github.com/ctechfilmuniversity/)
-- [GitHub team (public)](https://github.com/orgs/ctechfilmuniversity/)
+- [GitHub repository (public)](https://github.com/ctechfilmuniversity/lecture_theo_bg_audio_graphics)
+- [GitHub Wiki (public)](https://github.com/ctechfilmuniversity/lecture_theo_bg_audio_graphics/wiki)
+- [GitHub team (public)](https://github.com/orgs/ctechfilmuniversity/teams/ws2021_tbag)
+- [Miro project tbag_2021](https://miro.com/app/dashboard/)
+
 
 The repository will be used to share scripts (usually as readme.md) and slides, coding examples, homework and project materials. The Wiki will be maintained by the students to share information that might be useful for everyone, for example, dos and don'ts, useful links, and so on. The team will be used for discussion, comments, notes and any important announcements.
 
 To stay tuned with the materials, clone the main repo:
 
 ```
-git clone https://github.com/ctechfilmuniversity/
+git clone https://github.com/ctechfilmuniversity/lecture_theo_bg_audio_graphics
 
 ```
-
-We will also use a Miro board for group work and collecting, categorizing and storing central topics. You will be invited to Miro project "tbag_2021" for this.
-
-- [Miro project tbag_2021](https://miro.com/app/dashboard/)
 
 ---
 
