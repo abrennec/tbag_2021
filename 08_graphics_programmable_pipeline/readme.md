@@ -10,7 +10,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Graphics -- Shader Programming](#graphics----shader-programming)
+- [Graphics -- Transformations](#graphics----transformations)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
   - [External Media](#external-media)
@@ -20,23 +20,22 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ---
 
 
-# Graphics -- Shader Programming
+# Graphics -- Transformations
 
 
 ## Topics
 
 
-1. Uniforms and attributes
-2. Vertex and texture coordinates
-3. Shapes and 3D shader programs
-4. Simple image effects
+1. The programmable rendering pipeline
+2. Vertex shaders, geometry shaders, tesselation shaders, fragment shaders
+3. OpenGL Shader Language
+4. My first shader program
 5. Project work
 
 
 ## Learning Objectives
 
-- Students will learn  ... 
-
+- Students will learn 
 
 
 ## External Media
@@ -51,7 +50,5 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 --- 
 
 # Assignments
-
-
 
 
