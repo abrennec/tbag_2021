@@ -4,13 +4,8 @@
 
 let 
   sample_cow, sample_glass, sample_slamming,
-  button_cow, button_glass, button_slamming,
-  radio_playmode_cow, radio_playmode_glass, radio_playmode_slamming,
-  slider_panning_cow, slider_panning_glass, slider_panning_slamming,
-  checkbox_reverb_cow, checkbox_reverb_glass, checkbox_reverb_slamming, 
-  input_reverbTime_cow, input_reverbTime_glass, input_reverbTime_slamming,
-  input_decayRate_cow, input_decayRate_glass, input_decayRate_slamming,
-  reverb_cow, reverb_glass, reverb_slamming
+  ui_elements_cow = {}, ui_elements_glass  = {}, ui_elements_slamming  = {},
+  audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {}
   ;
 
 function setup() {
@@ -33,100 +28,130 @@ function loadSamples() {
 
 function setupUI() {
   // Buttons
-  createSampleButton(button_cow, sample_cow, 'Cow', 10, 10);
-  createSampleButton(button_glass, sample_glass, 'Glass', 10, 40);
-  createSampleButton(button_slamming, sample_slamming, 'Slamming', 10, 70);
+  createSampleButton(ui_elements_cow, sample_cow, 'Cow', 10, 10);
+  createSampleButton(ui_elements_glass, sample_glass, 'Glass', 10, 110);
+  createSampleButton(ui_elements_slamming, sample_slamming, 'Slamming', 10, 210);
 
   // Radio buttons for playing mode
-  createPlayModeRadioButton(radio_playmode_cow, sample_cow, 120, 10);
-  createPlayModeRadioButton(radio_playmode_glass, sample_glass, 120, 40);
-  createPlayModeRadioButton(radio_playmode_slamming, sample_slamming, 120, 70);
+  createPlayModeRadioButton(ui_elements_cow, sample_cow, 120, 10);
+  createPlayModeRadioButton(ui_elements_glass, sample_glass, 120, 110);
+  createPlayModeRadioButton(ui_elements_slamming, sample_slamming, 120, 210);
 
   // Slider element for panning
-  createPanningSlider(slider_panning_cow, sample_cow, 350, 10);
-  createPanningSlider(slider_panning_glass, sample_glass, 350, 40);
-  createPanningSlider(slider_panning_slamming, sample_slamming, 350, 70);
+  createPanningSlider(ui_elements_cow, sample_cow, 350, 10);
+  createPanningSlider(ui_elements_glass, sample_glass, 350, 110);
+  createPanningSlider(ui_elements_slamming, sample_slamming, 350, 210);
 
-  createReverbOption(checkbox_reverb_cow, input_reverbTime_cow, input_decayRate_cow, sample_cow, reverb_cow, 570, 10);
+  // Reverb configuration elements
+  createReverbOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 40);
+  createReverbOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 140);
+  createReverbOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 240);
+
+  // Delay configuration elements
+  createDelayOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 70);
+
+  // Create line separators
+  createElement('hr').position(0, 90).style('width', '100%');
+  createElement('hr').position(0, 190).style('width', '100%');
 }
 
-function createSampleButton(btn, sample, label, posX, posY) {
-  btn = createButton(label);
-  btn.position(posX , posY);
+function createSampleButton(ui_elements, sample, label, posX, posY) {
+  ui_elements.sampleBtn = createButton(label);
+  ui_elements.sampleBtn.position(posX , posY);
 
   // When mouse is being pressed (on button), play sample
-  btn.mousePressed(function() {
+  ui_elements.sampleBtn.mousePressed(function() {
     sample.play();
   });
 }
 
-function createPlayModeRadioButton(radioBtn, sample, posX, posY) {
+function createPlayModeRadioButton(ui_elements, sample, posX, posY) {
   createSpan('Play Mode: ').position(posX, posY);
-  radioBtn = createRadio('radio_' + posY);
-  radioBtn.position(posX + 80, posY);
-  radioBtn.option('restart');
-  radioBtn.option('sustain');
+  ui_elements.playModeRadioButton = createRadio('radio_' + posY);
+  ui_elements.playModeRadioButton.position(posX + 80, posY);
+  ui_elements.playModeRadioButton.option('restart');
+  ui_elements.playModeRadioButton.option('sustain');
   
-  radioBtn.selected('restart');
-  sample.playMode(radioBtn.value());
+  ui_elements.playModeRadioButton.selected('restart');
+  sample.playMode(ui_elements.playModeRadioButton.value());
 
   // When mouse has been clicked (after releasing mouse button), set the play mode
-  radioBtn.mouseClicked(function() {
-    sample.playMode(radioBtn.value());
+  ui_elements.playModeRadioButton.mouseClicked(function() {
+    sample.playMode(ui_elements.playModeRadioButton.value());
   });
 }
 
-function createPanningSlider(panningSlider, sample, posX, posY) {
+function createPanningSlider(ui_elements, sample, posX, posY) {
   createSpan('Panning: ').position(posX, posY);
-  panningSlider = createSlider(-1, 1, 0, 0);
-  panningSlider.position(posX + 60, posY);
+  ui_elements.panningSlider = createSlider(-1, 1, 0, 0);
+  ui_elements.panningSlider.position(posX + 60, posY);
 
    // When mouse has been clicked (after releasing mouse button), set the panning
-  panningSlider.mouseClicked(function() {
-    sample.pan(panningSlider.value());
+   ui_elements.panningSlider.mouseClicked(function() {
+    sample.pan(ui_elements.panningSlider.value());
   });
 }
 
-function createReverbOption(revCheckb, revTimeInput, revDecayInput, sample, reverb, posX, posY) {
-  reverb = new p5.Reverb();
-  
+function createReverbOption(ui_elements, sample, audio_fx, posX, posY) {
   createSpan('Reverb:').position(posX, posY);
 
-  revCheckb = createCheckbox(false);
-  revCheckb.position(posX + 50, posY);
+  ui_elements.reverbCheckbox = createCheckbox(false);
+  ui_elements.reverbCheckbox.position(posX + 50, posY);
 
   // when checkbox state changes, add or remove reverb
-  revCheckb.changed(function () { 
-    if (revCheckb.checked()) {
-      addReverb(sample, reverb, revTimeInput.value(), revDecayInput.value());
+  ui_elements.reverbCheckbox.changed(function () { 
+    if (ui_elements.reverbCheckbox.checked()) {
+      addReverb(sample, audio_fx, ui_elements.reverbTimeInput.value(), ui_elements.reverbDecayInput.value());
     } else {
-      console.log("changed: ", sample, reverb);
-      removeReverb(sample, reverb);
+      removeReverb(sample, audio_fx);
     }
   });
 
   createSpan('Reverb Time (s):').position(posX + 75, posY);
-  revTimeInput = createInput('0.0', 'number');
-  revTimeInput.position(posX + 190, posY);
-  revTimeInput.style('width', '40px');
+  ui_elements.reverbTimeInput = createInput('0.0', 'number');
+  ui_elements.reverbTimeInput.position(posX + 190, posY);
+  ui_elements.reverbTimeInput.style('width', '40px');
+  ui_elements.reverbTimeInput.attribute('step', '0.01');
 
   createSpan('Decay rate:').position(posX + 245, posY);
-  revDecayInput = createInput('0.0', 'number');
-  revDecayInput.position(posX + 325, posY);
-  revDecayInput.style('width', '40px');
+  ui_elements.reverbDecayInput = createInput('0.0', 'number');
+  ui_elements.reverbDecayInput .position(posX + 325, posY);
+  ui_elements.reverbDecayInput .style('width', '40px');
+  ui_elements.reverbDecayInput.attribute('step', '0.01');
 }
 
-function addReverb(sample, reverb, reverbTime, decayRate) {
+function addReverb(sample, audio_fx, reverbTime, decayRate) {
+  console.log(reverbTime, decayRate);
+  audio_fx.reverb = new p5.Reverb();
   sample.disconnect();
-  reverb.process(sample, reverbTime, decayRate);
-  //reverb.amp(4);
-  console.log("added Reverb: ", reverb, reverbTime, decayRate);
+  audio_fx.reverb.process(sample, reverbTime, decayRate); // TODO: directly access ui elements?
 }
 
-function removeReverb(sample, reverb) {
-  console.log(reverb);
+function removeReverb(sample, audio_fx) {
   sample.connect(); // without parameter, will connect to master output
-  reverb.disconnect();
+  audio_fx.reverb.disconnect();
+}
+
+function createDelayOption(ui_elements, sample, audio_fx, posX, posY) {
+  createSpan('Delay:').position(posX, posY);
+
+  ui_elements.delayCheckbox = createCheckbox(false);
+  ui_elements.delayCheckbox.position(posX + 45, posY);
+
+  // when checkbox state changes, add or remove reverb
+  ui_elements.delayCheckbox.changed(function () { 
+    if (ui_elements.delayCheckbox.checked()) {
+    } else {
+    }
+  });
+}
+
+function addDelay(sample, audio_fx, delayType, filterFreq, filterRes, delTime) {
+
+}
+
+function removeDelay(sample, audio_fx) {
+
 }
 
 // function draw() {
