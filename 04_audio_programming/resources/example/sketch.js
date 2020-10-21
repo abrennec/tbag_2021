@@ -2,10 +2,16 @@
 // https://p5js.org/examples/sound-load-and-play-sound.html
 // 
 
-let sample_cow, sample_glass, sample_slamming;
-let button_cow, button_glass, button_slamming;
-let radio_playmode_cow, radio_playmode_glass, radio_playmode_slamming;
-let slider_panning_cow, slider_panning_glass, slider_panning_slamming;
+let 
+  sample_cow, sample_glass, sample_slamming,
+  button_cow, button_glass, button_slamming,
+  radio_playmode_cow, radio_playmode_glass, radio_playmode_slamming,
+  slider_panning_cow, slider_panning_glass, slider_panning_slamming,
+  checkbox_reverb_cow, checkbox_reverb_glass, checkbox_reverb_slamming, 
+  input_reverbTime_cow, input_reverbTime_glass, input_reverbTime_slamming,
+  input_decayRate_cow, input_decayRate_glass, input_decayRate_slamming,
+  reverb_cow, reverb_glass, reverb_slamming
+  ;
 
 function setup() {
   // Loading the sound samples
@@ -40,6 +46,8 @@ function setupUI() {
   createPanningSlider(slider_panning_cow, sample_cow, 350, 10);
   createPanningSlider(slider_panning_glass, sample_glass, 350, 40);
   createPanningSlider(slider_panning_slamming, sample_slamming, 350, 70);
+
+  createReverbOption(checkbox_reverb_cow, input_reverbTime_cow, input_decayRate_cow, sample_cow, reverb_cow, 570, 10);
 }
 
 function createSampleButton(btn, sample, label, posX, posY) {
@@ -77,6 +85,48 @@ function createPanningSlider(panningSlider, sample, posX, posY) {
   panningSlider.mouseClicked(function() {
     sample.pan(panningSlider.value());
   });
+}
+
+function createReverbOption(revCheckb, revTimeInput, revDecayInput, sample, reverb, posX, posY) {
+  reverb = new p5.Reverb();
+  
+  createSpan('Reverb:').position(posX, posY);
+
+  revCheckb = createCheckbox(false);
+  revCheckb.position(posX + 50, posY);
+
+  // when checkbox state changes, add or remove reverb
+  revCheckb.changed(function () { 
+    if (revCheckb.checked()) {
+      addReverb(sample, reverb, revTimeInput.value(), revDecayInput.value());
+    } else {
+      console.log("changed: ", sample, reverb);
+      removeReverb(sample, reverb);
+    }
+  });
+
+  createSpan('Reverb Time (s):').position(posX + 75, posY);
+  revTimeInput = createInput('0.0', 'number');
+  revTimeInput.position(posX + 190, posY);
+  revTimeInput.style('width', '40px');
+
+  createSpan('Decay rate:').position(posX + 245, posY);
+  revDecayInput = createInput('0.0', 'number');
+  revDecayInput.position(posX + 325, posY);
+  revDecayInput.style('width', '40px');
+}
+
+function addReverb(sample, reverb, reverbTime, decayRate) {
+  sample.disconnect();
+  reverb.process(sample, reverbTime, decayRate);
+  //reverb.amp(4);
+  console.log("added Reverb: ", reverb, reverbTime, decayRate);
+}
+
+function removeReverb(sample, reverb) {
+  console.log(reverb);
+  sample.connect(); // without parameter, will connect to master output
+  reverb.disconnect();
 }
 
 // function draw() {
