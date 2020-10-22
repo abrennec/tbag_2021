@@ -29,30 +29,32 @@ function loadSamples() {
 function setupUI() {
   // Buttons
   createSampleButton(ui_elements_cow, sample_cow, 'Cow', 10, 10);
-  createSampleButton(ui_elements_glass, sample_glass, 'Glass', 10, 110);
-  createSampleButton(ui_elements_slamming, sample_slamming, 'Slamming', 10, 210);
+  createSampleButton(ui_elements_glass, sample_glass, 'Glass', 10, 125);
+  createSampleButton(ui_elements_slamming, sample_slamming, 'Slamming', 10, 240);
 
   // Radio buttons for playing mode
   createPlayModeRadioButton(ui_elements_cow, sample_cow, 120, 10);
-  createPlayModeRadioButton(ui_elements_glass, sample_glass, 120, 110);
-  createPlayModeRadioButton(ui_elements_slamming, sample_slamming, 120, 210);
+  createPlayModeRadioButton(ui_elements_glass, sample_glass, 120, 125);
+  createPlayModeRadioButton(ui_elements_slamming, sample_slamming, 120, 240);
 
   // Slider element for panning
   createPanningSlider(ui_elements_cow, sample_cow, 350, 10);
-  createPanningSlider(ui_elements_glass, sample_glass, 350, 110);
-  createPanningSlider(ui_elements_slamming, sample_slamming, 350, 210);
+  createPanningSlider(ui_elements_glass, sample_glass, 350, 125);
+  createPanningSlider(ui_elements_slamming, sample_slamming, 350, 240);
 
   // Reverb configuration elements
-  createReverbOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 40);
-  createReverbOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 140);
-  createReverbOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 240);
+  createReverbOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 45);
+  createReverbOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 160);
+  createReverbOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 275);
 
   // Delay configuration elements
-  createDelayOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 70);
+  createDelayOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 80);
+  createDelayOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 195);
+  createDelayOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 310);
 
   // Create line separators
-  createElement('hr').position(0, 90).style('width', '100%');
-  createElement('hr').position(0, 190).style('width', '100%');
+  createElement('hr').position(0, 105).style('width', '100%');
+  createElement('hr').position(0, 220).style('width', '100%');
 }
 
 function createSampleButton(ui_elements, sample, label, posX, posY) {
@@ -86,8 +88,8 @@ function createPanningSlider(ui_elements, sample, posX, posY) {
   ui_elements.panningSlider = createSlider(-1, 1, 0, 0);
   ui_elements.panningSlider.position(posX + 60, posY);
 
-   // When mouse has been clicked (after releasing mouse button), set the panning
-   ui_elements.panningSlider.mouseClicked(function() {
+  // When mouse has been clicked (after releasing mouse button), set the panning
+  ui_elements.panningSlider.mouseClicked(function() {
     sample.pan(ui_elements.panningSlider.value());
   });
 }
@@ -103,7 +105,8 @@ function createReverbOption(ui_elements, sample, audio_fx, posX, posY) {
     if (ui_elements.reverbCheckbox.checked()) {
       addReverb(sample, audio_fx, ui_elements.reverbTimeInput.value(), ui_elements.reverbDecayInput.value());
     } else {
-      removeReverb(sample, audio_fx);
+      //removeReverb(sample, audio_fx);
+      rearrangeAudioConnections(sample, audio_fx, 'reverb');
     }
   });
 
@@ -118,18 +121,26 @@ function createReverbOption(ui_elements, sample, audio_fx, posX, posY) {
   ui_elements.reverbDecayInput .position(posX + 325, posY);
   ui_elements.reverbDecayInput .style('width', '40px');
   ui_elements.reverbDecayInput.attribute('step', '0.01');
+
+  // Use change listener on input to directly change settings on reverb
+  ui_elements.reverbTimeInput.changed(function () {
+    setReverbSettings(audio_fx, ui_elements.reverbTimeInput.value(), ui_elements.reverbDecayInput.value());
+  });
+  ui_elements.reverbDecayInput.changed(function () {
+    setReverbSettings(audio_fx, ui_elements.reverbTimeInput.value(), ui_elements.reverbDecayInput.value());
+  });
 }
 
 function addReverb(sample, audio_fx, reverbTime, decayRate) {
-  console.log(reverbTime, decayRate);
   audio_fx.reverb = new p5.Reverb();
   sample.disconnect();
-  audio_fx.reverb.process(sample, reverbTime, decayRate); // TODO: directly access ui elements?
+  audio_fx.reverb.process(sample, reverbTime, decayRate);
 }
 
-function removeReverb(sample, audio_fx) {
-  sample.connect(); // without parameter, will connect to master output
-  audio_fx.reverb.disconnect();
+function setReverbSettings(audio_fx, reverbTime, decayRate) {
+  if ('reverb' in audio_fx) {
+    audio_fx.reverb.set(reverbTime, decayRate);
+  }
 }
 
 function createDelayOption(ui_elements, sample, audio_fx, posX, posY) {
@@ -141,17 +152,73 @@ function createDelayOption(ui_elements, sample, audio_fx, posX, posY) {
   // when checkbox state changes, add or remove reverb
   ui_elements.delayCheckbox.changed(function () { 
     if (ui_elements.delayCheckbox.checked()) {
+      addDelay(sample, audio_fx, ui_elements.delayTimeInput.value(), ui_elements.delayFeedbackInput.value(), ui_elements.delayFilterFreqInput.value());
     } else {
+      //removeDelay(sample, audio_fx);
+      rearrangeAudioConnections(sample, audio_fx, 'delay');
     }
+  });
+
+  createSpan('Delay Time (0 - 1):').position(posX + 70, posY);
+  ui_elements.delayTimeInput = createInput('0.0', 'number');
+  ui_elements.delayTimeInput.position(posX + 200, posY);
+  ui_elements.delayTimeInput.style('width', '40px');
+  ui_elements.delayTimeInput.attribute('step', '0.01');
+
+  createSpan('Feedback (0 - 1):').position(posX + 260, posY);
+  ui_elements.delayFeedbackInput = createInput('0.0', 'number');
+  ui_elements.delayFeedbackInput.position(posX + 375, posY);
+  ui_elements.delayFeedbackInput.style('width', '40px');
+  ui_elements.delayFeedbackInput.attribute('step', '0.01');
+
+  createSpan('Filter Frequency:').position(posX + 430, posY);
+  ui_elements.delayFilterFreqInput = createInput('0', 'number');
+  ui_elements.delayFilterFreqInput.position(posX + 550, posY);
+  ui_elements.delayFilterFreqInput.style('width', '40px');
+  ui_elements.delayFilterFreqInput.attribute('step', '1');
+
+  ui_elements.delayTimeInput.changed(function () {
+    setDelaySettings(audio_fx, ui_elements.delayTimeInput.value(), ui_elements.delayFeedbackInput.value(), ui_elements.delayFilterFreqInput.value());
+  });
+  ui_elements.delayFeedbackInput.changed(function () {
+    setDelaySettings(audio_fx, ui_elements.delayTimeInput.value(), ui_elements.delayFeedbackInput.value(), ui_elements.delayFilterFreqInput.value());
+  });
+  ui_elements.delayFilterFreqInput.changed(function () {
+    setDelaySettings(audio_fx, ui_elements.delayTimeInput.value(), ui_elements.delayFeedbackInput.value(), ui_elements.delayFilterFreqInput.value());
   });
 }
 
-function addDelay(sample, audio_fx, delayType, filterFreq, filterRes, delTime) {
-
+function addDelay(sample, audio_fx, delayTime, feedback, filterFreq) {
+  sample.disconnect();
+  audio_fx.delay = new p5.Delay();
+  audio_fx.delay.process(sample, parseFloat(delayTime), parseFloat(feedback), parseFloat(filterFreq));
 }
 
-function removeDelay(sample, audio_fx) {
+function setDelaySettings(audio_fx, delayTime, feedback, filterFreq) {
+  if ('delay' in audio_fx) {
+    audio_fx.delay.delayTime(parseFloat(delayTime));
+    audio_fx.delay.feedback(parseFloat(feedback));
+    audio_fx.delay.filter(parseFloat(filterFreq));
+  }
+}
 
+function rearrangeAudioConnections(sample, audio_fx, effectNameToDisconnect) {
+  audio_fx[effectNameToDisconnect].disconnect();
+  delete audio_fx[effectNameToDisconnect];
+  sample.disconnect();
+
+  let lastProperty;
+  for (const property in audio_fx) {
+    if (lastProperty) {
+      audio_fx[property].connect(audio_fx[lastProperty]);
+    }
+    lastProperty = property;
+  }
+  if (lastProperty) {
+    sample.connect(audio_fx[lastProperty]);
+  } else {
+    sample.connect();
+  }
 }
 
 // function draw() {
