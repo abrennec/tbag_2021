@@ -6,9 +6,7 @@ let
   sample_cow, sample_glass, sample_slamming,
   ui_elements_cow = {}, ui_elements_glass  = {}, ui_elements_slamming  = {},
   audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {},
-  sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [],
-  button_recording,
-  isRecording = false
+  sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [], button_recording,  isRecording = false
   ;
 
 function setup() {
