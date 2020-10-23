@@ -1,11 +1,14 @@
 // This example is based on the following scripts:
 // https://p5js.org/examples/sound-load-and-play-sound.html
-// 
+// https://p5js.org/examples/sound-record-save-audio.html
 
 let 
   sample_cow, sample_glass, sample_slamming,
   ui_elements_cow = {}, ui_elements_glass  = {}, ui_elements_slamming  = {},
-  audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {}
+  audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {},
+  sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [],
+  button_recording,
+  isRecording = false
   ;
 
 function setup() {
@@ -15,6 +18,7 @@ function setup() {
   // Setting up the UI
   setupUI();
   
+  initSoundRecorder();
   // Create and setup canvas
   //createCanvas(720, 200);
   //background(255, 0, 0);
@@ -27,34 +31,43 @@ function loadSamples() {
 }
 
 function setupUI() {
+  button_recording = createButton('Start/Stop recording');
+  button_recording.position(10, 5);
+  button_recording.style('background-color', 'white');
+  button_recording.mousePressed(recordingBtnPressed);
+  
   // Buttons
-  createSampleButton(ui_elements_cow, sample_cow, 'Cow', 10, 10);
-  createSampleButton(ui_elements_glass, sample_glass, 'Glass', 10, 125);
-  createSampleButton(ui_elements_slamming, sample_slamming, 'Slamming', 10, 240);
+  createSampleButton(ui_elements_cow, sample_cow, 'Cow', 10, 40);
+  createSampleButton(ui_elements_glass, sample_glass, 'Glass', 10, 155);
+  createSampleButton(ui_elements_slamming, sample_slamming, 'Slamming', 10, 270);
 
   // Radio buttons for playing mode
-  createPlayModeRadioButton(ui_elements_cow, sample_cow, 120, 10);
-  createPlayModeRadioButton(ui_elements_glass, sample_glass, 120, 125);
-  createPlayModeRadioButton(ui_elements_slamming, sample_slamming, 120, 240);
+  createPlayModeRadioButton(ui_elements_cow, sample_cow, 120, 40);
+  createPlayModeRadioButton(ui_elements_glass, sample_glass, 120, 155);
+  createPlayModeRadioButton(ui_elements_slamming, sample_slamming, 120, 270);
 
   // Slider element for panning
-  createPanningSlider(ui_elements_cow, sample_cow, 350, 10);
-  createPanningSlider(ui_elements_glass, sample_glass, 350, 125);
-  createPanningSlider(ui_elements_slamming, sample_slamming, 350, 240);
+  createPanningSlider(ui_elements_cow, sample_cow, 350, 40);
+  createPanningSlider(ui_elements_glass, sample_glass, 350, 155);
+  createPanningSlider(ui_elements_slamming, sample_slamming, 350, 270);
 
   // Reverb configuration elements
-  createReverbOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 45);
-  createReverbOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 160);
-  createReverbOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 275);
+  createReverbOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 75);
+  createReverbOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 190);
+  createReverbOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 305);
 
   // Delay configuration elements
-  createDelayOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 80);
-  createDelayOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 195);
-  createDelayOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 310);
+  createDelayOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 110);
+  createDelayOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 225);
+  createDelayOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 340);
 
   // Create line separators
-  createElement('hr').position(0, 105).style('width', '100%');
-  createElement('hr').position(0, 220).style('width', '100%');
+  createElement('hr').position(0, 20).style('width', '100%');
+  createElement('hr').position(0, 135).style('width', '100%');
+  createElement('hr').position(0, 250).style('width', '100%');
+  createElement('hr').position(0, 365).style('width', '100%');
+
+  
 }
 
 function createSampleButton(ui_elements, sample, label, posX, posY) {
@@ -133,8 +146,10 @@ function createReverbOption(ui_elements, sample, audio_fx, posX, posY) {
 
 function addReverb(sample, audio_fx, reverbTime, decayRate) {
   audio_fx.reverb = new p5.Reverb();
-  sample.disconnect();
-  audio_fx.reverb.process(sample, reverbTime, decayRate);
+  audio_fx.reverb.set(reverbTime, decayRate);
+  //sample.disconnect();
+  //audio_fx.reverb.process(sample, reverbTime, decayRate);
+  rearrangeAudioConnections(sample, audio_fx);
 }
 
 function setReverbSettings(audio_fx, reverbTime, decayRate) {
@@ -191,7 +206,10 @@ function createDelayOption(ui_elements, sample, audio_fx, posX, posY) {
 function addDelay(sample, audio_fx, delayTime, feedback, filterFreq) {
   sample.disconnect();
   audio_fx.delay = new p5.Delay();
-  audio_fx.delay.process(sample, parseFloat(delayTime), parseFloat(feedback), parseFloat(filterFreq));
+  //audio_fx.delay.process(sample, parseFloat(delayTime), parseFloat(feedback), parseFloat(filterFreq));
+  setDelaySettings(audio_fx, delayTime, feedback, filterFreq);
+
+  rearrangeAudioConnections(sample, audio_fx);
 }
 
 function setDelaySettings(audio_fx, delayTime, feedback, filterFreq) {
@@ -203,10 +221,12 @@ function setDelaySettings(audio_fx, delayTime, feedback, filterFreq) {
 }
 
 function rearrangeAudioConnections(sample, audio_fx, effectNameToDisconnect) {
-  audio_fx[effectNameToDisconnect].disconnect();
-  delete audio_fx[effectNameToDisconnect];
-  sample.disconnect();
-
+  if (effectNameToDisconnect) {
+    audio_fx[effectNameToDisconnect].disconnect();
+    delete audio_fx[effectNameToDisconnect];
+    sample.disconnect();
+  }
+  
   let lastProperty;
   for (const property in audio_fx) {
     if (lastProperty) {
@@ -219,6 +239,66 @@ function rearrangeAudioConnections(sample, audio_fx, effectNameToDisconnect) {
   } else {
     sample.connect();
   }
+}
+
+function initSoundRecorder() {
+  // create an audio in
+  audioInput = new p5.AudioIn();
+  // create a sound recorder
+  recorder = new p5.SoundRecorder();
+
+  // users must manually enable their browser microphone for recording to work properly!
+  audioInput.start();
+
+  // connect the mic to the recorder
+  recorder.setInput(audioInput);
+}
+
+function recordingBtnPressed() {
+  if (!isRecording) {
+    isRecording = true;
+    button_recording.style('background-color', 'lightcoral');
+    startRecording();
+  } else {
+    isRecording = false;
+    button_recording.style('background-color', 'white');
+    stopRecording();
+  }
+}
+
+function startRecording() {
+  // use the '.enabled' boolean to make sure user enabled the mic (otherwise we'd record silence)
+  if (audioInput.enabled) {
+    // create an empty sound file that we will use to playback the recording
+    sample_recordings.push(new p5.SoundFile());
+
+    // Tell recorder to record to a p5.SoundFile which we will use for playback
+    console.log(sample_recordings.length - 1);
+    recorder.record(sample_recordings[sample_recordings.length - 1]);
+  }
+}
+
+function stopRecording() {
+  // stop recorder, and send the result to soundFile
+  recorder.stop();
+
+  // adding the ui elements for the recording sample
+  addRecordingSampleUiElements();
+}
+
+function addRecordingSampleUiElements() {
+  const recordingIndex = sample_recordings.length - 1;
+  const baseYpos =  385 + recordingIndex * 115;
+
+  ui_elements_recordings[recordingIndex] = {};
+  audio_fx_recordings[recordingIndex] = {};
+
+  createSampleButton(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], 'Recording #' + recordingIndex, 10, baseYpos);
+  createPlayModeRadioButton(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], 120, baseYpos); // Radio buttons for playing mode 
+  createPanningSlider(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], 350, baseYpos);
+  createReverbOption(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], audio_fx_recordings[recordingIndex], 120, baseYpos + 35);
+  createDelayOption(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], audio_fx_recordings[recordingIndex], 120, baseYpos + 70);
+  createElement('hr').position(0, baseYpos + 95).style('width', '100%');
 }
 
 // function draw() {
