@@ -71,7 +71,7 @@ To give you a gentle introduction into the sound and audio topics that we will c
 ```diff
 - To be updated
 ```
-- Link to Computer Music History video
+- [Link to Computer Music History video](https://owncloud.gwdg.de/index.php/s/yTz0tkaFUGYB5BB)
 - ~ 23 mins
 
 ![screencast](imgs/screencast.png)
@@ -108,7 +108,7 @@ To get an overview of audio rendering check out the accompanying video presentat
 ```diff
 - To be updated
 ```
-- Link to Audio Rendering video
+- [Link to Audio Rendering video](https://owncloud.gwdg.de/index.php/s/exiSTk4dsX0yP1G)
 - ~ 14 mins
 
 ![screencast](imgs/screencast.png)
