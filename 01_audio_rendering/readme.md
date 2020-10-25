@@ -12,10 +12,10 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 - [Audio Rendering - Learning Objectives](#audio-rendering---learning-objectives)
 - [History of Computer Music](#history-of-computer-music)
-    - [Video Lecture](#video-lecture)
+    - [Lecture Video](#lecture-video)
     - [Exercise - Computer Music](#exercise---computer-music)
 - [Audio Rendering Basics](#audio-rendering-basics)
-    - [Video Lecture](#video-lecture-1)
+    - [Lecture Video](#lecture-video-1)
     - [Exercise - Audio Rendering](#exercise---audio-rendering)
 - [Properties of Sound](#properties-of-sound)
   - [Physical and Psychophysical Aspects](#physical-and-psychophysical-aspects)
@@ -56,7 +56,7 @@ This lecture will start with an introduction to the course and will give you and
 
 **Why?**
 
-1) **Historicaly Overview**: We will start with an historical overview of the development and milestones that established computer music and digital audio processing techniques.
+1) **Historical Overview**: We will start with an historical overview of the development and milestones that established computer music and digital audio processing techniques.
 2) **Audio rendering basics**: We will look into common audio rendering approaches so that you get a general understanding and overview of what is actually meant by audio rendering and how it is basically conducted.
 3) **Properties of sound**: We will look into the complex phenomenon called *sound* and its physical and psychophysical properties. This will lay the ground works for understanding how sound creation, propagation, and perception works and what that means for digitally rendering and processing audio.
 
@@ -66,11 +66,8 @@ This lecture will start with an introduction to the course and will give you and
 
 To give you a gentle introduction into the sound and audio topics that we will cover, please checkout the video presentation on central milestones in the history of computer music:
 
-### Video Lecture
+### Lecture Video
 
-```diff
-- To be updated
-```
 - [Link to Computer Music History video](https://owncloud.gwdg.de/index.php/s/yTz0tkaFUGYB5BB)
 - ~ 23 mins
 
@@ -101,7 +98,7 @@ In the video on computer music history, you learned about **Musique Concrète**.
 
 Audio rendering is a term commonly used in the context of digital sound reproduction with a special focus on the rendering process itself. In general, audio rendering targets the processing and mixing together of one ore more **sound sources** (for example, musical instruments, vocals, guitars, drums, etc.) such that an **audio image** or **soundscape** is created ready to be played back on a (specific) set of loudspeakers or headphones, the **output devices**.
 
-### Video Lecture
+### Lecture Video
 
 To get an overview of audio rendering check out the accompanying video presentation:
 

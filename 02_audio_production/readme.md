@@ -10,113 +10,97 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Audio Production -- In the Mix and Sound Production](#audio-production----in-the-mix-and-sound-production)
-  - [Topics](#topics)
-  - [Learning Objectives](#learning-objectives)
-- [Learning Objectives](#learning-objectives-1)
-- [Sound and Audio Basics](#sound-and-audio-basics)
-  - [Digital Audio Fundamentals](#digital-audio-fundamentals)
-    - [Digital Audio](#digital-audio)
-  - [digital 2](#digital-2)
+- [Audio Production -- Learning Objectives](#audio-production----learning-objectives)
+- [Digital Audio and Signal Path](#digital-audio-and-signal-path)
+  - [Lecture Video](#lecture-video)
+    - [Exercise - Digital Audio](#exercise---digital-audio)
+  - [Digital Audio](#digital-audio)
+  - [Digitization](#digitization)
     - [Sampling](#sampling)
     - [Quantization](#quantization)
+  - [Digital Audio Signals](#digital-audio-signals)
   - [Audio Editing Software](#audio-editing-software)
-- [Digital Audio Signals](#digital-audio-signals)
-    - [Audio Buffers](#audio-buffers)
+- [Audio Production](#audio-production)
+- [Spatial Audio in Stereo](#spatial-audio-in-stereo)
+- [Dynamics, Panning, and Audio FX](#dynamics-panning-and-audio-fx)
 - [Homework Assignment](#homework-assignment)
   - [Reaper and Musique Concrète](#reaper-and-musique-concrète)
     - [Get started](#get-started)
-    - [Topics](#topics-1)
+    - [Topics](#topics)
     - [Resources](#resources)
     - [Editing](#editing)
 
 ---
 
-   1. Digital audio
-   2. Stereo soundscape
-   3. Dynamics and panning
-   4. Audio FX
 
-# Audio Production -- In the Mix and Sound Production 
+# Audio Production -- Learning Objectives
 
-## Topics
+**What?**
 
-- Digital Audio Workstation
-- Tracks, instruments, and Plugins
-- Basics of Mixing 
-- Dynamics and panning (sound space basics)
-- Audio FX (Reverb, delay, equalizer)
-- Exercise and applications: production
+In this lecture, we will cover the following topics in order to understand what an audio production is generally comprised of and how it is conducted:
 
-## Learning Objectives
+- Digital audio and signal flow
+- Production steps and process
+- Spatial audio in stereo
+- Dynamics and audio FX
 
-Now that students know about the basics of sound and audio they will learn how to process audio.
+**Why?**
 
-- Students will learn about audio signal processing, i.e., theory behind audio signals and signal flow.
-- Students will learn about how recorded audio signals will be routed and mixed in a digital audio workstation (DAW).
-- Students will learn about how audio tracks can be further processed using audio effects (FX).
-- Students will learn how to create an audio mix and how to position their sound sources in a stereo mix.
-
-4) **Introduction to Reaper**: We will learn about a digital audio workstation, Reaper, which will be used in this lecture.
-
-# Learning Objectives
-
-To understand 
-
-- what is meant by audio rendering,
-- what is sound and what are its properites,
-- how hearing works,
-- what is audio technology,
-- how sound is processed digitally, and
-- how to work with sound in a computer.
+1) **Digital audio and signal path**: Since we are working with a computer, we first need to learn about what a "virtual sound scene" (see audio rendering from the previous section) actually looks like in terms of data files and digital signal processing. Hence, in the first part we will learn about how analog sound waves are actually represented in computer and what kind of infrastructure is needed to process them, for example, in a DAW.
+2) **Production steps and process**: Next, we will look into the general steps and processes that are involved in an audio production and will particularly focus on the mixing process.
+3) **Spatial audio in stereo**: One central goal of (m)any audio production is to create a spatial audio image -- at least to some extent. Stereo images are the most common way to approach spatial audio and the mixing process is targetting how to locate the different tracks (or audio objects) in the stereo image as well as how to best steer the listener's attention.
+4) **Dynamics, panning, and audio FX**: Another central goal of (m)any audio productions is to direct the attention of the listener. Changing the dynamics or panning of the tracks is a common approach as well as adding audio FX plugins to the production.
 
 ---
 
-# Sound and Audio Basics
+# Digital Audio and Signal Path
 
-In this lecture we will start our journey into the theoretical backgrounds of digital audio software applications from different perspectives:
+- Digital audio signal 
 
+- digitization 
+  - sampling 
+  - quantization
 
-1) **Digital audio fundemantals**: We will look into the digital concepts and techniques that allow us to work with sound in a computer so that you can create your own sounds and get an understanding of how digital audio technology addresses the properties of sound.
-2) **Audio editing software**: We will finally introduce different types of audio editing software in order to pick up on the theory with practical exercises.
+- signal path
+  - audio interface
+  - audio driver
+  - operating system
+  - audio programming sdk
+  - audio application
 
+Audio signals can be represented electronically in analog formats: analog processors operate directly on the voltage level of the analog signal (continuous function)
 
-<!-- ## Audio Signal -->
-<!-- 
-Overview of audio rendering process
-- analog vs digital audio signal
-- basics of signal flow
-- audio interfaces (I/O)
-- audio processing
-- audio devices -->
-<!-- 
-refers to audio signals & the (electronic) representation of sound i.e., in the contexts of sound capture, processing, reproduction
-
-Signal represents a quantity that varies over time
-Audio signal is a representation of sound 
-audio signals can be represented electronically in analog & digital formats as continuous and discrete signals
-digital processors operate mathematically on the binary representations of the signal
-digital audio expresses the pressure waveform as a binary number -->
-
-
---- 
-
-## Digital Audio Fundamentals
-
-### Digital Audio
-
-Sound waves are digitized using an audio-to-digital-converter (adc) that is part of the sound card/audio interface (device) and converted back using an digital-to-analog-converter (dac). Driver APIs provide a programming interface that tells the operating system (or the audio application directly) how to exchange audio data with the audio interface. Audio APIs introduce another layer of abstraction: They provide a programming interface across all operating systems (platforms) & are generally used by application developers.
-
-Audio signals can be represented electronically in
-analog formats: analog processors operate directly on the voltage level of the analog signal (continuous function)
-digital formats: digital processors operate mathematically on the binary representations of the digital signal (discrete function)
+Digital formats: digital processors operate mathematically on the binary representations of the digital signal (discrete function)
 
 Digital - Everything can be represented as a finite integer number
 
-## digital 2
+## Lecture Video
+
+Please checkout the following lecture video to learn about the above mentioned terms and how they are related:
+
+```diff
+- To be updated
+```
+- [Link to video]()
+- ~ XXX mins
+
+![screencast](imgs/screencast.png)
+
+You can find the accompanying slides in the **resources** folder. 
+
+### Exercise - Digital Audio
+
+
+## Digital Audio
+
+Sound waves are digitized using an audio-to-digital-converter (adc) that is part of the sound card/audio interface (device) and converted back using an digital-to-analog-converter (dac). Driver APIs provide a programming interface that tells the operating system (or the audio application directly) how to exchange audio data with the audio interface. Audio APIs introduce another layer of abstraction: They provide a programming interface across all operating systems (platforms) & are generally used by application developers.
+
+## Digitization
 
 Digital audio and digital audio technology usually describes the process of record, store, generate, manipulate, and reproduce sound using audio signals that have been encoded in digital form.
+
 what is a digital audio signal?
+
 microphone converts sound into analog electrical signal then an ADC converts it to a digital signal then you can manipulate it (record, store, edit, modify) with digital audio tools then convert it back to analog with DAC 
 Reproduction/Rendering Audio - Stereophony, 3D Audio, Binaural Audio
 
@@ -129,24 +113,15 @@ kettledrum changes mechanical energy into acoustical energy; a microphone respon
 
 ### Sampling 
 
+### Quantization
+
+
 Quantization - mapping the codomain of a sampling function to a set of integer numbers
 Noise (made by devices, etc.) cannot be eliminated; thus, quantization is always imprecise due to the existing noise
 Digital signal processing works with countable sequences of integers so that no noise is introduced -> example is reproduction and mp3
 The amplitude accuracy of a set of samples is entirely dependent on the processing HW indicated by the number of bits per sample, i.e., CD with 16 bits per sample, DVD with 24 bits per sample 
 
-### Quantization
-
-
-## Audio Editing Software
-
-Audacity
-
-Sonic Visualizer
-
-Reaper 
-
-
-# Digital Audio Signals
+## Digital Audio Signals
 
 Signal represents a quantity that varies over time
 Audio signal is a representation of sound 
@@ -160,8 +135,38 @@ Operates on an abstract representation of a physical quantity not on the quantit
 Digital - Everything can be represented as a finite integer number
 
 
-### Audio Buffers
 
+## Audio Editing Software
+
+Audacity
+
+Sonic Visualizer
+
+Reaper 
+
+- Checkout the following sections from the digitalsoundandmusic.com book's [Section 5.1](http://digitalsoundandmusic.com/chapters/ch5/5-1/) for additional details.
+
+# Audio Production 
+
+An audio production commonly refers to the process of creating an audio product (usually an audio file or a set of audio files) ready for playback on a dedicated playback system, in many cases this would be a stereo system. This process is usually comprised of several steps such as
+
+- pre-production
+- recording
+- editing
+- mixing different audio tracks 
+- processing and FX
+- rendering
+- post-production and mastering
+
+
+
+# Spatial Audio in Stereo
+
+
+
+# Dynamics, Panning, and Audio FX
+
+Practical lesson.
 
 --- 
 

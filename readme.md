@@ -122,10 +122,10 @@ At the end of the lecture, a final exercise will allow you to combine both field
    3. Audio rendering 
    4. Sound properties
 2. 18.11.20 - **Audio Production** (4 hrs)
-   1. Digital audio
-   2. Stereo soundscape
-   3. Dynamics and panning
-   4. Audio FX
+   1. Digital audio and signal path
+   2. Production steps and process
+   3. Spatial audio in stereo
+   4. Dynamics and audio FX
 3. 25.11.20 - **Sound Synthesis** (4 hrs)
    1. Sound generation and basic waveforms
    2. Sound synthesis
