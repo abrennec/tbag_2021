@@ -174,11 +174,10 @@ In contrast, when the direction of vibration that creates the wave is perpendicu
 ![traversal wave](imgs/transversal.gif)
 *Image source: https://de.wikipedia.org/wiki/Datei:Pricna_vlna.gif*
 
+**Additional Material**
 
-
-***Interactive App***
-
-*Google Experiments provides several very nice little audio applications. Check out the [sound wave app](https://musiclab.chromeexperiments.com/Sound-Waves/). What kind of wave type is depicted here?*
+- Check out this interactive [sound wave app](https://musiclab.chromeexperiments.com/Sound-Waves/) by Google experiments which depicts a waveform.
+- Checkout [this website](http://digitalsoundandmusic.com/2-1-3-longitudinal-and-transverse-waves/) by digitalsoundandmusic.com on more details about longitudinal and transversal waves.
 
 
 ### Sound Pressure Waves

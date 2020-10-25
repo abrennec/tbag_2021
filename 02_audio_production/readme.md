@@ -23,27 +23,19 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Audio Editing Software](#audio-editing-software)
 - [Digital Audio Signals](#digital-audio-signals)
     - [Audio Buffers](#audio-buffers)
-- [Further Reading](#further-reading)
-- [Homework Assignments](#homework-assignments)
-  - [Musique Concrète](#musique-concrète)
 - [Homework Assignment](#homework-assignment)
   - [Reaper and Musique Concrète](#reaper-and-musique-concrète)
     - [Get started](#get-started)
     - [Topics](#topics-1)
     - [Resources](#resources)
     - [Editing](#editing)
-    - [Reaper](#reaper)
 
 ---
 
-
-   1. Digital audio fundamentals
-   2. Working with a DAW
-   3. Mixing and audio rendering
-   4. Audio FX and spatial sound
-   5. Project work
-
-
+   1. Digital audio
+   2. Stereo soundscape
+   3. Dynamics and panning
+   4. Audio FX
 
 # Audio Production -- In the Mix and Sound Production 
 
@@ -170,21 +162,23 @@ Digital - Everything can be represented as a finite integer number
 
 ### Audio Buffers
 
----
-
-# Further Reading
-
-
 
 --- 
 
-# Homework Assignments
+# Homework Assignment 
 
-Due in the next but one session with some additional tasks coming next week. 
 
-## Musique Concrète
+**You can work on this task in a group or on your own!**
 
-Check out this [Recipe for Music Concrète](https://www.youtube.com/watch?v=2ZpwbXDleDw) to get an idea where to start.
+## Reaper and Musique Concrète
+
+### Get started 
+
+This task will kick-off the first small term project. Your task will be to create one song in the style of musique conrète. To get an idea of where or how to start, check out this video: 
+
+- [Recipe for Musique Conrète](https://www.youtube.com/watch?v=2ZpwbXDleDw)
+
+
 
 One goal of this task is that you play around with the different audio applications on your own and try to figure out how they work and what you can do with them. Note down your findings, questions, and learnings in the Github Wiki so that everyone can learn and contribute.
 
@@ -194,21 +188,6 @@ The next goal is that you conduct an audio rendering and work on a piece of musi
 - Load the recorded sounds into Audacity or Reaper and edit the recordings, try to identify interesting sounding parts, cut out parts that you do not like.
 - Cut, copy, and paste the recordings and play them back forward and backwards to create and interesting track.
 
-**You can work on this task in a group or on your own!**
-
-```diff
-- Add some Audacity & Reaper tutorial, tutorial on editing sounds.
-```
-
-# Homework Assignment 
-
-## Reaper and Musique Concrète
-
-### Get started 
-
-This task will kick-off the first small term project. Your task will be to create one song in the style of musique conrète. To get an idea of where or how to start, check out this video: 
-
-- [Recipe for Musique Conrète](https://www.youtube.com/watch?v=2ZpwbXDleDw)
 
 
 ### Topics
@@ -249,11 +228,3 @@ Make sure that you limit the number of samples to 3-5 different samples and work
 - Export and/or render the song into one final sound file (wav, or mp3)
 
 Simply play around with the samples in Reaper and make use of as many Reaper tutorials and functionalities that work for you. 
-
-### Reaper
-
-To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
-
-- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
-
-To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
