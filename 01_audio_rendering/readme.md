@@ -26,17 +26,21 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Amplitude](#amplitude)
     - [Frequency](#frequency)
     - [Complex Sounds and Timbre](#complex-sounds-and-timbre)
-    - [Exercise - Theory Recap](#exercise---theory-recap)
+    - [Exercise - Sound Properties](#exercise---sound-properties)
   - [Sound Perception](#sound-perception)
     - [Hearing](#hearing)
     - [Human Hearing Range](#human-hearing-range)
     - [Amplitude and Loudness](#amplitude-and-loudness)
     - [Frequency and Pitch](#frequency-and-pitch)
-- [Exercise - Categorization and Review](#exercise---categorization-and-review)
+    - [Exercise - Sound Perception](#exercise---sound-perception)
+- [Categorization & Review](#categorization--review)
 - [Homework Assignment](#homework-assignment)
-  - [Sound](#sound)
-  - [Music Concrète](#music-concrète)
-  - [Reaper](#reaper)
+  - [Recap](#recap)
+    - [Theory](#theory)
+    - [Categorization and Review](#categorization-and-review)
+    - [Learning Check](#learning-check)
+  - [Precap](#precap)
+    - [Reaper DAW](#reaper-daw)
 
 ---
 
@@ -77,7 +81,19 @@ You can find the accompanying slides in the **resources** folder.
 ### Exercise - Computer Music
 
 - What are the different areas of application and research that were presented in the screencast / what kind of application fields did you identify or are aware of other than that?
-- 
+
+In the video on computer music history, you learned about **Musique Concrète**. Music Concrète was an essential and critical milestone from a technological as well as from an artistic point of view. It introduced a completely new approach to the process of music making by re-using, altering and adapting pre-recorded sounds. To get an even better understanding of this technique and art form, check out the following resources as well:
+
+- [All you need to know about Musique Concrète](https://www.musicradar.com/news/everything-you-need-to-know-about-musique-concrete)
+- [Pierre Schaeffer und die Musique Concrète](https://museum.rechtaufremix.org/exponate/pierre-schaeffer-und-die-musique-concrete/)
+
+**Group work**: Music concrète will serve as the basis for our first practical exercise. Once you have completed the material above, please get in touch with your group member. Wrap your heads around the following questions and use sticky notes and this **[Miro Board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351573492&cot=12)** to answer them and add additional material, examples, questions and thoughts that we can use as a basis for a discussion: 
+
+- What is musique concrète?
+- What was so revolutionary about musique concrète?
+- What do you find interesting? How could you imagine using this in an art piece?
+- What is interesting from a technological point of view, what from an artistic point of view?
+
 
 ---
 
@@ -213,7 +229,7 @@ In a psychophysical sense, Frequency is perceived as **pitch**. A higher frequen
 
 **Measuring Frequency**
 
-Frequency is measured as cycles per second in Hertz. In the previous illustration, the left diagram depicts a frequency rate at 2 Hz, i.e., two cycles per second whereas the right diagram depicts a frequency at a rate of 4 Hz, i.e., four cycles per second.
+Frequency is measured as **number of cycles per second in Hertz**. In the previous illustration, the left diagram depicts a frequency rate at 2 Hz, i.e., two cycles per second whereas the right diagram depicts a frequency at a rate of 4 Hz, i.e., four cycles per second.
 
 To get an understanding of how Amplitude and Frequency are related, checkout this [interactive applet](http://musicandcomputersbook.com/applets/1_3_hear_freq.php) that allows you to change the two parameters.
 
@@ -230,16 +246,11 @@ In this context, the **timbre** of a sound is a recurring term which can be desc
 
 
 
-### Exercise - Theory Recap
+### Exercise - Sound Properties
 
-Read the following section of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets. 
-
-- [1.1 What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
-- Read the question at the bottom of section.
-  - Do you find them relevant? 
-  - Can you give answers to each of them?
-
-Further audio visual material on the properties of sound can be found at:
+- **Amplitude & Frequency**: Checkout this [interactive applet](http://musicandcomputersbook.com/applets/1_3_hear_freq.php) that allows you to change the two parameters amplitude and frequency.
+- **Timbre**: Checkout this [interactive applet](http://musicandcomputersbook.com/applets/1_4_draw_wave.php) that allows you to sketch out a waveform and experience different forms of "timbre".
+- Checkout these two videos that illustrate the physical properties of sound:
   - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
   - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
 
@@ -258,7 +269,7 @@ The human auditory system is responsible for the human hearing capabilities and 
 - the middle ear, 
 - the inner ear,
 
-as depcited in the following image:
+as depicted in the following image:
 
 ![ear anatomy](imgs/ear_anatomy.jpg)
 *Image source: http://pikeslaneprimary.weebly.com/class-4aj/how-do-we-hear-sounds*
@@ -312,8 +323,15 @@ As you can see, the relation is in logarithmic form. This means, a linear change
 
 It is interesting to note that perceived loudness varies with intensity and frequency; perceived pitch varies with frequency only though. The human hearing range deacreases with increasing age.
 
+### Exercise - Sound Perception
 
-# Exercise - Categorization and Review
+- **Linear vs logarithmic**: Checkout this [website and sound examples](https://www.audiocheck.net/soundtests_nonlinear.php) to actually *hear* what is meant by linear and logarithmic scales.
+- **Hearing range**: Checkout the following two websites that provide sound examples to test the hearing range. Please beware that the final result must not be realistic due to the general surrounding noise and your technical setup which might not playback the sampled frequencies correctly:
+  - [High Frequency Range Test (8-22 kHz)](https://www.audiocheck.net/audiotests_frequencycheckhigh.php)
+  - [Low Frequency Range Test (10-200 Hz)](https://www.audiocheck.net/audiotests_frequencychecklow.php)
+
+
+# Categorization & Review
 
 Now that you have learned about computer music, audio rendering, as well as sound as a physical and psychophysical phenomenon, how do you bring all of these aspects together? How do they relate in your understanding?
 
@@ -326,21 +344,29 @@ Now that you have learned about computer music, audio rendering, as well as soun
 
 ***Please Note:*** The previous sections on sound properties were restricted to the very basic concepts of sound generation and propagation through air and addressed the most essential properties of sound in order to get you started. To dive into more aspects of sound and acoustics, please checkout the recommended readings from the first page.
 
-<!-- - Musimathics
-- Acoustics and psychoacoustics -->
-
-
 --- 
 
 # Homework Assignment
 
-## Sound
+## Recap
 
-Review this script's [Properties of Sound](#properties-of-sound). Read the first sections of the Music and Computers online book and check out the interactive exercises presented there:
-- [1.2 Amplitude and Loudness](http://musicandcomputersbook.com/chapter1/01_02.php)
-- [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
-- [1.4 Timbre](http://musicandcomputersbook.com/chapter1/01_04.php)
+### Theory 
 
+- Recap the last sections on [Properties of Sound](#properties-of-sound) of the script including the exercises. 
+- Accompany the script with the following section of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets. 
+  - [1.1 What is Sound?](http://musicandcomputersbook.com/chapter1/01_01.php)
+    - Read the question at the bottom of section.
+      - Do you find them relevant? 
+      - Can you give answers to each of them?
+  - [1.2 Amplitude and Loudness](http://musicandcomputersbook.com/chapter1/01_02.php)
+  - [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
+  - [1.4 Timbre](http://musicandcomputersbook.com/chapter1/01_04.php)
+
+### Categorization and Review
+
+If you did not have the time to finalize this task during the lecture, please go back to the [Categorization & Review](#categorization--review) section and follow the instructions. 
+
+### Learning Check 
 
 Please pick one of the following questions and try to answer it. Find an example to illustrate your answer if possible. Add the question you picked as well as your answer to this [Miro board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351920589&cot=10). 
 
@@ -360,23 +386,20 @@ If a question has already been chosen, please pick another one.
 
 <!-- - Checkout this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350352000606&cot=12) and add answers to the above mentioned questions, add other materials that reflect what you have learned, as well as questions that you would like to clarify. -->
 
-## Music Concrète
+## Precap
 
-In the video on computer music history, you learned about **Musique Concrète**. Music Concrète was an essential and critical milestone from a technological as well as from an artistic point of view. It introduced a completely new approach to the process of music making by re-using, altering and adapting pre-recorded sounds. To get an even better understanding of this technique and art form, check out the following resources as well:
+### Reaper DAW
 
-- [All you need to know about Musique Concrète](https://www.musicradar.com/news/everything-you-need-to-know-about-musique-concrete)
-- [Pierre Schaeffer und die Musique Concrète](https://museum.rechtaufremix.org/exponate/pierre-schaeffer-und-die-musique-concrete/)
+In the next session, you will start working with a digital audio workstation (DAW), Reaper, that we will use during this lecture. 
 
-**Group work**: Music concrète will serve as the basis for our first practical exercise. Once you have completed the material above, please get in touch with your group member. Wrap your heads around the following questions and use sticky notes and this **[Miro Board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351573492&cot=12)** to answer them and add additional material, examples, questions and thoughts that we can use as a basis for a discussion: 
-
-- What is musique concrète?
-- What was so revolutionary about musique concrète?
-- What do you find interesting? How could you imagine using this in an art piece?
-- What is interesting from a technological point of view, what from an artistic point of view?
-
-## Reaper 
-
-Reaper is a digital audio workstation that we will be using during this lecture. Please download and install Reaper for the time of being. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
+Please download and install Reaper. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
 
 - [Reaper website](https://www.reaper.fm/index.php)
 - [Download Reaper Link](https://www.reaper.fm/download.php)
+
+To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
+
+- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
+- Try to load music into reaper and get used to playing it back and forth using the software 
+
+To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
