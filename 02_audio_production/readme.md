@@ -20,6 +20,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Quantization](#quantization)
   - [Digital Audio Signals](#digital-audio-signals)
   - [Audio Editing Software](#audio-editing-software)
+    - [Reaper DAW](#reaper-daw)
 - [Audio Production](#audio-production)
 - [Spatial Audio in Stereo](#spatial-audio-in-stereo)
 - [Dynamics, Panning, and Audio FX](#dynamics-panning-and-audio-fx)
@@ -145,6 +146,24 @@ Sonic Visualizer
 Reaper 
 
 - Checkout the following sections from the digitalsoundandmusic.com book's [Section 5.1](http://digitalsoundandmusic.com/chapters/ch5/5-1/) for additional details.
+
+
+### Reaper DAW
+
+In the next session, you will start working with a digital audio workstation (DAW), Reaper, that we will use during this lecture. 
+
+Please download and install Reaper. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
+
+- [Reaper website](https://www.reaper.fm/index.php)
+- [Download Reaper Link](https://www.reaper.fm/download.php)
+
+To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
+
+- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
+- Try to load music into reaper and get used to playing it back and forth using the software 
+
+To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
+
 
 # Audio Production 
 

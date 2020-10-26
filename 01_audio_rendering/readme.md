@@ -39,8 +39,6 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Theory](#theory)
     - [Categorization and Review](#categorization-and-review)
     - [Learning Check](#learning-check)
-  - [Precap](#precap)
-    - [Reaper DAW](#reaper-daw)
 
 ---
 
@@ -381,21 +379,3 @@ If a question has already been chosen, please pick another one.
 
 
 <!-- - Checkout this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350352000606&cot=12) and add answers to the above mentioned questions, add other materials that reflect what you have learned, as well as questions that you would like to clarify. -->
-
-## Precap
-
-### Reaper DAW
-
-In the next session, you will start working with a digital audio workstation (DAW), Reaper, that we will use during this lecture. 
-
-Please download and install Reaper. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
-
-- [Reaper website](https://www.reaper.fm/index.php)
-- [Download Reaper Link](https://www.reaper.fm/download.php)
-
-To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
-
-- [Hop Pole Studio: Reaper DAW 101: The Basics Part 1](https://www.youtube.com/watch?v=JwDcTPn2dvc)
-- Try to load music into reaper and get used to playing it back and forth using the software 
-
-To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
