@@ -13,7 +13,7 @@ let
   audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {},
   sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [], button_recording,  isRecording = false,
   oscillators = [], ui_elements_oscillators = [], button_oscillator,
-  fft
+  fft, waveformGraphics = []
   ;
 
 function setup() {
@@ -375,6 +375,15 @@ function addOscillatorUiElements() {
   });
 
   createElement('hr').position(0, baseYpos + 95);
+
+  addOscillatorFFTCanvas(oscIndex, 300, baseYpos);
+}
+
+function addOscillatorFFTCanvas(oscIndex, posX, posY) {
+  let graphicsCanvas = createGraphics(300, 100);
+  graphicsCanvas.position(posX, posY);
+
+  waveformGraphics[oscIndex] = graphicsCanvas;
 }
 
 
@@ -388,6 +397,11 @@ function draw() {
   noFill();
   stroke(255,255,255);
   drawOscillators();
+
+  waveformGraphics.forEach(graphic => {
+    graphic.background(0);
+    image(graphic);
+  });
 }
 
 function drawOscillators() {
@@ -400,4 +414,8 @@ function drawOscillators() {
     vertex(x, y);
   }
   endShape();
+}
+
+function drawWaveformToGraphics(graphics, audioInput) {
+
 }
