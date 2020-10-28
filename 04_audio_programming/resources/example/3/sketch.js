@@ -1,5 +1,9 @@
 // This example is based on the following scripts:
 // https://p5js.org/examples/sound-load-and-play-sound.html
+// https://p5js.org/examples/sound-play-mode.html
+// https://p5js.org/examples/sound-pan-sound.html
+// https://p5js.org/examples/sound-reverb.html
+// https://p5js.org/examples/sound-delay.html
 // https://p5js.org/examples/sound-record-save-audio.html
 
 let 
@@ -32,7 +36,7 @@ function setupUI() {
   button_recording = createButton('Start/Stop recording');
   button_recording.position(10, 5);
   button_recording.style('background-color', 'white');
-  button_recording.mousePressed(recordingBtnPressed);
+  button_recording.mousePressed(recordingBtnPressed); // @Angela: Hier ein Beispiel für den direkten Verweis auf eine Funktion, anstelle einer anonymen Funktion. Leider können so keine Argumente übergeben werden.
   
   // Buttons
   createSampleButton(ui_elements_cow, sample_cow, 'Cow', 10, 40);
