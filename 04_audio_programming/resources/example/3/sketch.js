@@ -10,7 +10,8 @@ let
   sample_cow, sample_glass, sample_slamming,
   ui_elements_cow = {}, ui_elements_glass  = {}, ui_elements_slamming  = {},
   audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {},
-  sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [], button_recording,  isRecording = false
+  sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [], button_recording,  isRecording = false,
+  oscillators = [], ui_elements_oscillators = [], button_oscillator
   ;
 
 function setup() {
@@ -33,10 +34,16 @@ function loadSamples() {
 }
 
 function setupUI() {
+  // Button to record audio from microphone
   button_recording = createButton('Start/Stop recording');
   button_recording.position(10, 5);
   button_recording.style('background-color', 'white');
   button_recording.mousePressed(recordingBtnPressed); // @Angela: Hier ein Beispiel für den direkten Verweis auf eine Funktion, anstelle einer anonymen Funktion. Leider können so keine Argumente übergeben werden.
+
+  // Button to add oscillator
+  button_oscillator = createButton('Add sine oscillator');
+  button_oscillator.position(140, 5);
+  button_oscillator.mousePressed(addSineOscillatorBtnPressed);
   
   // Buttons
   createSampleButton(ui_elements_cow, sample_cow, 'Cow', 10, 40);
@@ -290,7 +297,7 @@ function stopRecording() {
 
 function addRecordingSampleUiElements() {
   const recordingIndex = sample_recordings.length - 1;
-  const baseYpos =  385 + recordingIndex * 115;
+  const baseYpos = getBaseYPosition();
 
   ui_elements_recordings[recordingIndex] = {};
   audio_fx_recordings[recordingIndex] = {};
@@ -303,6 +310,72 @@ function addRecordingSampleUiElements() {
   createElement('hr').position(0, baseYpos + 95).style('width', '100%');
 }
 
+function addSineOscillatorBtnPressed() {
+  let osc = new p5.Oscillator('sine');
+
+  // setting up oscillator
+  osc.freq(240);
+  osc.amp(0.5);
+
+  oscillators.push(osc);
+  addOscillatorUiElements();
+}
+
+function addOscillatorUiElements() {
+  const oscIndex = oscillators.length - 1;
+  const baseYpos = getBaseYPosition();
+
+  ui_elements_oscillators[oscIndex] = {};
+
+  // label
+  createSpan('Sine Osc #' + oscIndex).position(10, baseYpos);
+
+  // enabled
+  createSpan('Enabled:').position(120, baseYpos);
+  ui_elements_oscillators[oscIndex].enabledCheckbox = createCheckbox(false);
+  ui_elements_oscillators[oscIndex].enabledCheckbox.position(180, baseYpos);
+
+  // when checkbox state changes, start or stop oscillator
+  ui_elements_oscillators[oscIndex].enabledCheckbox.changed(function () { 
+    if (ui_elements_oscillators[oscIndex].enabledCheckbox.checked()) {
+      oscillators[oscIndex].start();
+    } else {
+      oscillators[oscIndex].stop();
+    }
+  });
+
+  // frequency
+  createSpan('Frequency:').position(120, baseYpos + 35);
+  ui_elements_oscillators[oscIndex].freqInput = createInput('240', 'number');
+  ui_elements_oscillators[oscIndex].freqInput.position(200, baseYpos + 35);
+  ui_elements_oscillators[oscIndex].freqInput.style('width', '60px');
+  ui_elements_oscillators[oscIndex].freqInput.attribute('step', '0.1');
+
+  ui_elements_oscillators[oscIndex].freqInput.changed(function () {
+    const freq = parseFloat(ui_elements_oscillators[oscIndex].freqInput.value());
+    oscillators[oscIndex].freq(freq);
+  });
+
+  // amp
+  createSpan('Amplitude:').position(120, baseYpos + 70);
+  ui_elements_oscillators[oscIndex].ampInput = createInput('0.5', 'number');
+  ui_elements_oscillators[oscIndex].ampInput.position(200, baseYpos + 70);
+  ui_elements_oscillators[oscIndex].ampInput.style('width', '60px');
+  ui_elements_oscillators[oscIndex].ampInput.attribute('step', '0.01');
+
+  ui_elements_oscillators[oscIndex].ampInput.changed(function () {
+    const amp = parseFloat(ui_elements_oscillators[oscIndex].ampInput.value());
+    oscillators[oscIndex].amp(amp);
+  });
+
+  createElement('hr').position(0, baseYpos + 95).style('width', '100%');
+}
+
+
+function getBaseYPosition() {
+  const baseYpos = 385 + (sample_recordings.length + oscillators.length - 1) * 115;
+  return baseYpos;
+}
 // function draw() {
 //   background(220);
 // }
