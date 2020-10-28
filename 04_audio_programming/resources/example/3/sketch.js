@@ -375,17 +375,7 @@ function addOscillatorUiElements() {
   });
 
   createElement('hr').position(0, baseYpos + 95);
-
-  addOscillatorFFTCanvas(oscIndex, 300, baseYpos);
 }
-
-function addOscillatorFFTCanvas(oscIndex, posX, posY) {
-  let graphicsCanvas = createGraphics(300, 100);
-  graphicsCanvas.position(posX, posY);
-
-  waveformGraphics[oscIndex] = graphicsCanvas;
-}
-
 
 function getBaseYPosition() {
   const baseYpos = 385 + (sample_recordings.length + oscillators.length - 1) * 115;
@@ -397,11 +387,6 @@ function draw() {
   noFill();
   stroke(255,255,255);
   drawOscillators();
-
-  waveformGraphics.forEach(graphic => {
-    graphic.background(0);
-    image(graphic);
-  });
 }
 
 function drawOscillators() {
@@ -414,8 +399,4 @@ function drawOscillators() {
     vertex(x, y);
   }
   endShape();
-}
-
-function drawWaveformToGraphics(graphics, audioInput) {
-
 }
