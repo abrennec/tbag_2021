@@ -5,13 +5,15 @@
 // https://p5js.org/examples/sound-reverb.html
 // https://p5js.org/examples/sound-delay.html
 // https://p5js.org/examples/sound-record-save-audio.html
+// https://p5js.org/examples/sound-oscillator-frequency.html
 
 let 
   sample_cow, sample_glass, sample_slamming,
   ui_elements_cow = {}, ui_elements_glass  = {}, ui_elements_slamming  = {},
   audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {},
   sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [], button_recording,  isRecording = false,
-  oscillators = [], ui_elements_oscillators = [], button_oscillator
+  oscillators = [], ui_elements_oscillators = [], button_oscillator,
+  fft
   ;
 
 function setup() {
@@ -22,9 +24,13 @@ function setup() {
   setupUI();
   
   initSoundRecorder();
+
+  // FFT
+  fft = new p5.FFT();
+
   // Create and setup canvas
-  //createCanvas(720, 200);
-  //background(255, 0, 0);
+  createCanvas(480, 360).position(760, 10);
+  background(0, 0, 0);
 }
 
 function loadSamples() {
@@ -71,10 +77,10 @@ function setupUI() {
   createDelayOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 340);
 
   // Create line separators
-  createElement('hr').position(0, 20).style('width', '100%');
-  createElement('hr').position(0, 135).style('width', '100%');
-  createElement('hr').position(0, 250).style('width', '100%');
-  createElement('hr').position(0, 365).style('width', '100%');
+  createElement('hr').position(0, 20);
+  createElement('hr').position(0, 135);
+  createElement('hr').position(0, 250);
+  createElement('hr').position(0, 365);
 
   
 }
@@ -307,7 +313,7 @@ function addRecordingSampleUiElements() {
   createPanningSlider(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], 350, baseYpos);
   createReverbOption(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], audio_fx_recordings[recordingIndex], 120, baseYpos + 35);
   createDelayOption(ui_elements_recordings[recordingIndex], sample_recordings[recordingIndex], audio_fx_recordings[recordingIndex], 120, baseYpos + 70);
-  createElement('hr').position(0, baseYpos + 95).style('width', '100%');
+  createElement('hr').position(0, baseYpos + 95);
 }
 
 function addSineOscillatorBtnPressed() {
@@ -368,7 +374,7 @@ function addOscillatorUiElements() {
     oscillators[oscIndex].amp(amp);
   });
 
-  createElement('hr').position(0, baseYpos + 95).style('width', '100%');
+  createElement('hr').position(0, baseYpos + 95);
 }
 
 
@@ -376,17 +382,22 @@ function getBaseYPosition() {
   const baseYpos = 385 + (sample_recordings.length + oscillators.length - 1) * 115;
   return baseYpos;
 }
-// function draw() {
-//   background(220);
-// }
 
-// function mousePressed() {
-//   if (song.isPlaying()) {
-//     // .isPlaying() returns a boolean
-//     song.stop();
-//     background(255, 0, 0);
-//   } else {
-//     song.play();
-//     background(0, 255, 0);
-//   }
-// }
+function draw() {
+  background(0);
+  noFill();
+  stroke(255,255,255);
+  drawOscillators();
+}
+
+function drawOscillators() {
+  let waveform = fft.waveform(); // analyze the waveform
+  beginShape();
+  strokeWeight(3);
+  for (let i = 0; i < waveform.length; i++) {
+    let x = map(i, 0, waveform.length, 0, width);
+    let y = map(waveform[i], -1, 1, height, 0);
+    vertex(x, y);
+  }
+  endShape();
+}
