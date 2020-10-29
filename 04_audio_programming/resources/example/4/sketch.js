@@ -5,19 +5,38 @@
 // https://p5js.org/examples/sound-reverb.html
 // https://p5js.org/examples/sound-delay.html
 // https://p5js.org/examples/sound-record-save-audio.html
+// https://p5js.org/examples/sound-oscillator-frequency.html
 
 let 
   sample_cow, sample_glass, sample_slamming,
   ui_elements_cow = {}, ui_elements_glass  = {}, ui_elements_slamming  = {},
   audio_fx_cow = {}, audio_fx_glass = {}, audio_fx_slamming = {},
-  sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [], button_recording,  isRecording = false
+  sample_recordings = [], ui_elements_recordings = [], audio_fx_recordings  = [], button_recording,  isRecording = false,
+  oscillators = [], ui_elements_oscillators = [], button_oscillator,
+  fft, waveformGraphics = []
   ;
 
 function setup() {
+  // Loading the sound samples
+  loadSamples();
+
   // Setting up the UI
   setupUI();
   
   initSoundRecorder();
+
+  // FFT
+  fft = new p5.FFT();
+
+  // Create and setup canvas
+  createCanvas(480, 360).position(760, 10);
+  background(0, 0, 0);
+}
+
+function loadSamples() {
+  sample_cow = loadSound('assets/58277__benboncan__cow.wav');
+  sample_glass = loadSound('assets/440773__mgamabile__smashing-glass.wav');
+  sample_slamming = loadSound('assets/379924__supercow8399__slamming-on-wooden-desk.mp3');
 }
 
 function setupUI() {
@@ -25,10 +44,45 @@ function setupUI() {
   button_recording = createButton('Start/Stop recording');
   button_recording.position(10, 5);
   button_recording.style('background-color', 'white');
-  button_recording.mousePressed(recordingBtnPressed);
+  button_recording.mousePressed(recordingBtnPressed); // @Angela: Hier ein Beispiel für den direkten Verweis auf eine Funktion, anstelle einer anonymen Funktion. Leider können so keine Argumente übergeben werden.
+
+  // Button to add oscillator
+  button_oscillator = createButton('Add sine oscillator');
+  button_oscillator.position(140, 5);
+  button_oscillator.mousePressed(addSineOscillatorBtnPressed);
+  
+  // Buttons
+  createSampleButton(ui_elements_cow, sample_cow, 'Cow', 10, 40);
+  createSampleButton(ui_elements_glass, sample_glass, 'Glass', 10, 155);
+  createSampleButton(ui_elements_slamming, sample_slamming, 'Slamming', 10, 270);
+
+  // Radio buttons for playing mode
+  createPlayModeRadioButton(ui_elements_cow, sample_cow, 120, 40);
+  createPlayModeRadioButton(ui_elements_glass, sample_glass, 120, 155);
+  createPlayModeRadioButton(ui_elements_slamming, sample_slamming, 120, 270);
+
+  // Slider element for panning
+  createPanningSlider(ui_elements_cow, sample_cow, 350, 40);
+  createPanningSlider(ui_elements_glass, sample_glass, 350, 155);
+  createPanningSlider(ui_elements_slamming, sample_slamming, 350, 270);
+
+  // Reverb configuration elements
+  createReverbOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 75);
+  createReverbOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 190);
+  createReverbOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 305);
+
+  // Delay configuration elements
+  createDelayOption(ui_elements_cow, sample_cow, audio_fx_cow, 120, 110);
+  createDelayOption(ui_elements_glass, sample_glass, audio_fx_glass, 120, 225);
+  createDelayOption(ui_elements_slamming, sample_slamming, audio_fx_slamming, 120, 340);
 
   // Create line separators
   createElement('hr').position(0, 20);
+  createElement('hr').position(0, 135);
+  createElement('hr').position(0, 250);
+  createElement('hr').position(0, 365);
+
+  
 }
 
 function createSampleButton(ui_elements, sample, label, posX, posY) {
@@ -249,7 +303,7 @@ function stopRecording() {
 
 function addRecordingSampleUiElements() {
   const recordingIndex = sample_recordings.length - 1;
-  const baseYpos = 40 + (sample_recordings.length - 1) * 115;
+  const baseYpos = getBaseYPosition();
 
   ui_elements_recordings[recordingIndex] = {};
   audio_fx_recordings[recordingIndex] = {};
@@ -262,7 +316,87 @@ function addRecordingSampleUiElements() {
   createElement('hr').position(0, baseYpos + 95);
 }
 
+function addSineOscillatorBtnPressed() {
+  let osc = new p5.Oscillator('sine');
+
+  // setting up oscillator
+  osc.freq(240);
+  osc.amp(0.5);
+
+  oscillators.push(osc);
+  addOscillatorUiElements();
+}
+
+function addOscillatorUiElements() {
+  const oscIndex = oscillators.length - 1;
+  const baseYpos = getBaseYPosition();
+
+  ui_elements_oscillators[oscIndex] = {};
+
+  // label
+  createSpan('Sine Osc #' + oscIndex).position(10, baseYpos);
+
+  // enabled
+  createSpan('Enabled:').position(120, baseYpos);
+  ui_elements_oscillators[oscIndex].enabledCheckbox = createCheckbox(false);
+  ui_elements_oscillators[oscIndex].enabledCheckbox.position(180, baseYpos);
+
+  // when checkbox state changes, start or stop oscillator
+  ui_elements_oscillators[oscIndex].enabledCheckbox.changed(function () { 
+    if (ui_elements_oscillators[oscIndex].enabledCheckbox.checked()) {
+      oscillators[oscIndex].start();
+    } else {
+      oscillators[oscIndex].stop();
+    }
+  });
+
+  // frequency
+  createSpan('Frequency:').position(120, baseYpos + 35);
+  ui_elements_oscillators[oscIndex].freqInput = createInput('240', 'number');
+  ui_elements_oscillators[oscIndex].freqInput.position(200, baseYpos + 35);
+  ui_elements_oscillators[oscIndex].freqInput.style('width', '60px');
+  ui_elements_oscillators[oscIndex].freqInput.attribute('step', '0.1');
+
+  ui_elements_oscillators[oscIndex].freqInput.changed(function () {
+    const freq = parseFloat(ui_elements_oscillators[oscIndex].freqInput.value());
+    oscillators[oscIndex].freq(freq);
+  });
+
+  // amp
+  createSpan('Amplitude:').position(120, baseYpos + 70);
+  ui_elements_oscillators[oscIndex].ampInput = createInput('0.5', 'number');
+  ui_elements_oscillators[oscIndex].ampInput.position(200, baseYpos + 70);
+  ui_elements_oscillators[oscIndex].ampInput.style('width', '60px');
+  ui_elements_oscillators[oscIndex].ampInput.attribute('step', '0.01');
+
+  ui_elements_oscillators[oscIndex].ampInput.changed(function () {
+    const amp = parseFloat(ui_elements_oscillators[oscIndex].ampInput.value());
+    oscillators[oscIndex].amp(amp);
+  });
+
+  createElement('hr').position(0, baseYpos + 95);
+}
+
 function getBaseYPosition() {
   const baseYpos = 385 + (sample_recordings.length + oscillators.length - 1) * 115;
   return baseYpos;
+}
+
+function draw() {
+  background(0);
+  noFill();
+  stroke(255,255,255);
+  drawOscillators();
+}
+
+function drawOscillators() {
+  let waveform = fft.waveform(); // analyze the waveform
+  beginShape();
+  strokeWeight(3);
+  for (let i = 0; i < waveform.length; i++) {
+    let x = map(i, 0, waveform.length, 0, width);
+    let y = map(waveform[i], -1, 1, height, 0);
+    vertex(x, y);
+  }
+  endShape();
 }
