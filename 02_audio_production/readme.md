@@ -12,18 +12,19 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 - [Audio Production -- Learning Objectives](#audio-production----learning-objectives)
 - [Digital Audio and Signal Path](#digital-audio-and-signal-path)
-  - [Lecture Video](#lecture-video)
-    - [Exercise - Digital Audio](#exercise---digital-audio)
-  - [Digital Audio](#digital-audio)
-  - [Digitization](#digitization)
+  - [Digital Audio Signals](#digital-audio-signals)
+  - [Digital Audio Signal Path](#digital-audio-signal-path)
+  - [Digitization and PCM](#digitization-and-pcm)
     - [Sampling](#sampling)
     - [Quantization](#quantization)
-  - [Digital Audio Signals](#digital-audio-signals)
+    - [Lecture Video](#lecture-video)
+- [Audio Production](#audio-production)
   - [Audio Editing Software](#audio-editing-software)
     - [Reaper DAW](#reaper-daw)
-- [Audio Production](#audio-production)
 - [Spatial Audio in Stereo](#spatial-audio-in-stereo)
+    - [Lecture Video](#lecture-video-1)
 - [Dynamics, Panning, and Audio FX](#dynamics-panning-and-audio-fx)
+    - [Lecture Video](#lecture-video-2)
 - [Homework Assignment](#homework-assignment)
   - [Reaper and Musique Concrète](#reaper-and-musique-concrète)
     - [Get started](#get-started)
@@ -56,26 +57,71 @@ In this lecture, we will cover the following topics in order to understand what 
 
 # Digital Audio and Signal Path
 
-- Digital audio signal 
+Digital audio and digital audio technology usually describes the process of record, store, generate, manipulate, and reproduce sound using audio signals that have been encoded in digital form.
 
-- digitization 
-  - sampling 
-  - quantization
+## Digital Audio Signals
+
+- A **signal** represents a quantity that varies over time. 
+- Audio signal is a representation of sound 
+- audio signals can be represented electronically in analog & digital formats as continuous and discrete signals
+
+- Audio signals can be represented electronically in analog formats: analog processors operate directly on the voltage level of the analog signal (continuous function)
+
+- Digital formats: digital processors operate mathematically on the binary representations of the digital signal (discrete function)
+
+
+- digital audio expresses the pressure waveform as a binary number
+- digital processors operate mathematically on the binary representations of the signal
+- Digital - Everything can be represented as a finite integer number
+
+- Signal - A formal description of a phenomenon evolving over time and space (1D - Sound, 2D - Image, 3D -Movie)
+- Signal processing - An operation that modifies, analyzes, changes the information contained in a signal
+- Operates on an abstract representation of a physical quantity not on the quantity itself
+
+
+## Digital Audio Signal Path 
 
 - signal path
+  - audio input / microphone
   - audio interface
   - audio driver
   - operating system
   - audio programming sdk
   - audio application
 
-Audio signals can be represented electronically in analog formats: analog processors operate directly on the voltage level of the analog signal (continuous function)
 
-Digital formats: digital processors operate mathematically on the binary representations of the digital signal (discrete function)
 
-Digital - Everything can be represented as a finite integer number
+microphone converts sound into analog electrical signal then an ADC converts it to a digital signal then you can manipulate it (record, store, edit, modify) with digital audio tools then convert it back to analog with DAC 
+Reproduction/Rendering Audio - Stereophony, 3D Audio, Binaural Audio
 
-## Lecture Video
+
+Analog sound waves are digitized using an analog-to-digital-converter (ADC). This converter 
+
+ that is part of the sound card/audio interface (device) and converted back using an digital-to-analog-converter (dac). Driver APIs provide a programming interface that tells the operating system (or the audio application directly) how to exchange audio data with the audio interface. Audio APIs introduce another layer of abstraction: They provide a programming interface across all operating systems (platforms) & are generally used by application developers.
+
+
+
+A transducer converts one form of energy in another
+mechanical energy turns into electrical energy through a microphone (diaphragm oscillates), loudspeakers convert electrical energy back in sound
+Audio refers to capture, storage & reproduction of sound
+Audio equipment represents changing air pressure of sound with changing electrical voltage inside the components
+Acoustical systems can be accessed with transducers, devices that change energy from one form to another 
+kettledrum changes mechanical energy into acoustical energy; a microphone responds by producing electrical energy or a loudspeaker that produces acoustical energy from electrical energy
+
+## Digitization and PCM
+
+
+### Sampling 
+
+### Quantization
+
+Quantization - mapping the codomain of a sampling function to a set of integer numbers
+Noise (made by devices, etc.) cannot be eliminated; thus, quantization is always imprecise due to the existing noise
+Digital signal processing works with countable sequences of integers so that no noise is introduced -> example is reproduction and mp3
+The amplitude accuracy of a set of samples is entirely dependent on the processing HW indicated by the number of bits per sample, i.e., CD with 16 bits per sample, DVD with 24 bits per sample 
+
+
+### Lecture Video
 
 Please checkout the following lecture video to learn about the above mentioned terms and how they are related:
 
@@ -89,51 +135,24 @@ Please checkout the following lecture video to learn about the above mentioned t
 
 You can find the accompanying slides in the **resources** folder. 
 
-### Exercise - Digital Audio
+
+**Additional Material**
+
+- Checkout the following sections from the digitalsoundandmusic.com book's [Section 5.1](http://digitalsoundandmusic.com/chapters/ch5/5-1/) for additional details and analog to digital conversion and digital audio in general.
 
 
-## Digital Audio
 
-Sound waves are digitized using an audio-to-digital-converter (adc) that is part of the sound card/audio interface (device) and converted back using an digital-to-analog-converter (dac). Driver APIs provide a programming interface that tells the operating system (or the audio application directly) how to exchange audio data with the audio interface. Audio APIs introduce another layer of abstraction: They provide a programming interface across all operating systems (platforms) & are generally used by application developers.
+# Audio Production 
 
-## Digitization
+An audio production commonly refers to the process of creating an audio product (usually an audio file or a set of audio files) ready for playback on a dedicated playback system, in many cases this would be a stereo system. This process is usually comprised of several steps such as
 
-Digital audio and digital audio technology usually describes the process of record, store, generate, manipulate, and reproduce sound using audio signals that have been encoded in digital form.
-
-what is a digital audio signal?
-
-microphone converts sound into analog electrical signal then an ADC converts it to a digital signal then you can manipulate it (record, store, edit, modify) with digital audio tools then convert it back to analog with DAC 
-Reproduction/Rendering Audio - Stereophony, 3D Audio, Binaural Audio
-
-A transducer converts one form of energy in another
-mechanical energy turns into electrical energy through a microphone (diaphragm oscillates), loudspeakers convert electrical energy back in sound
-Audio refers to capture, storage & reproduction of sound
-Audio equipment represents changing air pressure of sound with changing electrical voltage inside the components
-Acoustical systems can be accessed with transducers, devices that change energy from one form to another 
-kettledrum changes mechanical energy into acoustical energy; a microphone responds by producing electrical energy or a loudspeaker that produces acoustical energy from electrical energy
-
-### Sampling 
-
-### Quantization
-
-
-Quantization - mapping the codomain of a sampling function to a set of integer numbers
-Noise (made by devices, etc.) cannot be eliminated; thus, quantization is always imprecise due to the existing noise
-Digital signal processing works with countable sequences of integers so that no noise is introduced -> example is reproduction and mp3
-The amplitude accuracy of a set of samples is entirely dependent on the processing HW indicated by the number of bits per sample, i.e., CD with 16 bits per sample, DVD with 24 bits per sample 
-
-## Digital Audio Signals
-
-Signal represents a quantity that varies over time
-Audio signal is a representation of sound 
-audio signals can be represented electronically in analog & digital formats as continuous and discrete signals
-digital processors operate mathematically on the binary representations of the signal
-digital audio expresses the pressure waveform as a binary number
-
-Signal - A formal description of a phenomenon evolving over time and space (1D - Sound, 2D - Image, 3D -Movie)
-Signal processing - An operation that modifies, analyzes, changes the information contained in a signal
-Operates on an abstract representation of a physical quantity not on the quantity itself
-Digital - Everything can be represented as a finite integer number
+- pre-production
+- recording
+- editing
+- mixing different audio tracks 
+- processing and FX
+- rendering
+- post-production and mastering
 
 
 
@@ -145,7 +164,6 @@ Sonic Visualizer
 
 Reaper 
 
-- Checkout the following sections from the digitalsoundandmusic.com book's [Section 5.1](http://digitalsoundandmusic.com/chapters/ch5/5-1/) for additional details.
 
 
 ### Reaper DAW
@@ -165,27 +183,42 @@ To get started with Reaper, for example, checkout the first 30 minutes of this t
 To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
 
 
-# Audio Production 
-
-An audio production commonly refers to the process of creating an audio product (usually an audio file or a set of audio files) ready for playback on a dedicated playback system, in many cases this would be a stereo system. This process is usually comprised of several steps such as
-
-- pre-production
-- recording
-- editing
-- mixing different audio tracks 
-- processing and FX
-- rendering
-- post-production and mastering
-
-
-
 # Spatial Audio in Stereo
 
 
 
+### Lecture Video
+
+Please checkout the following lecture video to learn about the above mentioned terms and how they are related:
+
+```diff
+- To be updated
+```
+- [Link to video]()
+- ~ XXX mins
+
+![screencast](imgs/screencast.png)
+
+You can find the accompanying slides in the **resources** folder. 
+
+
 # Dynamics, Panning, and Audio FX
 
-Practical lesson.
+
+### Lecture Video
+
+Please checkout the following lecture video to learn about the above mentioned terms and how they are related:
+
+```diff
+- To be updated
+```
+- [Link to video]()
+- ~ XXX mins
+
+![screencast](imgs/screencast.png)
+
+You can find the accompanying slides in the **resources** folder. 
+
 
 --- 
 

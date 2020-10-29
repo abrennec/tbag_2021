@@ -100,9 +100,6 @@ Audio rendering is a term commonly used in the context of digital sound reproduc
 
 To get an overview of audio rendering check out the accompanying video presentation:
 
-```diff
-- To be updated
-```
 - [Link to Audio Rendering video](https://owncloud.gwdg.de/index.php/s/exiSTk4dsX0yP1G)
 - ~ 14 mins
 
@@ -173,6 +170,7 @@ In contrast, when the direction of vibration that creates the wave is perpendicu
 
 - Check out this interactive [sound wave app](https://musiclab.chromeexperiments.com/Sound-Waves/) by Google experiments which depicts a waveform.
 - Checkout [this website](http://digitalsoundandmusic.com/2-1-3-longitudinal-and-transverse-waves/) by digitalsoundandmusic.com on more details about longitudinal and transversal waves.
+- **Question:** How does speaking work and how is sound created and transmitted when you speak? Think of the voice chords.
 
 
 ### Sound Pressure Waves
@@ -247,6 +245,7 @@ In this context, the **timbre** of a sound is a recurring term which can be desc
 - Checkout these two videos that illustrate the physical properties of sound:
   - [Khan Academy - Sound Properties](https://www.youtube.com/watch?time_continue=315&v=-_xZZt99MzY)
   - [Science Sauce - Sound Properties](https://www.youtube.com/watch?v=TsQL-sXZOLc)
+- **Research question:** How does speaking work? 
 
 
 ## Sound Perception
@@ -320,6 +319,7 @@ It is interesting to note that perceived loudness varies with intensity and freq
 ### Exercise - Sound Perception
 
 - **Linear vs logarithmic**: Checkout this [website and sound examples](https://www.audiocheck.net/soundtests_nonlinear.php) to actually *hear* what is meant by linear and logarithmic scales.
+  - Describe the relationship in your own words.
 - **Hearing range**: Checkout the following two websites that provide sound examples to test the hearing range. Please beware that the final result must not be realistic due to the general surrounding noise and your technical setup which might not playback the sampled frequencies correctly:
   - [High Frequency Range Test (8-22 kHz)](https://www.audiocheck.net/audiotests_frequencycheckhigh.php)
   - [Low Frequency Range Test (10-200 Hz)](https://www.audiocheck.net/audiotests_frequencychecklow.php)
