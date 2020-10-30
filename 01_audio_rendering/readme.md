@@ -35,10 +35,10 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Exercise - Sound Perception](#exercise---sound-perception)
 - [Categorization & Review](#categorization--review)
 - [Homework Assignment](#homework-assignment)
-  - [Recap](#recap)
-    - [Theory](#theory)
-    - [Categorization and Review](#categorization-and-review)
-    - [Learning Check](#learning-check)
+  - [Theory](#theory)
+  - [Categorization and Review](#categorization-and-review)
+  - [Learning Check](#learning-check)
+  - [Audio Editing Software](#audio-editing-software)
 
 ---
 
@@ -342,9 +342,7 @@ Now that you have learned about computer music, audio rendering, as well as soun
 
 # Homework Assignment
 
-## Recap
-
-### Theory 
+## Theory 
 
 - Recap the last sections on [Properties of Sound](#properties-of-sound) of the script including the exercises. 
 - Accompany the script with the following section of the [Music and Computers Book](http://musicandcomputersbook.com)  and check out the interactive applets. 
@@ -356,11 +354,11 @@ Now that you have learned about computer music, audio rendering, as well as soun
   - [1.3 Frequency, Pitch, and Intervals](http://musicandcomputersbook.com/chapter1/01_03.php)
   - [1.4 Timbre](http://musicandcomputersbook.com/chapter1/01_04.php)
 
-### Categorization and Review
+## Categorization and Review
 
 If you did not have the time to finalize this task during the lecture, please go back to the [Categorization & Review](#categorization--review) section and follow the instructions. 
 
-### Learning Check 
+## Learning Check 
 
 Please pick one of the following questions and try to answer it. Find an example to illustrate your answer if possible. Add the question you picked as well as your answer to this [Miro board](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350351920589&cot=10). 
 
@@ -378,4 +376,12 @@ If a question has already been chosen, please pick another one.
   - How does timbre come into play?
 
 
-<!-- - Checkout this [**Miro Board frame**](https://miro.com/app/board/o9J_kjnEj5M=/?moveToWidget=3074457350352000606&cot=12) and add answers to the above mentioned questions, add other materials that reflect what you have learned, as well as questions that you would like to clarify. -->
+## Audio Editing Software
+
+There are many different types of audio editing software. The complexity of these software types varies strongly form simple audio recording and editing options to complex audio production and rendering functionalities. First of all, check out and explore the following audio editing software types:
+
+- [Audacity](https://www.audacity.de)
+- [Sonic Visualizer](https://www.sonicvisualiser.org)
+- [Reaper](https://www.reaper.fm/index.php)
+
+What tasks can you accomplish with these two software types? Can you imagine using them and if so why? 

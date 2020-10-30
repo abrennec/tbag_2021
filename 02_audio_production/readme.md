@@ -19,12 +19,13 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Quantization](#quantization)
     - [Lecture Video](#lecture-video)
 - [Audio Production](#audio-production)
-  - [Audio Editing Software](#audio-editing-software)
-    - [Reaper DAW](#reaper-daw)
+  - [Digital Audio Workstations](#digital-audio-workstations)
+  - [Working with Reaper](#working-with-reaper)
 - [Spatial Audio in Stereo](#spatial-audio-in-stereo)
     - [Lecture Video](#lecture-video-1)
 - [Dynamics, Panning, and Audio FX](#dynamics-panning-and-audio-fx)
     - [Lecture Video](#lecture-video-2)
+  - [Reading Material](#reading-material)
 - [Homework Assignment](#homework-assignment)
   - [Reaper and Musique Concrète](#reaper-and-musique-concrète)
     - [Get started](#get-started)
@@ -42,7 +43,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 In this lecture, we will cover the following topics in order to understand what an audio production is generally comprised of and how it is conducted:
 
 - Digital audio and signal flow
-- Production steps and process
+- Production steps and processes
 - Spatial audio in stereo
 - Dynamics and audio FX
 
@@ -57,27 +58,33 @@ In this lecture, we will cover the following topics in order to understand what 
 
 # Digital Audio and Signal Path
 
-Digital audio and digital audio technology usually describes the process of record, store, generate, manipulate, and reproduce sound using audio signals that have been encoded in digital form.
+Digital audio and digital audio technology usually refer to the processes involved in reproducing sound using audio signals that have been encoded in digital form. A little terminology will help to clarify this matter.
 
 ## Digital Audio Signals
 
-- A **signal** represents a quantity that varies over time. 
-- Audio signal is a representation of sound 
-- audio signals can be represented electronically in analog & digital formats as continuous and discrete signals
+A **signal** represents a quantity that varies over time. It could also be described as a formal description of a phenomenon evolving over time and space, for example: 
+  - 1D - Sound, 
+  - 2D - Image, 
+  - 3D - Movie.
 
-- Audio signals can be represented electronically in analog formats: analog processors operate directly on the voltage level of the analog signal (continuous function)
+An **audio signal** is a representation of sound in  an analog format or a digital format:
+  - An **analog audio** (continuous) signal is an electronic representation of sound that can be described as a continuous function. Analog processor, for instance, would operate directly on the voltage level of the analog signal.
+  - A **digital audio** (discrete) signal is a binary representation of sound that can be described as a discrete function. Digital processors operate mathematically on the binary representations of the digital signal. Digital audio expresses a pressure waveform as a binary number or sequence of numbers as we will see. 
 
-- Digital formats: digital processors operate mathematically on the binary representations of the digital signal (discrete function)
+
+```diff
+- To be updated
+```
+
+![analog vs digital](imgs/)
 
 
-- digital audio expresses the pressure waveform as a binary number
-- digital processors operate mathematically on the binary representations of the signal
-- Digital - Everything can be represented as a finite integer number
+**Signal processing** is an operation or a set of operations that modify, analyze, change the information contained in a signal and operates on an abstract representation of a physical quantity not on the quantity itself.
 
-- Signal - A formal description of a phenomenon evolving over time and space (1D - Sound, 2D - Image, 3D -Movie)
-- Signal processing - An operation that modifies, analyzes, changes the information contained in a signal
-- Operates on an abstract representation of a physical quantity not on the quantity itself
 
+**References and further reading:** 
+
+- [Audio Signal Processing for Music Applications](https://www.coursera.org/learn/audio-signal-processing)
 
 ## Digital Audio Signal Path 
 
@@ -146,34 +153,33 @@ You can find the accompanying slides in the **resources** folder.
 
 An audio production commonly refers to the process of creating an audio product (usually an audio file or a set of audio files) ready for playback on a dedicated playback system, in many cases this would be a stereo system. This process is usually comprised of several steps such as
 
-- pre-production
+- composition
 - recording
 - editing
-- mixing different audio tracks 
+- mixing  
 - processing and FX
 - rendering
-- post-production and mastering
+- mastering
+
+[Audio production](http://digitalsoundandmusic.com/chapters/ch8/)
+
+## Digital Audio Workstations
+
+A software application that comprises all of these aspects is commonly referred to as digital audio workstation (DAW). Here we will use Reaper as our DAW. If you are already familiar with another DAW, please feel free to use that one. Market standard DAWs are
+
+- Avid's [ProTools](https://www.avid.com/de/pro-tools) (mostly in the U.S.)
+- Steinberg's [Cubase](https://new.steinberg.net/de/cubase/)
+- Apple's [Logic](https://www.apple.com/de/logic-pro/) 
+
+Reaper is technologically equal to the above mentioned applications but its interface could not yet compete with the market standard apps.
 
 
+<!-- Please download and install Reaper. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
 
-## Audio Editing Software
+- [Reaper](https://www.reaper.fm/index.php)
+- [Download Reaper Link](https://www.reaper.fm/download.php) -->
 
-Audacity
-
-Sonic Visualizer
-
-Reaper 
-
-
-
-### Reaper DAW
-
-In the next session, you will start working with a digital audio workstation (DAW), Reaper, that we will use during this lecture. 
-
-Please download and install Reaper. You can use it freely for 30 days and might continue the evaluation process thereafter unless you would like to get a licence. Please get in touch with your tutor in that case.
-
-- [Reaper website](https://www.reaper.fm/index.php)
-- [Download Reaper Link](https://www.reaper.fm/download.php)
+## Working with Reaper
 
 To get started with Reaper, for example, checkout the first 30 minutes of this tutorial by Hop Pole Studios on Youtube:
 
@@ -181,6 +187,7 @@ To get started with Reaper, for example, checkout the first 30 minutes of this t
 - Try to load music into reaper and get used to playing it back and forth using the software 
 
 To get a good understanding of the software, checkout the [Reaper user guide](https://www.reaper.fm/userguide.php) and the additional material and tutorial resource provided via the website.
+
 
 
 # Spatial Audio in Stereo
@@ -219,6 +226,10 @@ Please checkout the following lecture video to learn about the above mentioned t
 
 You can find the accompanying slides in the **resources** folder. 
 
+
+## Reading Material
+
+- [Audio processing](http://digitalsoundandmusic.com/chapters/ch7/)
 
 --- 
 
