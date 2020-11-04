@@ -29,6 +29,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Exercise - Sound Properties](#exercise---sound-properties)
   - [Sound Perception](#sound-perception)
     - [Hearing](#hearing)
+    - [Hearing Damage](#hearing-damage)
     - [Human Hearing Range](#human-hearing-range)
     - [Amplitude and Loudness](#amplitude-and-loudness)
     - [Frequency and Pitch](#frequency-and-pitch)
@@ -276,6 +277,14 @@ The **inner ear** is finally responsible of transforming the mechanical energy o
 
 ![ear anatomy](imgs/basilar_membrane.png)
 
+### Hearing Damage
+
+Hearing damage or even hearing loss can occur if you expose your ears to loud sounds for long periods of time or if you temporarily get into a situation where the pressure waves simply affect your ears too massively. In such a case it can happen that the hair cells in the basilar membrane buckle and are completely destroyed, as depicted in the following images. A processing of sound can no longer take place. Therefore, especially when working with sound, you should always make sure that all sound sources are turned down before using them (especially headphones or speakers).
+
+![hearing damage](imgs/hearing_damage.png)
+*Image source: unknown*
+
+The top left image shows a healthy membrane, bottom left shows a damged area of hair cells of the basilar membrane. The image on the right shows a set of healthy hair cells in the background and a set of damaged hair cells, in the form of the little red dots, in the front of the image.
 
 ### Human Hearing Range
 
