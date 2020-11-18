@@ -34,6 +34,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Homework Assignment](#homework-assignment)
     - [Self-study](#self-study)
     - [Listen](#listen)
+    - [Miro Board](#miro-board)
   - [Audio project: Musique Concrète](#audio-project-musique-concrète)
     - [Get started](#get-started)
     - [Topics](#topics)
@@ -301,6 +302,13 @@ Listen, listen, listen!
 
 Listen to music carefully. Try to identify panning and dynamic effects. Bring examples that you find interesting to the next lecture.
 
+### Miro Board
+
+Please use this Miro board to collect questions, feedback and useful information that you have stumbled across while working on the project or reading the script:
+
+**Link to be updated**
+
+The miro board also includes one frame for review and recap where I would like you to collect your thoughts so we can keep track of open issues and aspects that need our further attention :-)
 
 ## Audio project: Musique Concrète
 
