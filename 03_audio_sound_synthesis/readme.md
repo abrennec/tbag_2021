@@ -10,7 +10,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Sound Synthesis -- Digital Sound Generation and Analysis](#sound-synthesis----digital-sound-generation-and-analysis)
+- [Sound Synthesis - Digital Sound Generation and Analysis](#sound-synthesis---digital-sound-generation-and-analysis)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
 - [Further Reading](#further-reading)
@@ -20,7 +20,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 
 
-# Sound Synthesis -- Digital Sound Generation and Analysis
+# Sound Synthesis - Digital Sound Generation and Analysis
 
 
 ## Topics
@@ -31,6 +31,8 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 4. Audio analysis with FFT
 5. Project work
 
+FMT examples
+slides video
 
 ## Learning Objectives
 
@@ -43,7 +45,7 @@ Students know about the basics of sound and digital audio and are capable of pro
 
 ---
 
-sound synth with p5??
+
 
 ---
 
@@ -54,12 +56,6 @@ sound synth with p5??
 --- 
 
 # Assignments
-
-
-- Check out the [spectogram app](https://musiclab.chromeexperiments.com/Spectrogram/). 
-  - What do you understand from the information provided by the spectogram? 
-  - What is a spectogram?
-
 
 - Check out [Teropa's harmonic explorer](https://teropa.info/harmonics-explorer/) and play with the frequency and amplitude parameters. Also, add more and more simple sound waves (in this case, sine waves) together. 
   - What do you notice? 
