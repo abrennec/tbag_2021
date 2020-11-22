@@ -62,7 +62,10 @@ Check out the followin lecture video to understand the backgrounds of sound synt
 
 ### Additional Material
 
-- Check out [Teropa's harmonic explorer](https://teropa.info/harmonics-explorer/) and play with the frequency and amplitude parameters. Also, add more and more simple sound waves (in this case, sine waves) together.
+- Check out [Teropa's harmonic explorer](https://teropa.info/harmonics-explorer/) and play with the frequency and amplitude parameters. Also, add more and more simple sound waves (in this case, sine waves) together. See also how [Teropa connects frequency and pitch](https://teropa.info/blog/2016/08/10/frequency-and-pitch.html) in several examples.
+- The following two links will illustrate and exemplify furthermore the mathematical representation of sinusoids:
+  - https://www.geogebra.org/m/Mr5gjXmR 
+  - https://jackschaedler.github.io/circles-sines-signals/sincos.html 
 
 
 ## Practical Approches to Synthesis
