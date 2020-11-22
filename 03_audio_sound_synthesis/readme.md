@@ -173,9 +173,7 @@ The sawtooth wave is similar to the triangle wave but is defined by an aprubt fa
 
 ## Controlling One Oscillator with Another
 
-One aspect of sound synthesis is the generation of complex sounds by combining different waves with each other as we have seen above. Another interesting aspect of sound synthesis is the generation of complex sounds by emplyoing one oscillator as control element. That is, one oscillator is used such that it controls certain parameters of another oscillator. For example, the LFO is often used to control another sound wave as we have already seen in the initial ofApp example. Here, we will explore three techniques illustrated in the following Image:
-
-![Image](imgs/AMFM.png)
+One aspect of sound synthesis is the generation of complex sounds by combining different waves with each other as we have seen above. Another interesting aspect of sound synthesis is the generation of complex sounds by emplyoing one oscillator as a control element. That is, one oscillator is used such that it controls certain parameters of another oscillator. For example, the LFO is often used to control another sound wave as we have already seen in the Reaper ReaSynth tutorial. 
 
 ## Sound Synthesis Sync
 
