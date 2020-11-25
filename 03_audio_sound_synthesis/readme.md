@@ -191,7 +191,8 @@ Please check out the following lecture videos to learn about additive synthesis 
 
 ### Additional Material
 
-- Check out [Teropa's harmonic explorer](https://teropa.info/harmonics-explorer/) and play with the frequency and amplitude parameters. Also, add more and more simple sound waves (in this case, sine waves) together. See also how [Teropa connects frequency and pitch](https://teropa.info/blog/2016/08/10/frequency-and-pitch.html) in several examples.
+- Check out [Teropa's harmonic explorer](https://teropa.info/harmonics-explorer/) and play with the frequency and amplitude parameters. Try to create some of the basic waveform types by setting the parameters according to the equations given above.
+- Also, add more and more simple sound waves (in this case, sine waves) together. See also how [Teropa connects frequency and pitch](https://teropa.info/blog/2016/08/10/frequency-and-pitch.html) in several examples.
 
 --- 
 
@@ -201,7 +202,7 @@ Please check out the following lecture videos to learn about subtractive synthes
 
 ### Lecture Video Part 3
 
-- [Link to Sound Synthesis video 05 - Subtractive Synthesis]()
+- [Link to Sound Synthesis video 05 - Subtractive Synthesis](https://owncloud.gwdg.de/index.php/s/wDDsPpEzIAZmTz1)
   - ~ 12 mins
 
 ![screencast](imgs/screencast.png)
