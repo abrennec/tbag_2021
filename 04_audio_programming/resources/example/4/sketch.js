@@ -284,6 +284,8 @@ function recordingBtnPressed() {
 function startRecording() {
   // use the '.enabled' boolean to make sure user enabled the mic (otherwise we'd record silence)
   if (audioInput.enabled) {
+    getAudioContext().resume(); // Prevent exception in Chrome
+
     // create an empty sound file that we will use to playback the recording
     sample_recordings.push(new p5.SoundFile());
 
