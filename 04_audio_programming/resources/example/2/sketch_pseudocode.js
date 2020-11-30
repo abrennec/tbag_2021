@@ -73,7 +73,7 @@ function createPanningSlider(ui_elements, sample, posX, posY) {
   });
 }
 
-//TODO: Implement a function to add the reverb effect as UI element with the appropriate functionality. Most of the logic (alias the function body) is given. Read and understand the code, and add the function head. Think especially about about the parameters to pass.
+//TODO: Implement a function to add the reverb effect as UI element with the appropriate functionality. Most of the logic (alias the function body) is given. Read and understand the code, and add the function definition. Think especially about about the parameters to pass.
 /* function ...(...){
   createSpan('Reverb:').position(posX, posY);
 
