@@ -125,7 +125,7 @@ function createDelayOption(ui_elements, sample, audio_fx, posX, posY) {
   ui_elements.delayCheckbox = createCheckbox(false);
   ui_elements.delayCheckbox.position(posX + 45, posY);
 
-  // when checkbox state changes, add or remove reverb
+  // when checkbox state changes, add or remove delay
   ui_elements.delayCheckbox.changed(function () { 
     if (ui_elements.delayCheckbox.checked()) {
       addDelay(sample, audio_fx, ui_elements.delayTimeInput.value(), ui_elements.delayFeedbackInput.value(), ui_elements.delayFilterFreqInput.value());
