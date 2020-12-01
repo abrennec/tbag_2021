@@ -12,7 +12,6 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 - [Audio Programming](#audio-programming)
   - [Topics](#topics)
-  - [Learning Objectives](#learning-objectives)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
 
@@ -24,15 +23,10 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 ## Topics
 
 1. Introducing WebAudio and p5.js
-1. Digital signal flow 
-2. Working with audio buffers
-3. Interactive audio - changing the signal flow
-4. Project work
-
-## Learning Objectives
-
-- Students will 
-
+2. Digital signal flow 
+3. Working with audio buffers
+4. Interactive audio - changing the signal flow
+5. Project work
 
 ---
 
