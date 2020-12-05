@@ -13,8 +13,12 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - [Graphics -- Graphics Pipeline](#graphics----graphics-pipeline)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
-  - [External Media](#external-media)
-- [Further Reading](#further-reading)
+  - [Computer Graphics History](#computer-graphics-history)
+  - [Graphics Rendering Basics](#graphics-rendering-basics)
+  - [Local space, global space, camera space, screen space](#local-space-global-space-camera-space-screen-space)
+  - [Graphics vs. Images and Textures](#graphics-vs-images-and-textures)
+  - [OpenGL and WebGL](#opengl-and-webgl)
+  - [Practical Exerices](#practical-exerices)
 - [Assignments](#assignments)
 
 ---
@@ -33,15 +37,26 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ## Learning Objectives
 
-- Students will learn 
+To be updated.
+
+## Computer Graphics History
 
 
-## External Media
+## Graphics Rendering Basics
 
 
----
+## Local space, global space, camera space, screen space
 
-# Further Reading
+
+## Graphics vs. Images and Textures
+
+To be updated.
+
+## OpenGL and WebGL
+
+To be updated.
+
+## Practical Exerices
 
 
 

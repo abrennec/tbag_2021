@@ -12,8 +12,17 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 - [Audio Programming](#audio-programming)
   - [Topics](#topics)
-- [Further Reading](#further-reading)
-- [Assignments](#assignments)
+- [Audio Projects](#audio-projects)
+  - [Ideas](#ideas)
+    - [Ula](#ula)
+    - [Lucas](#lucas)
+    - [Sylvia](#sylvia)
+    - [Paul](#paul)
+    - [Malte](#malte)
+    - [India](#india)
+    - [Johanna](#johanna)
+    - [Sebastian](#sebastian)
+    - [Orkun](#orkun)
 
 ---
 
@@ -28,14 +37,53 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 4. Interactive audio - changing the signal flow
 5. Project work
 
----
-
-# Further Reading
-
-
 
 --- 
 
-# Assignments
+# Audio Projects
 
+## Ideas 
 
+### Ula 
+
+- Topic: "Mesophonia" or "Beehives vs politics"
+- Eating sounds trigger me awfully
+
+### Lucas
+
+- Topic: "Pressure and Relief"
+- Breakbeat, using helm synths
+
+### Sylvia
+
+- Topic: "Alien / Jungle"
+- Strange soundscapes
+
+### Paul
+
+- Topic: "Kitchen sounds"
+- Recording, natural sounds
+
+### Malte
+
+- Topic: "Train song"
+- Recording, train sounds
+
+### India
+
+- Topic: "Sleep paralysis"
+- Pressure, anxiety
+
+### Johanna
+
+- Topic: "Sounds of cereals"
+- Morning sound experience
+
+### Sebastian
+
+- Topic: "Winds of Kyoto"
+- Corona cancelled trip processing
+
+### Orkun 
+
+- Topic: TBD
