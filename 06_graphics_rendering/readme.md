@@ -23,8 +23,6 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
     - [Examples of Polygon Meshes](#examples-of-polygon-meshes)
       - [Level of Detail](#level-of-detail)
       - [Adaptive Refinement](#adaptive-refinement)
-    - [Implementation Details -- Advanced](#implementation-details----advanced)
-      - [Vertex Buffer and Index Buffer](#vertex-buffer-and-index-buffer)
     - [Additional Material](#additional-material-1)
 - [Assignments](#assignments)
 
@@ -145,7 +143,7 @@ The following images illustrate an approach that referred to as **adaptive refin
 Checkout the [accompanying publication](https://www.graphics.rwth-aachen.de/media/papers/sqrt31.pdf) if you are interested in the details.
 
 
-### Implementation Details -- Advanced
+<!-- ### Implementation Details -- Advanced
 
 A vertex mesh is essentially a collection of vertex coordinates (vertices) that are arranged in a particular format (triangles, triangle strup) in order to describe the surface of the object. Triangle meshes use a vertex and an index buffer.
 
@@ -165,7 +163,7 @@ As you can see, the first triangle is formed by the vertices 0, 1, 2 whereas the
 
 The reason why two buffer lists are introduced to organize mesh representations is primarily twofold: First of all, every vertex (usually composed of 2 or 3 coordinate values) has to be stored only once. Second,  accessing and organizing indices, i.e., singular values, can be handled more efficiently. 
 
-In OpenGL you can directly specify vertex and index buffer lists, but this is not possible for p5.js. 
+In OpenGL you can directly specify vertex and index buffer lists, but this is not possible for p5.js.  -->
 
 ### Additional Material
 
@@ -183,4 +181,5 @@ To learn more about meshes and triangulation, please refer to the following arti
 # Assignments
 
 
-- [Tyler Hobb's: Aesthetically Pleasing Triangle Subdivision](https://tylerxhobbs.com/essays/2017/aesthetically-pleasing-triangle-subdivision) -- Checkout this article by digital artist Tyler Hobbs on how to create aesthetically pleasing images with executing different forms of triangle subdivision on a geometric model, or, to be more precise, on the polygon mesh of the geometric model. Try this out on your own. Start with a simple 2D object like a rectangle and subdivide it into several triangles following a specific rule.
+- [Tyler Hobb's: Aesthetically Pleasing Triangle Subdivision](https://tylerxhobbs.com/essays/2017/aesthetically-pleasing-triangle-subdivision) -- Checkout this article by digital artist Tyler Hobbs on how to create aesthetically pleasing images with executing different forms of triangle subdivision on a geometric model, or, to be more precise, on the polygon mesh of the geometric model. Try this out on your own. Start with a simple 2D object like a rectangle and subdivide it into several triangles following a specific rule. 
+- Check out the following 
