@@ -25,6 +25,17 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
       - [Adaptive Refinement](#adaptive-refinement)
     - [Additional Material](#additional-material-1)
 - [Assignments](#assignments)
+  - [Exercises](#exercises)
+    - [Script](#script)
+    - [p5 Setup](#p5-setup)
+    - [2D geometry and vertices](#2d-geometry-and-vertices)
+      - [Exercise 1](#exercise-1)
+      - [Exercise 2](#exercise-2)
+    - [3D geometry and WebGL](#3d-geometry-and-webgl)
+      - [Exercise 3](#exercise-3)
+  - [Graphics Project](#graphics-project)
+    - [Aesthetics and Geometry](#aesthetics-and-geometry)
+      - [Triangle Subdivision](#triangle-subdivision)
 
 ---
 
@@ -101,7 +112,7 @@ Important terms in this context are:
 
 - **Triangle vertices** - Three vertices that describe to a triangle.
 - **Triangle faces** - The surface that is being described by the triangle, as illustrated in the previous image.
-- **Normal vector** - Each triangle face (but also every triangle vertex) can be used to calculate a normal vector, i.e., a vector that is perpendicular to the triangle face. Checkout the **cross product** to understand how normal vectors are being calculated.
+- **Normal vector** - Each triangle face (but also every triangle vertex) can be used to calculate a normal vector, i.e., a vector that is orthogonal to the triangle face. Checkout the **cross product** to understand how normal vectors are being calculated.
 
 In the following image, triangle vertices are represented by v1, v2, .., v4 whereas normal vectors are represented by n1 and n2:
 
@@ -121,7 +132,6 @@ In p5.js, the **beginShape** and **endShape** commands (this is also true for th
 ![vertex normals](imgs/p5_triangles.png)
 *Image source: https://p5js.org/reference/#/p5/beginShape*
 
-
 ### Examples of Polygon Meshes
 
 Different calculation methods for triangle subdivision have been developed and are being used. Their application often times depends on their **efficiency** in terms of rendering times and their **quality** in terms of realistic object representation. 
@@ -132,6 +142,13 @@ A typical example for a polygon mesh at different **resolitions** or **levels of
 
 ![triangle mesh bunny](imgs/triangle_bunny_mesh.jpg)
 *Image source: http://www.cmap.polytechnique.fr/~peyre/images/test_remeshing.jpg*
+
+p5.js objects also allow to adjust the level of details. Check out these examples:
+
+![triangle mesh bunny](imgs/p5_lod.png)
+*Image source: https://p5js.org/reference/#/p5/sphere*
+
+
 
 #### Adaptive Refinement
 
@@ -167,12 +184,7 @@ In OpenGL you can directly specify vertex and index buffer lists, but this is no
 
 ### Additional Material
 
-In the following links, you will find a couple of different approaches for triangle subdivision:
-
-- [Subdivision looping](https://graphics.stanford.edu/~mdfisher/subdivision.html) 
-- [Triangle Subdivision](http://www.cs.cmu.edu/afs/cs/academic/class/15462-s14/www/lec_slides/Subdivision.pdf)
-
-To learn more about meshes and triangulation, please refer to the following article by scratchapixel
+To learn more about meshes and triangulation in general, please refer to the following article by scratchapixel
 - [3d basic rendering](https://www.scratchapixel.com/lessons/3d-basic-rendering/rendering-3d-scene-overview/rendering-3d-scene)
 
 
@@ -180,6 +192,72 @@ To learn more about meshes and triangulation, please refer to the following arti
 
 # Assignments
 
+## Exercises 
 
-- [Tyler Hobb's: Aesthetically Pleasing Triangle Subdivision](https://tylerxhobbs.com/essays/2017/aesthetically-pleasing-triangle-subdivision) -- Checkout this article by digital artist Tyler Hobbs on how to create aesthetically pleasing images with executing different forms of triangle subdivision on a geometric model, or, to be more precise, on the polygon mesh of the geometric model. Try this out on your own. Start with a simple 2D object like a rectangle and subdivide it into several triangles following a specific rule. 
-- Check out the following 
+### Script  
+
+Read the script and checkout the accompanying materials and video lectures.
+
+### p5 Setup
+If you have not yet setup a working p5 dev environment, check out and follow the instructions in the code/p5_setup folder.
+
+### 2D geometry and vertices
+
+Check out the following p5 examples and play around with the values and parameters:
+
+- https://p5js.org/reference/#/p5/vertex
+- https://p5js.org/reference/#/p5/beginShape
+
+Make sure you have seen the **p5.vector** reference:
+- https://p5js.org/reference/#/p5.Vector
+
+
+#### Exercise 1
+Pick one of the exercises from [beginShape](https://p5js.org/reference/#/p5/beginShape) or [vertex](https://p5js.org/reference/#/p5/vertex) and reimplement them using  [createVector](https://p5js.org/reference/#/p5.Vector).
+
+#### Exercise 2
+
+Checkout the following functions:
+- https://p5js.org/reference/#/p5.Vector/dot
+- https://p5js.org/reference/#/p5.Vector/cross
+- https://p5js.org/reference/#/p5.Vector/lerp
+
+What happens during each of them? Make sure you understand what is happening and create an example for each of them (pen and paper). 
+
+
+### 3D geometry and WebGL
+
+If you want to work with 3d geometry, you have to adjust the drawing context "createCanvas" such that it supports WEBGL
+- https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5
+- https://p5js.org/reference/#/p5/createCanvas
+- https://p5js.org/reference/#/p5/sphere
+
+#### Exercise 3 
+
+Extend your rectangular vertex mesh from exercise 1 into 3D and create a triangle mesh that represents a box similar to the one depicted below:
+
+--- 
+
+## Graphics Project
+
+### Aesthetics and Geometry
+
+Checkout the [instagram channel of digital artist Saskia Freeke](https://www.instagram.com/sasj_nl/?hl=de). Use it as an inspiration to create your own geometric aesthetic with p5.js. 
+
+
+#### Triangle Subdivision
+
+Checkout the article [Aesthetically Pleasing Triangle Subdivision](https://tylerxhobbs.com/essays/2017/aesthetically-pleasing-triangle-subdivision) by digital artist Tyler Hobbs. 
+
+In this article, Hobbs discusses how to create aesthetically interesting images with the help of different triangle subdivision objects. 
+
+Try to follow his approach. Start with manually describing a simple 2D object like a rectangle and subdivide it into several triangles following a specific algorithmic rule. Follow the subdivision approach depicted in the following image:
+
+![triangle split](imgs/trianglesplit.JPG)
+*Courtesy of Grit Kit.*
+
+At the following links, you will find a few more ideas on how to approach triangle subdivision in case you want to experiment more:
+
+- [Subdivision looping](https://graphics.stanford.edu/~mdfisher/subdivision.html) 
+- [Triangle Subdivision](http://www.cs.cmu.edu/afs/cs/academic/class/15462-s14/www/lec_slides/Subdivision.pdf)
+
