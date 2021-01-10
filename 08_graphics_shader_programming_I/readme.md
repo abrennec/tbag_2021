@@ -13,7 +13,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - [Graphics -- Transformations](#graphics----transformations)
   - [Topics](#topics)
   - [Learning Objectives](#learning-objectives)
-  - [External Media](#external-media)
+  - [Objects](#objects)
 - [Further Reading](#further-reading)
 - [Assignments](#assignments)
 
@@ -38,7 +38,15 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 - Students will learn 
 
 
-## External Media
+## Objects
+
+Geometric objects are almost always defined by two groups of properties:
+
+- **Geometric parameters** to define the object's shape 
+  and to position the object in the scene.
+- **Materials** to define the object's shape and looks with the help of textures or visuals (color information) or specific material properties like reflectivity, mass, elasticity, for instance.
+
+We will focus on geometric parameters here.
 
 
 ---
