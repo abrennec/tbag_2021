@@ -5,9 +5,10 @@
 * Prompt 06
 * Triangle subdivision.
 *
-* Grit Kit
-*
-* Reference:
+* The porting in p5.js was done by Markus Traber.
+* The original implementation was done in Processing by
+* Grit Schuster ["Grit Kit" https://gritschuster.de] following
+* an article on triangle subdivision by Tyler Hobbs: 
 * https://tylerxhobbs.com/essays/2017/aesthetically-pleasing-triangle-subdivision
 */
 
