@@ -14,8 +14,10 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Computer Graphics History](#computer-graphics-history)
     - [Lecture Video](#lecture-video)
   - [Graphics Rendering Basics](#graphics-rendering-basics)
-  - [Euclidian Geometry and Vertices](#euclidian-geometry-and-vertices)
     - [Lecture Video](#lecture-video-1)
+    - [Exercise](#exercise)
+  - [Euclidian Geometry and Vertices](#euclidian-geometry-and-vertices)
+    - [Lecture Video](#lecture-video-2)
     - [Additional Material](#additional-material)
   - [3D Geometric Objects and Triangles](#3d-geometric-objects-and-triangles)
     - [Terminology](#terminology)
@@ -24,6 +26,8 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
       - [Level of Detail](#level-of-detail)
       - [Adaptive Refinement](#adaptive-refinement)
     - [Additional Material](#additional-material-1)
+    - [Implementation Details -- Advanced](#implementation-details----advanced)
+      - [Vertex Buffer and Index Buffer](#vertex-buffer-and-index-buffer)
 - [Assignments](#assignments)
   - [Exercises](#exercises)
     - [Script](#script)
@@ -36,6 +40,7 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
   - [Graphics Project](#graphics-project)
     - [Aesthetics and Geometry](#aesthetics-and-geometry)
       - [Triangle Subdivision](#triangle-subdivision)
+        - [Longest Side Approach](#longest-side-approach)
 
 ---
 
@@ -61,10 +66,12 @@ A short overview of the history of computer graphics will serve as a context for
 
 The following lecture video presents you with selected milestones from computer graphics history. Check out the video presentation at the following address and the accompanying slides in the resources folder:
 
-- [Link to CG history video]()
+- [Link to CG history video](https://owncloud.gwdg.de/index.php/s/hDdzny0ezgXzEf5)
 - ~ 20 mins
 
 ![screencast](imgs/screencast.png)
+
+Please checkout in particular the video reference added to the "**VolLibre**" film. It shows you how much geometry and mathematics are interwined with computer graphics and how different subjects and/or research areas can influence each other.
 
 <!-- ### Additional Material
 
@@ -74,9 +81,21 @@ Please checkout in particular the video reference added to the "VolLibre" film. 
 
 ## Graphics Rendering Basics
 
-During the lecture, I will give you an **online presentation** on graphics rendering basics. Please find the accompanying slides in the ressources folder.
+### Lecture Video
 
-![graphics rendering](imgs/rendering_pipeline.png)
+The following lecture video introduces you to graphics rendering in general. Check out the video presentation at the following address and the accompanying slides in the resources folder:
+
+- [Link to graphics rendering video](https://owncloud.gwdg.de/index.php/s/LIbOXZgTRMfkoMr)
+- ~ 30 mins
+
+![screencast](imgs/screencast.png)
+
+### Exercise
+
+OpenGL and WebGL are based on an implementation of the rendering pipeline, hence they aim at rasterization. three.js, which is based on WebGL, also follows a rasterization approach. 
+
+In CC1 you have implemented an interactive 3D graphics app. Check out the implementation and try to relate the steps of the rendering pipeline to the function calls you have used. 
+Can you find the pipeline in your code?
 
 ## Euclidian Geometry and Vertices
 
@@ -84,18 +103,26 @@ During the lecture, I will give you an **online presentation** on graphics rende
 
 The following lecture video introduces you to vector spaces and euclidian geometry in general. Check out the video presentation at the following address and the accompanying slides in the resources folder:
 
-- [Link to vector spaces video]()
+- [DEAD Link to vector spaces video INPUT FOLLOWS]()
 - ~ XX mins
 
 ![screencast](imgs/screencast.png)
 
 ### Additional Material
 
-Highly recommended:
+Recommended engineering approach to vectors by Daniel Shiffman:
+- [Nature of Code book chapter](https://natureofcode.com/book/chapter-1-vectors/)
+- [Youtube videos on vector mathematics](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZwSmtE13iJBcoI-r4y7iEc) 
+
+
+
+Recommended maths on vectors:
 
 - [3blue1brown's series on linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
   - [... on vectors](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1)
   - [... on linear combinations and more](https://www.youtube.com/watch?v=k7RM-ot2NWY&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=2)
+
+
 
 ## 3D Geometric Objects and Triangles
 
@@ -160,9 +187,16 @@ The following images illustrate an approach that referred to as **adaptive refin
 Checkout the [accompanying publication](https://www.graphics.rwth-aachen.de/media/papers/sqrt31.pdf) if you are interested in the details.
 
 
-<!-- ### Implementation Details -- Advanced
+### Additional Material
 
-A vertex mesh is essentially a collection of vertex coordinates (vertices) that are arranged in a particular format (triangles, triangle strup) in order to describe the surface of the object. Triangle meshes use a vertex and an index buffer.
+To learn more about meshes and triangulation in general, please refer to the following article by scratchapixel
+- [scratchapixel on 3d basic rendering](https://www.scratchapixel.com/lessons/3d-basic-rendering/rendering-3d-scene-overview/rendering-3d-scene)
+
+--- 
+
+### Implementation Details -- Advanced
+
+A vertex mesh is essentially a collection of vertex coordinates (vertices) that are arranged in a particular format (triangles, triangle strip) in order to describe the surface of the object. Triangle meshes use a vertex and an index buffer.
 
 #### Vertex Buffer and Index Buffer
 
@@ -180,12 +214,8 @@ As you can see, the first triangle is formed by the vertices 0, 1, 2 whereas the
 
 The reason why two buffer lists are introduced to organize mesh representations is primarily twofold: First of all, every vertex (usually composed of 2 or 3 coordinate values) has to be stored only once. Second,  accessing and organizing indices, i.e., singular values, can be handled more efficiently. 
 
-In OpenGL you can directly specify vertex and index buffer lists, but this is not possible for p5.js.  -->
+In OpenGL you can directly specify vertex and index buffer lists, but this is not possible for p5.js.
 
-### Additional Material
-
-To learn more about meshes and triangulation in general, please refer to the following article by scratchapixel
-- [3d basic rendering](https://www.scratchapixel.com/lessons/3d-basic-rendering/rendering-3d-scene-overview/rendering-3d-scene)
 
 
 --- 
@@ -211,6 +241,7 @@ Check out the following p5 examples and play around with the values and paramete
 Make sure you have seen the **p5.vector** reference:
 - https://p5js.org/reference/#/p5.Vector
 
+**Note:** *Take care of how you order the vertices, try to change the order and see what happens to the geometric object!*
 
 #### Exercise 1
 Pick one of the exercises from [beginShape](https://p5js.org/reference/#/p5/beginShape) or [vertex](https://p5js.org/reference/#/p5/vertex) and reimplement them using  [createVector](https://p5js.org/reference/#/p5.Vector).
@@ -236,20 +267,26 @@ If you want to work with 3d geometry, you have to adjust the drawing context "cr
 
 Extend your rectangular vertex mesh from exercise 1 into 3D and create a triangle mesh that represents a box similar to the one depicted below:
 
+![triangle mesh bunny](imgs/box_mesh.png)
+*Image Source: Steve Marschner's slides on CG*
+
 --- 
 
 ## Graphics Project
 
 ### Aesthetics and Geometry
 
-Checkout the [instagram channel of digital artist Saskia Freeke](https://www.instagram.com/sasj_nl/?hl=de). Use it as an inspiration to create your own geometric aesthetic with p5.js. 
+Checkout the [instagram channel of digital artist Saskia Freeke](https://www.instagram.com/sasj_nl/?hl=de). Use it as an inspiration to create your own geometric aesthetic with p5.js. Consider the graphics project as an experiment. Try out to create interesting geometric forms and play with the maths behind that. Interactivity is not a must but would be interesting to add. 
 
+Triangle subdivision is an example for automatically creating interesting meshes. This is going to be the basis for the graphics project.
 
 #### Triangle Subdivision
 
 Checkout the article [Aesthetically Pleasing Triangle Subdivision](https://tylerxhobbs.com/essays/2017/aesthetically-pleasing-triangle-subdivision) by digital artist Tyler Hobbs. 
 
 In this article, Hobbs discusses how to create aesthetically interesting images with the help of different triangle subdivision objects. 
+
+##### Longest Side Approach
 
 Try to follow his approach. Start with manually describing a simple 2D object like a rectangle and subdivide it into several triangles following a specific algorithmic rule. Follow the subdivision approach depicted in the following image:
 
