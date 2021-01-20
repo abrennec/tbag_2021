@@ -147,9 +147,9 @@ At the end of the lecture, a final exercise will allow you to combine both field
    1. Martrices and matrix multiplication
    2. Geometric transformations
    3. Homogeneous coordinates
-   4. Graphics rendering pipeline revisited
+   4. Geometric transformations by example
 8. 27.01.20 - **Shader programming I** (4 hrs)
-   1. The programmable rendering pipeline
+   1. The rendering pipeline revisited
    2. Vertex shaders and fragment shaders
    3. OpenGL Shader Language
    4. Vertex shader manipulations
