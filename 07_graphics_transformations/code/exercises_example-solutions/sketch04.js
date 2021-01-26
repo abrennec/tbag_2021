@@ -50,7 +50,9 @@ function draw() {
 
       //rotate(-angle)
       // 2)
-      applyMatrix(cos(-angle), sin(-angle), -sin(-angle), cos(-angle), 0, 0)
+      applyMatrix( cos(-angle), sin(-angle), 
+                    -sin(-angle), cos(-angle), 
+                    0, 0)
 
       rect(0, 0, r, r)
       pop()
@@ -63,7 +65,9 @@ function draw() {
       //rotate(angle)
 
       // 2)
-      applyMatrix(cos(angle), sin(angle), -sin(angle), cos(angle), 0, 0)
+      applyMatrix( cos(angle), sin(angle), 
+                  -sin(angle), cos(angle), 
+                   0, 0)
 
       rect(0, 0, r, r)
       pop()
