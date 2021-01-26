@@ -10,41 +10,36 @@ Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de | Film Univers
 
 ---
 
-- [Graphics -- Shader Programming I](#graphics----shader-programming-i)
-  - [Topics](#topics)
-  - [Learning Objectives](#learning-objectives)
-  - [Objects](#objects)
-- [Shaders](#shaders)
-  - [ofShader in openFrameworks](#ofshader-in-openframeworks)
+- [Learning Objectives -- Shader Programming I](#learning-objectives----shader-programming-i)
+  - [What?](#what)
+  - [Why?](#why)
+- [Intro to Shaders](#intro-to-shaders)
+  - [Revisiting the Rendering Pipeline](#revisiting-the-rendering-pipeline)
+  - [Implementation and Code Examples](#implementation-and-code-examples)
     - [Shaders, Variables, GLSL Versions](#shaders-variables-glsl-versions)
     - [Important Variables Type Qualifiers](#important-variables-type-qualifiers)
-- [Bibliography](#bibliography)
-  - [Recap](#recap)
-- [Further Reading](#further-reading)
+- [Additional Material](#additional-material)
 - [Assignments](#assignments)
 
 ---
 
 
-# Graphics -- Shader Programming I
+# Learning Objectives -- Shader Programming I
 
+## What?
 
-## Topics
+In this session, we will start to take a first look into shader programs, what they have to do with the rendering pipeline and how they are basically functioning. The topics are as follows:
 
+- The rendering pipeline revisited
+- Vertex shaders and fragment shaders
+- Uniforms and attributes
+- OpenGL Shader Language
 
-8. 27.01.20 - **Shader programming I** (4 hrs)
-   1. The rendering pipeline revisited
-   2. Vertex shaders and fragment shaders
-   3. Uniforms and attributes
-   4. OpenGL Shader Language
+## Why?
 
+Shader programming is a very interesting and a very powerful way to manipulate and enhance the shape and visual looks of geometric objects. At the same time, understanding how to program a shader is not that easy at first glance. It requires a basic knowledge of how computer graphics are rendered and processed in general.
 
-## Learning Objectives
-
-- Students will learn 
-
-
-## Objects
+<!-- ## Objects
 
 Geometric objects are almost always defined by two groups of properties:
 
@@ -52,12 +47,25 @@ Geometric objects are almost always defined by two groups of properties:
   and to position the object in the scene.
 - **Materials** to define the object's shape and looks with the help of textures or visuals (color information) or specific material properties like reflectivity, mass, elasticity, for instance.
 
-We will focus on geometric parameters here.
+We will focus on geometric parameters here. -->
 
 
-# Shaders
+# Intro to Shaders
 
-When the vertex data and all of the vertex specifications like color or texture are passed on to the rendering pipeline and the GPU, each vertex is processed, rasterized and finally written into the frame buffer. Shaders are small programs that can be executed on the GPU on a **per-vertex** and **per-pixel** basis to further enhance the rendering and image generation. In particular, there are two different shader types:
+"Shaders" are small programs that can be executed on the GPU on a **per-vertex** and **per-pixel** basis to speed up and further enhance the rendering and image generation process. 
+
+Technically, a polygonal mesh is specified or loaded as a 3d model (e.g., *.obj file) in the application program. The respective vertex data and all of the corresponding vertex specifications (positions, color or texture information) are passed on to the GPU. Each vertex is then processed, rasterized and finally written into the frame buffer based on the steps specified by the rendering pipeline.
+
+## Revisiting the Rendering Pipeline
+
+The following illustrations present the rendering pipeline steps in a new light and indicate at which point a shader program can be used to manipulate data:
+
+![rendering_pipeline](imgs/evasgl-graphics-pipeline.png)
+*Image source: https://www.enlightenment.org/playground/evas-gl.md*
+
+Although the illustration was taken from the documentation of a specific graphics library called "evas-gl", the illustrated steps are universal for a rendering pipeline. 
+
+As you can see, there are two different shader types depicted:
 
 - **Vertex shader** to adjust and process the geometric vertex data and operate on one vertex at a time. 
   - Input: Vertex in world space
@@ -66,18 +74,15 @@ When the vertex data and all of the vertex specifications like color or texture 
   - Input: Fragment
   - Output: Pixel color of the vertex
 
-These are the programmable components of the graphics pipeline as illustrated below:
+Meanwhile, there are also geometry and tesselation shader programs available but they are not yet supported on all platforms or graphics libraries. For instance, p5.js only supports vertex and fragment shader programs.
 
-![rendering_pipeline](assets/rendering_pipeline.png)
-_Image source: https://www.ntu.edu.sg/home/ehchua/programming/opengl/cg_basicstheory.html_
+The following illustration depicts the rendering pipeline as implemented by WebGL:
 
-As you can see, the vertex shader will be executed first, the fragment shader will be executed subsequently. 
-
-1. vertex shader 
-2. fragment shader
+![rendering_pipeline](imgs/webgl_graphics_pipeline.jpg)
+*Image source: https://opentechschool-brussels.github.io/intro-to-webGL-and-shaders/log1_graphic-pipeline*
 
 
-In particular, a **vertext shader** takes care of the following:
+As you can see, the vertex shader will be executed first, the fragment shader will be executed subsequently. In particular, a **vertext shader** takes care of the following:
 
 > "A vertex shader processes each vertex of the rendered object and changes its properties, such as position, normal, color, and some custom attributes. It can be used for geometric transformations of 3D objects." [Denis Perevalov, "Mastering openFrameworks", Chap. 8].
 
@@ -87,41 +92,31 @@ In contrast, a **fragment shader** is resonsible for finally calculating the fin
 
 If you want to use either a vertex or a fragment shader or both in your program, you need to specify and enable both of them. openFrameworks simplifies this process with the ofShader object.
 
-## ofShader in openFrameworks
+## Implementation and Code Examples 
 
-openFrameworks provides the **ofShader object** that allows for setting up and loading vertex, (geometry) and fragment shaders. openFrameworks supports the OpenGL shading language GLSL. 
+Let's take a look at a first shader application. Check out the code folder code/shaders.
 
-```cpp
-// Declare a shader object.
-ofShader shader;
+Important notes: 
 
-// ... 
-
-// Load the actual shader files. By default openFrameworks
-// will search for the shader files in the bin/data folder.
-shader.load("shaders/vert.glsl", "shaders/frag.glsl");
-
-// ...
-
-// Now enable the shader by calling the begin() and end()
-// functions upon it. Every mesh that is put inside these
-// function calls will be processed by the shaders.
-shader.begin();    
-myMesh.draw();
-shader.end();
-
-```
+- **Shader programs** are writtein in **individual source code files**. Common naming conventions are 
+  - "myShader.vert" and 
+  - "myShader.frag". 
+- These programs are then simply **loaded into the application program** and take care of how the geometry is rendered.
+- Shader programs also use their own language, for example, **OpenGL Shading Language (GLSL)** which is a C-like language.
 
 ### Shaders, Variables, GLSL Versions
 
-When working with shaders, it is important to understand that - due to their nature as being components of the rendering pipeline - specific variables like, e.g., **gl_Vertex**, **gl_Position**, **gl_ModelViewProjectionMatrix**, **gl_FragColor**, etc., are **built-in variables** provided by the underlying OpenGL library! These variables are used to access and change OpenGL-specific function states although their use as fixed built-in values has been removed with latest GLSL versions. Nonetheless, older versions are widely supported on many systems which is why you should know about them. The list of built-in variables used by GLSL and OpenGL can be found at 
+When working with shaders, it is important to understand that - due to their nature as being components of the rendering pipeline - specific variables like, e.g., **gl_Vertex**, **gl_Position**, **gl_ModelViewProjectionMatrix**, **gl_FragColor**, etc., are **built-in variables** provided by the underlying OpenGL library! 
+
+These variables are used to access and change OpenGL-specific function states although their use as fixed built-in values has been removed with latest GLSL versions. Nonetheless, older versions are widely supported on many systems which is why you should know about them. 
+
+The list of built-in variables used by GLSL and OpenGL can be found at 
 - https://www.khronos.org/registry/OpenGL-Refpages/gl4/index.php
 
-As mentioned above, the use of the built-in variables, however, changed with latest GLSL versions. The GLSL version you can use depends on the OpenGL version supported on your system and graphics card. 
+<!-- As mentioned above, the use of the built-in variables, however, changed with latest GLSL versions. The GLSL version you can use depends on the OpenGL version supported on your system and graphics card. 
 Here, we will be working with GLSL 1.2 which will work on most machines. An overview of OpenGL and GLSL versions can be found at 
-- https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)
+- https://www.khronos.org/opengl/wiki/Core_Language_(GLSL) -->
 
-In order to find out about the OpenGL version supported on your platform, you can either run the openFrameworks example/gl/glInfoExample or start ProjectGenerator and select the OpenGL version you would like to use in the **Template** section. This will implicitly reveal which OpenGL will be supported on your system. 
 
 ### Important Variables Type Qualifiers
 
@@ -129,42 +124,33 @@ Basically, you will work with three different types of variable type qualifiers:
 
 - **Attributes**
   - Attribute variables are specifed and processed per vertex. They correspond to the internal OpenGL attribute settings. 
-  - In openFrameworks, you can specify vertices by using the ofMesh class. The specified values are then handed over to the underlying OpenGL library for further processing which uses its pre-defined attribute variables to store the values internally and hands those over to the shader. 
+  - In p5.js, you can specify vertices by using the vertex() function. The specified values are then handed over to the underlying OpenGL library for further processing which uses its pre-defined attribute variables to store the values internally and hands those over to the shader. 
   - Examples: gl_Vertex, gl_Color, gl_MultiTexCoord0, gl_Normal, ...
 - **Uniform**
-  - Uniform variables can be specified in the application (i.e., ofApp) and can be handed over to the shader program (ofShader) directly (compared to how attributes are processed, for instance). They are used to, for example, to hand over information interactively from the application to the shader program.
-  - Univorm variables are applied to the entire primitive that is being processed.
+  - Uniform variables can be specified in the application (i.e., sketch.js) and can be handed over to the shader program directly (compared to how attributes are processed, for instance). 
+  - They are used to, for example, to hand over information interactively from the application to the shader program.
+  - Uniform variables are applied to the entire primitive that is being processed.
   - Examples: User defined variables as well as dedicated OpenGL uniforms like gl_ProjectionMatrix, gl_ModelViewMatrix, gl_NormalMatrix, ...
 - **Varying**
   - Varying variables can be used to exchange data between the shaders themselves; i.e., you can specify a varying variable in the vertex shader and retrieve the information inside of the fragment shader for further processing.
   - There are two sets of varying variables, one for the vertex and one for the fragment shader.
   - Examples: gl_Color, gl_TexCoord\[\], gl_FrontColor, ...
-Variable type qualifiers can be used inside of your ofApp and be handed over to the shader programs for an execution on the GPU.
+Variable type qualifiers can be used inside of your sketch.js file and be handed over to the shader programs for an execution on the GPU.
 
-To learn more about shaders, please refer to the corresponding [chapter on shaders in the ofBook](https://openframeworks.cc/ofBook/chapters/shaders.html) and revisit the code examples. 
+
+---
+
+# Additional Material
+
+**We will follow this p5.js tutorial**
+- https://itp-xstory.github.io/p5js-shaders/#/
+
+More information on WebGL and Shaders can be found here
+- https://opentechschool-brussels.github.io/intro-to-webGL-and-shaders/log0_setting-up
 
 For more information on the latest list of shader types supported by OpenGL and latest GLSL version specifications, visit 
 - https://www.khronos.org/registry/OpenGL/specs/gl/
 - https://www.khronos.org/registry/OpenGL/index_gl.php
-
---- 
-
-# Bibliography
-
-## Recap 
-
-Revise and Review
-
-- [OpenGL & openFrameworks](https://openframeworks.cc/ofBook/chapters/openGL.html#meshes)
-- [Meshes](https://openframeworks.cc/ofBook/chapters/openGL.html#meshes)
-- [Shaders](https://openframeworks.cc/ofBook/chapters/shaders.html)
-- [OpenGL GLSL Tutorial](https://www.opengl.org/sdk/docs/tutorials/TyphoonLabs/)
-
----
-
-# Further Reading
-
-
 
 --- 
 
