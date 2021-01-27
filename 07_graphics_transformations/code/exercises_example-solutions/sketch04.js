@@ -38,8 +38,8 @@ function draw() {
       //    you can replace rotate(..) with it? (Requires homogeneous coordinates)
 
       // 1) 
-      //   cos(a)   -sin(a)   0
-      //   sin(a)    cos(a)   0
+      //   cos(a)   -sin(a)   0      -   a  c  e 
+      //   sin(a)    cos(a)   0      -   b  d  f
       //   0         0        1
 
       // drawing a rect in the individual cell
@@ -49,10 +49,10 @@ function draw() {
       translate(i, j)
 
       //rotate(-angle)
-      // 2)
-      applyMatrix( cos(-angle), sin(-angle), 
-                    -sin(-angle), cos(-angle), 
-                    0, 0)
+      // 2) // is this a transposed matrix?
+      applyMatrix( cos(-angle), sin(-angle),    // a b  
+                    -sin(-angle), cos(-angle),  // c d 
+                    0, 0 )                      // e f
 
       rect(0, 0, r, r)
       pop()
