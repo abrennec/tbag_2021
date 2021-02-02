@@ -41,7 +41,11 @@ function draw() {
 
   //1
   push()
+  
   //translate(0, -80);
+  //rotateX(tan(angle));
+  //rotateY(tan(angle));
+  //rotateZ(tan(angle));
 
     // Rotation matrix around x 
     //   1    0        0          0 
@@ -77,7 +81,7 @@ function draw() {
     let s = sin(tan(angle));
     
     /*
-    // This is the short form of the matrix mulktiplication above, including the translation!
+    // This is the short form of the matrix multiplication above, including the translation!
     applyMatrix( c*c,  c*s*s-s*c,   c*s*c+(-s)*(-s),  0,
                  c*s,  s*s*s+c*c,   s*s*c+c*(-s),     -80,
                  -s,   s*c,         c*c,              0,
@@ -86,7 +90,7 @@ function draw() {
    // If you uncomment this matrix, it is not working as expected.. why not?
 
     // First of all, applyMatrix uses the transposed form in all cases, 2D and 3D.
-    // My apologies, if I have explained it wrongly last time!
+    // My apologies, if I have explained it wrong last time!
     /*
     applyMatrix( c*c,             c*s,               -s,        0,
                  c*s*s-s*c,       s*s*s+c*c,         s*c,       0,
@@ -96,6 +100,9 @@ function draw() {
     // BUT if you compare this result with the result of the function calls rotateX, rotateY, etc.
     // the resulting transformation is different here. Why?
     
+    // The sequence of operations must be 
+    // rotateX * rotateY * rotateZ
+
     /*
     // This finally the correct matrix but not yet in transposed form ... 
     applyMatrix( c*c,               -s*c,           s,        0,
