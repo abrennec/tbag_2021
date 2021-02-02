@@ -154,8 +154,8 @@ At the end of the lecture, a final exercise will allow you to combine both field
    3. Uniforms and attributes
    4. OpenGL Shader Language
 9.  03.02.20 - **Shader programming II** (4 hrs)
-    1. Fragment shader exercises
-    2. Vertex shader exercises
+    1. Vertex shader exercises
+    2. Fragment shader exercises
 10. TBD - **Graphics projects**
     1. Projects presentation
     2. Final Exercise + course wrap-up (2 hrs)

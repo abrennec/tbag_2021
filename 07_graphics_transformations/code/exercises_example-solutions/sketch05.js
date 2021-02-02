@@ -18,8 +18,7 @@ let music;
 function preload() {
     // TODO: 
     // Add a music file so that the sketch works
-    // source: https://freesound.org/people/Timbre/sounds/94840/
-  music = loadSound("94840__timbre__water-in-metal-pan-music.wav");
+  music = loadSound("94840__timbre__water-in-metal-pan-music.wav")
 
 }
 
@@ -40,32 +39,97 @@ function draw() {
     // 1) How would you have to combine the rotation matrices into one?
     // 2) How would the applyMatrix() function look like?
 
-  // 1)
-  // Multiplicate each rotation matrix. But use reverse order, like shown below:
-  // rotateZ * rotateY * rotateX
+  //1
+  push()
+  //translate(0, -80);
 
-  push();
-  translate(0, -80);
-  // rotateX(tan(angle));
-  // rotateY(tan(angle));
-  // rotateZ(tan(angle));
+    // Rotation matrix around x 
+    //   1    0        0          0 
+    //   0    cos(a)   -sin(a)    0  
+    //   0    sin(a)   cos(a)     0
+    //   0    0        0          1
 
-  // 2)
-  let c = cos(tan(angle));
-  let s = sin(tan(angle));
-  applyMatrix( c*c,  -s*c+c*s*s,  -s*-s-c*c*s,  0,
-               c*s,   c*c+s*s*s,   c*s-s*s*c,   0,
-               s,    -c*s,         c*c,         0,
-               0,     0,           0,           1);
+    // Rotation matrix around y 
+    //   cos(a)   0     sin(a)    0
+    //   0        1     0         0
+    //   -sin(a)  0     cos(a)    0
+    //   0        0     0         1
 
+    // Rotation matrix around z 
+    //   cos(a)   -sin(a)   0     0 
+    //   sin(a)    cos(a)   0     0
+    //   0         0        1     0
+    //   0         0        0     1
+  
+    // First, multiply rotateX with rotateY => rotateY * rotateX, resulting in
+    // cos(a)    sin(a) * sin(a)    sin(a) * cos(a)     0
+    // 0         cos(a)             -sin(a)             0
+    // -sin(a)   sin(a) * cos(a)    cos(a) * cos(a)     0
+    // 0         0                  0                   1
+
+    // Second, multiply rotateYX with rotateZ => rotateZ * rotateYX, resulting in
+    // cos(a) * cos(a)     cos(a) * sin(a) * sin(a) + (-sin(a)) * cos(a)    cos(a) * sin(a) * cos(a) + (-sin(a) * -sin(a))    0
+    // cos(a) * sin(a)     sin(a) * sin(a) * sin(a) + cos(a) * cos(a)       sin(a) * sin(a) * cos(a) + cos(a) * (-sin(a)      0
+    // -sin(a)             sin(a) * cos(a)                                  cos(a) * cos(a)                                   0
+    // 0                   0                                                0                                                 1
+
+    let c = cos(tan(angle));
+    let s = sin(tan(angle));
+    
+    /*
+    // This is the short form of the matrix mulktiplication above, including the translation!
+    applyMatrix( c*c,  c*s*s-s*c,   c*s*c+(-s)*(-s),  0,
+                 c*s,  s*s*s+c*c,   s*s*c+c*(-s),     -80,
+                 -s,   s*c,         c*c,              0,
+                 0,    0,           0,                1);
+    */
+   // If you uncomment this matrix, it is not working as expected.. why not?
+
+    // First of all, applyMatrix uses the transposed form in all cases, 2D and 3D.
+    // My apologies, if I have explained it wrongly last time!
+    /*
+    applyMatrix( c*c,             c*s,               -s,        0,
+                 c*s*s-s*c,       s*s*s+c*c,         s*c,       0,
+                 c*s*c+(-s)*(-s), s*s*c+c*(-s),      c*c,       0,
+                 0,               -80,               0,         1);
+    */
+    // BUT if you compare this result with the result of the function calls rotateX, rotateY, etc.
+    // the resulting transformation is different here. Why?
+    
+    /*
+    // This finally the correct matrix but not yet in transposed form ... 
+    applyMatrix( c*c,               -s*c,           s,        0,
+                c*s+(-s)*c*(-s),    c*c-s*s*s,      -s*c,     -80,
+                s*s+c*c*(-s),       s*c+c*s*s,      c*c,      0,
+                0,                  0,              0,        1);
+                */
+    
+    //... this one is the correct transformation matrix that leads to the same
+    // result as the individual function calls below and in transposed form:
+    /*
+    applyMatrix( c*c,    c*s+(-s)*c*(-s),   s*s+c*c*(-s),   0,
+                -s*c,    c*c-s*s*s,         s*c+c*s*s,      0,
+                s,       -s*c,              c*c,            0,
+                0,       -80,               0,              1);
+    */
+
+    
+    translate(0, -80);
+    rotateX(tan(angle));
+    rotateY(tan(angle));
+    rotateZ(tan(angle));
+  
   torus(40 + vol * 200, 10, 6);
+
+  /*
   rotateY(angle);
   rotateZ(angle);
   torus(20, 5, 6);
-  pop();
-
+  */
+  pop()
+/*
   //2
-  push();
+  push()
   translate(-100, 30);
   rotateX(cos(angle));
   rotateY(cos(angle));
@@ -74,10 +138,10 @@ function draw() {
   rotateY(angle);
   rotateZ(angle);
   torus(20, 7, 6);
-  pop();
+  pop()
 
   //3
-  push();
+  push()
   translate(100, 30);
   rotateX(sin(angle));
   rotateY(sin(angle));
@@ -86,10 +150,10 @@ function draw() {
   rotateY(-angle);
   rotateZ(-angle);
   torus(20, 8, 6);
-  pop();
+  pop()
 
-
-  angle += 0.003;
+*/
+  angle += 0.003
 
 }
 
@@ -97,6 +161,6 @@ function musicController() {
   if (music.isPlaying()) {
     music.stop();
   } else {
-    music.play();
+    music.play()
   }
 }
